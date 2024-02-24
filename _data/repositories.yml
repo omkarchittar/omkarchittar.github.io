@@ -1,12 +1,25 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - omkarchittar
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - omkarchittar/manipulator_control_DDPG
+  - omkarchittar/PointCloud_Classification_and_Segmentation
+  - omkarchittar/Superpixels_and_SLIC
+  - omkarchittar/Neural_Surfaces
+  - omkarchittar/Implicit_Neural_Representation
+  - omkarchittar/Single_View_to_3D
+  - omkarchittar/PyTorch3D_Rendering_Basics
+  - omkarchittar/Neural_Radiance_Fields
+  - omkarchittar/Stereo_Depth_Estimation
+  - omkarchittar/Zhang_Camera_Calibration
+  - omkarchittar/Tsai_Camera_Calibration
+  - omkarchittar/Control_of_Crane_System
+  - omkarchittar/Obstacle_Avoidance_Bot
+  - omkarchittar/A_Star_Path_Planning
+  - omkarchittar/Dijkstra_Point_Robot
+  - omkarchittar/Image_Stitching
+  - omkarchittar/Camera_Pose_Estimation
+  - omkarchittar/BFS_8_Puzzle
+  - omkarchittar/Trajectory_Tracking
+  - omkarchittar/Point_Cloud_Analysis
+  - omkarchittar/Wall_Following_Robot
