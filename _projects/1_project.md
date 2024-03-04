@@ -1,14 +1,27 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: 3D Vision
+description: Learning for 3D Vision
+img: assets/img/3D_vision_main.png
 importance: 1
 category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
+
+Developing autonomous agents requires them to understand and interact within a 3D environment. The capability to deduce, shape, and apply 3D representations is crucial in AI for various applications, including robotic handling, autonomous driving, virtual reality, and photo editing. The ambition to comprehend 3D spaces in computer vision has made significant strides with the advent of advanced (deep) learning methods. This area aims to delve into the integration of 3D Vision with Learning-based approaches, highlighting recent breakthroughs in the field.
+
+It covers topics including:
+- Explicit, Implicit, and Neural 3D Representations	
+- Differentiable Rendering
+- Single-view 3D Prediction: Objects, Scenes, and Humans	
+- Neural Rendering
+- Multi-view 3D Inference: Radiance Fields, Multi-plane Images, Implicit Surfaces, etc.
+- Generative 3D Models	
+- Shape Abstraction	
+- Mesh and Point cloud processing
+
+<!-- Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
 
@@ -19,63 +32,117 @@ To give your project a background in the portfolio page, just add the img tag to
     title: project
     description: a project with a background image
     img: /assets/img/12.jpg
-    ---
+    --- -->
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="row justify-content-center">
+        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/PyTorch3D_Rendering_Basics">Renderiing Basics
+            {% include figure.liquid path="assets/img/3DV1.jpg" title="Renderiing Basics" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
+        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Single_View_to_3D">Single View to 3D
+            {% include figure.liquid path="assets/img/3DV3.png" title="Single View to 3D" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
+        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Neural_Radiance_Fields">Neural Radiance Fields
+            {% include figure.liquid path="assets/img/3DV5.gif" title="Neural Radiance Fields" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
     </div>
 </div>
+
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    1. Learning the basics of rendering with PyTorch3D, exploring 3D representations, and practice constructing simple geometry <br>
+    2. Exploring the types of loss and decoder functions for regressing to voxels, point clouds, and mesh representation from single view RGB input <br>
+    3. Volume Rendering and Neural Radiance Fields <br>
 </div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+
+<div class="container">
+    <div class="row">
+        <div class="col"><a href="https://github.com/omkarchittar/Neural_Surfaces">Sphere Tracing
+                {% include figure.liquid path="assets/img/3DV6.gif" title="Sphere Tracing" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
+        <div class="col"><a href="https://github.com/omkarchittar/Neural_Surfaces">Optimizing a Neural SDF
+                {% include figure.liquid path="assets/img/3DV7.gif" title="Optimizing a Neural SDF" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
     </div>
 </div>
+
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    1. Implementing sphere tracing for rendering an SDF <br>
+    2. Implementing an MLP architecture for a neural SDF, and training this neural SDF on point cloud data
 </div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<a href="https://github.com/omkarchittar/Neural_Surfaces">VolSDF</a>
+<div class="container">
+    <div class="row">
+        <div class="col"><a href="https://github.com/omkarchittar/Neural_Surfaces">
+                {% include figure.liquid path="assets/img/3DV8.gif" title="VolSDF" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
+        <div class="col"><a href="https://github.com/omkarchittar/Neural_Surfaces">
+                {% include figure.liquid path="assets/img/3DV9.gif" title="VolSDF" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
     </div>
 </div>
+
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    1. Implementing a function for converting SDF into volume density<br>
+    2. Extending the NeuralSurface class to predict color
+
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
 
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+<a href="https://github.com/omkarchittar/Neural_Surfaces">Phong Relighting</a>
+<div class="container">
+    <div class="row">
+        <div class="col"><a href="https://github.com/omkarchittar/Neural_Surfaces">
+                {% include figure.liquid path="assets/img/3DV10.gif" title="Phong Relighting" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
+        <div class="col"><a href="https://github.com/omkarchittar/Neural_Surfaces">
+                {% include figure.liquid path="assets/img/3DV11.gif" title="Phong Relighting" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
+    </div>
 </div>
-```
 
-{% endraw %}
+<div class="caption">
+    Implementing the Phong reflection model in order to render the SDF volume we trained under different lighting conditions
+</div>
+
+<a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">Point Cloud Classification</a>
+<div class="container">
+    <div class="row">
+        <div class="col"><a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">
+                {% include figure.liquid path="assets/img/3DV12.gif" title="Point Cloud Classification" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
+        <div class="col"><a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">
+                {% include figure.liquid path="assets/img/3DV13.gif" title="Point Cloud Classification" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
+        <div class="col"><a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">
+                {% include figure.liquid path="assets/img/3DV14.gif" title="Point Cloud Classification" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
+    </div>
+</div>
+
+<div class="caption">
+    Implementing a classification model that classifies points clouds from across 3 classes (chairs, vases and lamps objects)
+</div>
+
+<a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">Point Cloud Segmentation</a>
+<div class="container">
+    <div class="row">
+        <div class="col"><a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">
+                {% include figure.liquid path="assets/img/3DV15.gif" title="Point Cloud Segmentation" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
+        <div class="col"><a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">
+                {% include figure.liquid path="assets/img/3DV16.gif" title="Point Cloud Segmentation" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
+        <div class="col"><a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">
+                {% include figure.liquid path="assets/img/3DV17.gif" title="Point Cloud Segmentation" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
+    </div>
+</div>
+
+<div class="caption">
+    Implementing a Segmentation model that segments points of chair objects into 6 semantic segmentation classes
+</div>
+
+
+
+
