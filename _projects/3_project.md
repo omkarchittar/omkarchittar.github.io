@@ -1,9 +1,8 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: Robotics & Autonomy
+description: Perception, Planning, Controls, Localization and Navigation
+img: assets/img/ROB1.jpg
 importance: 3
 category: work
 ---

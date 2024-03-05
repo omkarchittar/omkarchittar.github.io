@@ -1,81 +1,67 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
-importance: 2
+title: Computer Vision/DL
+description: Learning based computer vision
+img: assets/img/CVDL1.png
+importance: 1
 category: work
-giscus_comments: true
+related_publications: true
 ---
-
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/CVDL_main.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
+
+Welcome to the showcase of my deep learning and computer vision projects, where innovation meets practical application. My portfolio spans a variety of cutting-edge projects that demonstrate my expertise in harnessing the power of neural networks to interpret and understand visual data. From developing sophisticated algorithms for real-time object detection and recognition, to crafting advanced neural network architectures for image segmentation and enhancement, each project embodies my commitment to advancing the field of computer vision.
+
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="row justify-content-center">
+        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Superpixels_and_SLIC">Superpixels and SLIC
+            {% include figure.liquid path="assets/img/CVDL2.png" title="Superpixels and SLIC" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
+        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Generative_Adversarial_Networks">GANs
+            {% include figure.liquid path="assets/img/CVDL3.png" title="GANs" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
+        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/LiDAR_SLAM">LiDAR SLAM
+            {% include figure.liquid path="assets/img/CVDL4.png" title="LiDAR SLAM" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    1. Segmentation using Superpixels <br>
+    2. Generative Adversarial Networks(GANs) on MNIST and Deep Convolutional GANs(DCGANs) on Human Faces Dataset <br>
+    3. Simultaneous Localization and Mapping using LiDAR data <br>
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<a href="https://github.com/omkarchittar/Semantic_Segmentation_and_Object_Detection">Semantic Segmentation and Object Detection</a>
+<div class="container">
+    <div class="row"><a href="https://github.com/omkarchittar/Semantic_Segmentation_and_Object_Detection">
+                {% include figure.liquid path="assets/img/CVDL7.png" title="Semantic Segmentation" class="img-fluid rounded z-depth-1" %}</a>
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="row"><a href="https://github.com/omkarchittar/Semantic_Segmentation_and_Object_Detection">
+                {% include figure.liquid path="assets/img/CVDL8.png" title="Object Detection" class="img-fluid rounded z-depth-1" %}</a>
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    1. Sample Segmentation Results <br>
+    2. Sample Object Detection Results
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
 
-{% raw %}
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Implicit_Neural_Representation">Implicit Neural Representation
+    {% include figure.liquid path="assets/img/CVDL5.png" title="Implicit Neural Representation" class="img-fluid rounded z-depth-1" %}</a>
+    </div>
 </div>
-```
 
-{% endraw %}
+<div class="caption">
+    An illustration of an image represented in the implicit neural representation (INR) form, i.e. as an MLP that predicts an RGB pixel value given its (x, y) coordinates. In contrast to a pixel-based representation, it stores the image in its true continuous form. 
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Pose_Estimation_2D">Pose Estimation
+    {% include figure.liquid path="assets/img/CVDL6.gif" title="Pose Estimation" class="img-fluid rounded z-depth-1" %}</a>
+    </div>
+</div>

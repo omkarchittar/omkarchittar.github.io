@@ -1,13 +1,17 @@
 ---
 layout: page
-title: 3D Vision
+title: 3D Computer Vision
 description: Learning for 3D Vision
-img: assets/img/3D_vision_main.png
+img: assets/img/3DV0.png
 importance: 1
 category: work
 related_publications: true
 ---
-
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/3D_vision_main.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 Developing autonomous agents requires them to understand and interact within a 3D environment. The capability to deduce, shape, and apply 3D representations is crucial in AI for various applications, including robotic handling, autonomous driving, virtual reality, and photo editing. The ambition to comprehend 3D spaces in computer vision has made significant strides with the advent of advanced (deep) learning methods. This area aims to delve into the integration of 3D Vision with Learning-based approaches, highlighting recent breakthroughs in the field.
 
@@ -21,18 +25,6 @@ It covers topics including:
 - Shape Abstraction	
 - Mesh and Point cloud processing
 
-<!-- Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    --- -->
 
 <div class="row">
     <div class="row justify-content-center">
@@ -143,6 +135,10 @@ To give your project a background in the portfolio page, just add the img tag to
     Implementing a Segmentation model that segments points of chair objects into 6 semantic segmentation classes
 </div>
 
+
+[MVS](https://github.com/walsvid/Awesome-MVS?tab=readme-ov-file#early)
+[SLAM](https://github.com/kanster/awesome-slam)
+[SLAM](https://github.com/SilenceOverflow/Awesome-SLAM)
 
 
 

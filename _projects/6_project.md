@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
+title: Machine Learning
+description: 
+img: assets/img/ML1.jpg
 importance: 4
-category: fun
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
