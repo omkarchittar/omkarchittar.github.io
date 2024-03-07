@@ -28,8 +28,8 @@ It covers topics including:
 
 <div class="row">
     <div class="row justify-content-center">
-        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/PyTorch3D_Rendering_Basics">Renderiing Basics
-            {% include figure.liquid path="assets/img/3DV1.jpg" title="Renderiing Basics" class="img-fluid rounded z-depth-1" %}</a>
+        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/PyTorch3D_Rendering_Basics">Rendering Basics
+            {% include figure.liquid path="assets/img/3DV1.jpg" title="Rendering Basics" class="img-fluid rounded z-depth-1" %}</a>
         </div>
         <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Single_View_to_3D">Single View to 3D
             {% include figure.liquid path="assets/img/3DV3.png" title="Single View to 3D" class="img-fluid rounded z-depth-1" %}</a>

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Computer Vision/DL
+title: Deep Learning/CV
 description: Learning based computer vision
 img: assets/img/CVDL1.png
 importance: 1
@@ -58,6 +58,13 @@ Welcome to the showcase of my deep learning and computer vision projects, where 
 
 <div class="caption">
     An illustration of an image represented in the implicit neural representation (INR) form, i.e. as an MLP that predicts an RGB pixel value given its (x, y) coordinates. In contrast to a pixel-based representation, it stores the image in its true continuous form. 
+</div>
+
+<a href="https://github.com/omkarchittar/Structure_from_Motion">Structure from Motion</a>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Structure_from_Motion">
+        {% include figure.liquid path="assets/img/3DV18.jpeg" title="SfM" class="img-fluid rounded z-depth-1" %}</a>
+    </div>
 </div>
 
 <div class="row">

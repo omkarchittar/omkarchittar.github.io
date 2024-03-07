@@ -1,80 +1,72 @@
 ---
 layout: page
 title: Robotics & Autonomy
-description: Perception, Planning, Controls, Localization and Navigation
+description: Perception, Planning, Controls
 img: assets/img/ROB1.jpg
 importance: 3
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/ROB_main.png" title="main" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+
+
+Creating a fully autonomous vehicle or robotic system involves integrating several crucial components. These include the perception system, path planning, trajectory generation, follower subsystem, and controls subsystem.
+
+The perception subsystem relies on sensors like cameras, LiDARs, and RADARS to perceive the environment, localize the vehicle or robot, and plan trajectories while ensuring collision avoidance. It serves as a fundamental component for autonomous navigation.
+
+The path planning module is responsible for generating the trajectory for the vehicle or robot to follow towards its destination. It considers objects detected by the perception system and plans to avoid collisions or getting too close to obstacles. This module utilizes a predefined map to understand constraints such as one-way roads and non-drivable areas, enabling it to plan a global path to the destination.
+
+Lastly, the controls module issues commands to actuate and steer the vehicle or robot along the planned trajectory. Typically, separate controllers manage longitudinal and lateral movements, with one controlling throttle or brake, and the other steering the vehicle.
+
+Below sections showcase implementations of such systems, incorporating some or all of these key components essential for autonomous navigation.
+
+<div style="text-align: center;">
+    <a href="https://github.com/omkarchittar/manipulator_control_DDPG">Reinforcement Learning Manipulator Control</a>
+    <div class="container">
+        <div class="row">
+            <a href="https://github.com/omkarchittar/manipulator_control_DDPG" style="display: inline-block; margin: 0 auto;">
+                {% include figure.liquid path="assets/img/ROB7.gif" title="Reinforcement Learning Manipulator Control 1000 ep" class="img-fluid rounded z-depth-1" %}
+            </a>
+        </div>
+    </div>
 </div>
+
+
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="row justify-content-center">
+        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Structure_from_Motion">Structure from Motion
+            {% include figure.liquid path="assets/img/SFM_square.png" title="SfM" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
+        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/LiDAR_SLAM">LiDAR SLAM
+            {% include figure.liquid path="assets/img/CVDL4.png" title="LiDAR SLAM" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
     </div>
 </div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row">
+    <div class="row justify-content-center">
+        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Dijkstra_Point_Robot">Dijkstra Path Planning
+            {% include figure.liquid path="assets/img/ROB3.png" title="Dijkstra Path Planning" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
+        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/A_Star_Path_Planning">A* Path Planning
+            {% include figure.liquid path="assets/img/ROB4.png" title="A* Path Planning" class="img-fluid rounded z-depth-1" %}</a>
+        </div>
     </div>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Obstacle_Avoidance_Bot">Obstacle Avoiding Bot
+        {% include figure.liquid path="assets/img/ROB2.png" title="Obstacle Avoiding Bot" class="img-fluid rounded z-depth-1" %}</a>
+    </div>
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Wall_Following_Robot">Wall Following Bot
+    {% include figure.liquid path="assets/img/ROB5.png" title="Pose Estimation" class="img-fluid rounded z-depth-1" %}</a>
+    </div>
 </div>
-```
 
-{% endraw %}
