@@ -135,6 +135,13 @@ It covers topics including:
     Implementing a Segmentation model that segments points of chair objects into 6 semantic segmentation classes
 </div>
 
+<a href="https://github.com/omkarchittar/Structure_from_Motion">Structure from Motion</a>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Structure_from_Motion">
+        {% include figure.liquid path="assets/img/3DV18.jpeg" title="SfM" class="img-fluid rounded z-depth-1" %}</a>
+    </div>
+</div>
+
 
 [MVS](https://github.com/walsvid/Awesome-MVS?tab=readme-ov-file#early)
 [SLAM](https://github.com/kanster/awesome-slam)
