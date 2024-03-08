@@ -3,7 +3,7 @@ layout: page
 title: 3D Computer Vision
 description: Learning for 3D Vision
 img: assets/img/3DV0.png
-importance: 1
+importance: 2
 category: work
 related_publications: true
 ---
