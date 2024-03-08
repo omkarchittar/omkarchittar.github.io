@@ -19,12 +19,10 @@ social: true # includes social icons at the bottom of the page
 ---
 
 `Academic and Professional Path`
-
 Hello! I'm Omkar Chittar.
 As a passionate Computer Vision Engineer and educator, I've spent the past few years at the forefront of technology and innovation. With a Master's degree in Engineering, specializing in Robotics from the University of Maryland, and a rich professional background that includes leading projects at Sakar Robotics and contributing to advancements at DRDO, my journey has been marked by a relentless pursuit of knowledge and application in machine learning, computer vision, and robotics. 
 
 `Innovations and Expertise`
-
 My portfolio showcases projects in computer vision, such as advanced 3D rendering, semantic segmentation, object detection and tracking. At Sakar Robotics, I spearheaded the development of cutting-edge localization and navigation systems, significantly enhancing their efficiency and accuracy. 
 
 As the proprietor of SAI Classes, I not only imparted critical knowledge in Linear Algebra, Calculus, Machine Learning, and Computer Vision but also managed a dedicated team of over 10 faculty members, fostering an environment of learning and innovation. My work is driven by a deep belief in the transformative power of technology and education, aiming to inspire and mentor the next generation of engineers and technologists.
