@@ -72,3 +72,7 @@ Welcome to the showcase of my deep learning and computer vision projects, where 
     {% include figure.liquid path="assets/img/CVDL6.gif" title="Pose Estimation" class="img-fluid rounded z-depth-1" %}</a>
     </div>
 </div>
+
+---
+
+---
