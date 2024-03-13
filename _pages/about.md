@@ -26,3 +26,13 @@ As a passionate Computer Vision Engineer and educator, I've spent the past few y
 My portfolio showcases projects in computer vision, such as advanced 3D rendering, semantic segmentation, object detection and tracking. At Sakar Robotics, I spearheaded the development of cutting-edge localization and navigation systems, significantly enhancing their efficiency and accuracy. 
 
 As the proprietor of SAI Classes, I not only imparted critical knowledge in Linear Algebra, Calculus, Machine Learning, and Computer Vision but also managed a dedicated team of over 10 faculty members, fostering an environment of learning and innovation. My work is driven by a deep belief in the transformative power of technology and education, aiming to inspire and mentor the next generation of engineers and technologists.
+
+Committed to lifelong learning, I continuously seek out the latest advancements in technology and pedagogy to enhance both my technical proficiencies and teaching methodologies. This dedication ensures that I remain at the cutting edge of my field, ready to tackle the challenges of tomorrow and share those insights with both peers and students. Through this ongoing journey, I aim to sustain my growth as a professional and educator, fostering a culture of curiosity and continuous improvement.
+
+
+
+
+
+
+
+
