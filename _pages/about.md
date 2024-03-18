@@ -27,7 +27,7 @@ My portfolio showcases projects in computer vision, such as advanced 3D renderin
 
 As the proprietor of SAI Classes, I not only imparted critical knowledge in Linear Algebra, Calculus, Machine Learning, and Computer Vision but also managed a dedicated team of over 10 faculty members, fostering an environment of learning and innovation. My work is driven by a deep belief in the transformative power of technology and education, aiming to inspire and mentor the next generation of engineers and technologists.
 
-Committed to lifelong learning, I continuously seek out the latest advancements in technology and pedagogy to enhance both my technical proficiencies and teaching methodologies. This dedication ensures that I remain at the cutting edge of my field, ready to tackle the challenges of tomorrow and share those insights with both peers and students. Through this ongoing journey, I aim to sustain my growth as a professional and educator, fostering a culture of curiosity and continuous improvement.
+In this era of rapid technological advancement, where artificial intelligence increasingly becomes a cornerstone of innovation, I believe that creativity remains our most indispensable asset. It is our ability to imagine, to create, and to innovate that truly distinguishes us in a world dominated by algorithms and data. Embracing and nurturing creativity is essential, ensuring that as we navigate the complexities of AI, we do so with a vision that encompasses not just technological proficiency but also the uniquely human capacity to envision a better future.
 
 
 
