@@ -30,11 +30,10 @@
       "startDate": "2019-06-01",
       "endDate": "2022-06-01",
       "summary": [
-        "• Initiated vehicle detection and identification advancements using YOLO and DeepSORT, achieving a 20x increase in model inference speed through lossless quantization and deployment optimizations.", 
-        "• Employed optical flow algorithms for improved motion vector analysis, enhancing tracking performance.", 
-        "• Led enhancement of localization and navigation systems, integrating Normal Distribution Transform for localization and GPS/IMU fusion with Kalman filters, boosting mapping accuracy by 20% and efficiency by 50%.", 
-        "• Oversaw C++ driver development for GPS modules and optimized velocity estimation, reducing noise by 40%.",
-        "• Deployed Siamese neural networks for face recognition, showcasing skill in model optimization with OpenVINO and PyTorch, and integrated PyTorch models into C++ environments, demonstrating programming versatility."
+        "• Engineered a system by integrating U-Net architecture for precise pixel-level semantic segmentation and employing YOLO for object detection, achieving segmentation training accuracy of 98.02% & validation accuracy of 97.78% \\n • Enhanced localization & navigation capabilities by integrating Normal Distribution Transform & fusing GPS/IMU data with Kalman filters, increasing mapping precision by 20% and a 50% gain in operational efficiency; conducted research to refine odometry processes for enhanced sensor-based localization \\n • Transitioned a PyTorch-based trained model to a production environment in C++, utilizing libtorch and CMake
+        \\n • Containerized and deployed deep-learning models for inference on third-party operational platforms and AWS
+        \\n • Devised localization methods for deep few-shot vision models, improving accuracy on densely-annotated datasets
+        \\n • Implemented few-shot binary segmentation models to generate object annotations for downstream classifiers"
       ],
       "highlights": ["Computer Vision"]
     },
@@ -45,8 +44,11 @@
       "startDate": "2018-01-05",
       "endDate": "2019-01-10",
       "summary": [
-        "• Developed an active exoskeleton for assisting humans while lifting heavy loads, achieving 95% gait anomaly detection accuracy with PoseNet and LSTM networks, enhancing load support by 30%.", 
-        "• Conducted 100+ trials, significantly improving exoskeleton design and efficiency, and streamlined data processing by 40%, speeding up rehabilitation and task support adjustments"
+        "• Innovated an active exoskeleton system for assisting humans while lifting heavy loads, achieving 95% gait prediction
+        accuracy with PoseNet and LSTM networks, enhancing load support by 30%
+        \\n • Created systems to analyze geo-spatial data using state-of-the-art self and semi-supervised deep learning methods
+        \\n • Performed image segmentation using superpixels generated with SLIC algorithm, resulting in 95% accuracy
+        \\n • Implemented Siamese neural network for face recognition utilizing Tensorflow and One-Shot Learning"
       ],
       "highlights": ["Exoskeleton Systems"]
     },
