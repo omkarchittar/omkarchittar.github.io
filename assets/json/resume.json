@@ -24,24 +24,56 @@
   },
   "work": [
     {
+      "name": "Radical AI",
+      "position": "Artificial Intelligence Intern",
+      "url": "https://lab.radicalai.app/",
+      "startDate": "2024-02-05",
+      "endDate": "Present",
+      "summary": [
+        "• Leveraged deep learning models from OpenAI and Google Cloud Platform using APIs to develop an AI Coach, enhancing career development and increasing user engagement by 40% \\n",
+        "• Engineered an open-source tool leveraging VertexAI, Langchain, React and FastAPI to analyze and distill YouTube transcripts, transforming digital learning by condensing extensive educational videos into accessible key concepts, markedly enhancing study efficiency and instructional methods \\n", 
+        "• Collaborated on the AutoGrade project by benchmarking state-of-the-art LLMs for grading code submissions, which improved grading accuracy by 30% and reduced manual review needs \\n",
+        "• Created API endpoints using FastAPI for code file submissions, and handled errors and edge cases efficiently; improved system reliability and reduced response time by 25% through Docker-based dependency management"
+      ],
+      "highlights": ["Generative AI"]
+    },
+    {
       "name": "Sakar Robotics",
       "position": "Computer Vision Engineer",
       "url": "https://www.sakarrobotics.com",
-      "startDate": "2019-06-01",
-      "endDate": "2022-06-01",
+      "startDate": "2019-07-08",
+      "endDate": "2022-06-30",
       "summary": [
-        "• Engineered a system by integrating U-Net architecture for precise pixel-level semantic segmentation and employing YOLO for object detection, achieving segmentation training accuracy of 98.02% & validation accuracy of 97.78% \\n • Enhanced localization & navigation capabilities by integrating Normal Distribution Transform & fusing GPS/IMU data with Kalman filters, increasing mapping precision by 20% and a 50% gain in operational efficiency; conducted research to refine odometry processes for enhanced sensor-based localization \\n • Transitioned a PyTorch-based trained model to a production environment in C++, utilizing libtorch and CMake\\n • Containerized and deployed deep-learning models for inference on third-party operational platforms and AWS\\n • Devised localization methods for deep few-shot vision models, improving accuracy on densely-annotated datasets\\n • Implemented few-shot binary segmentation models to generate object annotations for downstream classifiers"
+        "• Implemented NeRF for synthesizing novel views of construction sites, enabling high-fidelity volumetric analysis, lowering manual inspection requirements and improving project tracking accuracy by 15% \\n",
+        "• Led the development of a 3D face reconstruction system for surveillance using deep Structure from Motion and facial keypoint detection, improving surveillance capabilities whilst lowering man-power and saving $10000 yearly \\n",
+        "• Designed a system for robotic navigation by integrating U-Net architecture for precise semantic segmentation and YOLO for object detection, resulting in a 40% improvement in object recognition and path planning capabilities \\n",
+        "• Enhanced localization capabilities of a mobile robot by integrating Normal Distribution Transform & fusing GPS/IMU data with Kalman filters, increasing mapping precision by 20% and a 50% gain in efficiency; conducted research to refine odometry processes for enhanced sensor-based localization \\n",
+        "• Implemented PointNET architecture for classification and segmentation of point clouds from LiDAR sensor mounted on a mobile robot, achieving 97% accuracy for classification and 90% for segmentation \\n",
+        "• Trained a 7-DOF robotic arm using Reinforcement Learning for a pick-and-place task by leveraging DDPG algorithm and Hindsight Experience Replay technique, resulting in a 30% improvement in precision \\n",
+        "• Enhanced localization capabilities of the mobile robot by integrating Normal Distribution Transform & fusing GPS/IMU data with Kalman filters, increasing mapping precision by 20% and a 50% gain in operational efficiency; conducted research to refine odometry processes for enhanced sensor-based localization \\n",
+        "• Streamlined data workflow and model training, enhancing data/image acquisition via ROS APIs, and boosting training speed by 20% and policy rollout by 35% through strategic CUDA optimization and SLURM scheduling \\n",
+        "• Partnered with cross-functional teams to integrate software modules for a robotic arm, resulting in a 30% reduction in development time and improved overall system performance \\n",
+        "• Coordinated with software engineering and product teams to transition models from PyTorch to production environments in C++ using libtorch and Docker, significantly enhancing operational efficiency and scalability \\n",
+        "• Managed the full software development life-cycle of a robotic system, using Agile methodologies & pair-programming with object-oriented design patterns and rigorous unit testing to ensure system robustness & maintainability"
       ],
       "highlights": ["Computer Vision"]
     },
     {
-      "name": "DRDO",
-      "position": "Project Intern",
+      "name": "Defence Research and Development Organisation",
+      "position": "Robotics Trainee Engineer",
       "url": "",
-      "startDate": "2018-01-05",
-      "endDate": "2019-01-10",
+      "startDate": "2018-07-02",
+      "endDate": "2019-07-05",
       "summary": [
-        "• Innovated an active exoskeleton system for assisting humans while lifting heavy loads, achieving 95% gait prediction accuracy with PoseNet and LSTM networks, enhancing load support by 30% \\n • Created systems to analyze geo-spatial data using state-of-the-art self and semi-supervised deep learning methods \\n • Performed image segmentation using superpixels generated with SLIC algorithm, resulting in 95% accuracy \\n • Implemented Siamese neural network for face recognition utilizing Tensorflow and One-Shot Learning"
+        "• Innovated an active exoskeleton system for assisting humans while lifting heavy loads, achieving 95% gait prediction accuracy with PoseNet and LSTM networks, enhancing load support capabilities by 30% \\n",
+        "• Integrated the orientation and odometry information from IMU and 2D LIDAR scans to build occupancy grid map of the environment by updating the log odds while simultaneously performing particle filter based localization \\n",
+        "• Deployed Model Predictive Control on 7 DoF manipulator arm to plan collision-free trajectories in an obstacle cluttered environment, leading to a 15% reduction in response time and improved system stability \\n",
+        "• Devised LQG and LQR control by linearizing the dynamic model of a crane carrying suspended masses to minimize the oscillations & control effort; used Kalman filter to account for Gaussian noise in the sensor measurements \\n",
+        "• Performed image segmentation using superpixels generated with SLIC algorithm, resulting in 95% accuracy \\n",
+        "• Employed Siamese neural network for face recognition utilizing TensorFlow and One-Shot Learning \\n",
+        "• Devised localization methods for deep few-shot vision models, improving accuracy on densely-annotated datasets \\n",
+        "• Successfully trained and deployed CycleGAN for image-to-image translation; achieved 0.25 mAP increase in the cross-domain object detection performance over baseline \\n",
+        "• Implemented Search-based algorithms like BFS, DFS, Dijkstra, A*, and Sampling-based algorithms like RRT, RRT* and bi-RRT on holonomic and non-holonomic robots"
       ],
       "highlights": ["Exoskeleton Systems"]
     },
