@@ -2,7 +2,7 @@
 layout: page
 title: Deep Learning/CV
 description: Learning based computer vision
-img: assets/img/CVDL1.png
+img: assets/img/CVDL1.jpg
 importance: 1
 category: work
 related_publications: true
