@@ -6,7 +6,7 @@
     "phone": "",
     "url": "https://omkarchittar.com",
     "location": { "city": "Redmond", "region": "WA", "countryCode": "US" },
-    "summary": "Data Scientist with a robotics and computer vision background. I design and ship ML systems in real workflows — from media post-production to robotics — and mentor students through FLL."
+    "summary": "Data Scientist with a robotics and computer vision background. I design and ship ML systems in real workflows - from media post-production to robotics - and mentor students through FLL."
   },
   "work": [
     {
@@ -17,7 +17,7 @@
       "endDate": "2025-08",
       "highlights": [
         "Built and deployed ML pipelines to automate media post-production workflows.",
-        "Developed systems for audio-track selection and video–commentary synchronization.",
+        "Developed systems for audio-track selection and video-commentary synchronization.",
         "Used BigQuery, Looker and GCP for scalable data pipelines and analytics."
       ]
     },
