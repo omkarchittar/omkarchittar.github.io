@@ -8,9 +8,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Tulane Dr,</p>
-    <p>Graduate Hills</p>
-    <p>College Park, MD 20740</p>
+    <p>8709 161st Ave NE</p>
+    <p>Redmond, WA 98052</p>
 
 news: false # includes a list of news items
 latest_posts: false # includes a list of the newest posts
