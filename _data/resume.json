@@ -1,0 +1,93 @@
+{
+  "basics": {
+    "name": "Omkar Chittar",
+    "label": "Data Scientist",
+    "email": "omkarchittar@gmail.com",
+    "phone": "",
+    "url": "https://omkarchittar.com",
+    "location": { "city": "Redmond", "region": "WA", "countryCode": "US" },
+    "summary": "Data Scientist with a robotics and computer vision background. I design and ship ML systems in real workflows — from media post-production to robotics — and mentor students through FLL."
+  },
+  "work": [
+    {
+      "name": "FOX Sports",
+      "position": "Data Scientist",
+      "location": "Remote",
+      "startDate": "2024-01",
+      "endDate": "2025-08",
+      "highlights": [
+        "Built and deployed ML pipelines to automate media post-production workflows.",
+        "Developed systems for audio-track selection and video–commentary synchronization.",
+        "Used BigQuery, Looker and GCP for scalable data pipelines and analytics."
+      ]
+    },
+    {
+      "name": "Sakaar Robotics",
+      "position": "Computer Vision Engineer",
+      "startDate": "2021-07",
+      "endDate": "2022-12",
+      "highlights": [
+        "Implemented localization/navigation and object detection/segmentation/tracking.",
+        "Improved real-world robustness and efficiency of robotic vision systems."
+      ]
+    },
+    {
+      "name": "DRDO",
+      "position": "Research Intern",
+      "startDate": "2020-06",
+      "endDate": "2021-06",
+      "highlights": [
+        "Worked on 3D vision/rendering; applied ML for recognition and scene analysis."
+      ]
+    },
+    {
+      "name": "SAI Classes",
+      "position": "Founder & Educator",
+      "startDate": "2016-01",
+      "endDate": "2020-12",
+      "highlights": [
+        "Taught Linear Algebra, Calculus, ML, and Computer Vision; managed a team of 10+ instructors.",
+        "Created materials that simplify complex math/AI concepts."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "FIRST LEGO League (FLL)",
+      "position": "Mentor",
+      "startDate": "2024-08",
+      "highlights": [
+        "Coach middle-school teams; simplify robotics/AI concepts and guide innovation projects."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Maryland, College Park",
+      "area": "Robotics",
+      "studyType": "M.S.",
+      "startDate": "2019-08",
+      "endDate": "2021-05"
+    },
+    {
+      "institution": "University of Pune",
+      "area": "Computer Engineering",
+      "studyType": "B.E.",
+      "startDate": "2014-08",
+      "endDate": "2018-05"
+    }
+  ],
+  "skills": [
+    { "name": "Programming", "keywords": ["Python", "SQL", "Git", "Linux"] },
+    { "name": "Data/Cloud", "keywords": ["BigQuery", "Looker", "Google Cloud"] },
+    { "name": "ML/AI", "keywords": ["Computer Vision", "Deep Learning", "Predictive Modeling", "Data Pipelines", "AV Sync"] },
+    { "name": "Other", "keywords": ["Excel Solver", "PERT/Monte Carlo"] },
+    { "name": "Soft Skills", "keywords": ["Mentorship", "Cross-functional collaboration", "Technical writing"] }
+  ],
+  "languages": [
+    { "language": "English", "fluency": "Professional" }
+  ],
+  "interests": [
+    { "name": "Robotics, AI for media, mentoring" }
+  ]
+}
