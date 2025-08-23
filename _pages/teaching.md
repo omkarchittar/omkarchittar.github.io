@@ -1,12 +1,45 @@
 ---
 layout: page
-permalink: /teaching/
 title: teaching
-description: Proprietor and Teacher at SAI Classes
+permalink: /teaching/
 nav: true
 nav_order: 6
+description: Proprietor and Teacher at SAI Classes; Mentor for FIRST LEGO League
 ---
 
-During my tenure as the proprietor of SAI Classes, I had the distinct privilege of fostering an educational environment that not only emphasized the academic growth of over 100 undergraduate students but also their holistic development. My curriculum was meticulously designed to cover the complexities of Linear Algebra, Calculus, Machine Learning, and Computer Vision, ensuring a robust foundation for students aspiring to excel in these disciplines. Beyond the dissemination of knowledge, I dedicated myself to mentoring students on a personal level, offering guidance on navigating the challenges of academic life and making informed career decisions. This role allowed me to refine my pedagogical approach, emphasizing the practical application of theoretical concepts to real-world problems, thereby preparing students for the demands of the technology and engineering sectors. The experience was a testament to the power of education in shaping future innovators and problem-solvers, reinforcing my commitment to teaching and mentorship.
+## Overview
+I care about making complex ideas feel simple and useful. I teach math and AI fundamentals and mentor students through hands-on projects that build confidence, curiosity, and real skills.
 
-At SAI Classes, my responsibilities extended beyond teaching; I managed a team of over 10 faculty members, orchestrating a collaborative effort to design and implement a curriculum that was both comprehensive and conducive to learning. This involved the meticulous creation of assignments, tests, and grading criteria to ensure academic rigor and fairness in assessment. My role required a balance between leadership and partnership, as I worked closely with faculty to refine teaching methodologies and ensure that our educational offerings were aligned with the latest advancements in the fields of Linear Algebra, Calculus, Machine Learning, and Computer Vision. This experience not only reinforced my organizational and managerial skills but also underscored the importance of a cohesive team in delivering quality education.
+## FIRST LEGO League (FLL) — Mentor
+**2024 – present**
+- Coach middle school teams on strategy, robot design, and innovation projects.  
+- Break down topics like sensors, perception, and basic ML into friendly lessons.  
+- Guide teamwork, iteration, and clear communication.  
+- Help students present their work with demos, visuals, and short write-ups.
+
+## SAI Classes — Proprietor and Teacher
+**2016 – 2020**
+- Taught **Linear Algebra, Calculus, Machine Learning, and Computer Vision** to 100+ undergraduates.
+- Led a team of 10+ instructors and built a consistent teaching toolkit: lecture notes, problem sets, solution keys, and grading rubrics.
+- Focused on linking theory to practice with short projects and open-book assessments.
+- Coached students on study plans, internships, and project portfolios.
+
+### Selected course units
+- **Linear Algebra:** vector spaces, eigenvalues, SVD, applications to PCA and image compression.  
+- **Calculus:** optimization, gradients, constrained problems, numerical methods.  
+- **Machine Learning:** supervised learning, basic evaluation, data prep, model selection.  
+- **Computer Vision:** image filtering, feature extraction, segmentation, detection, tracking.
+
+## Teaching principles
+- **Clarity first:** start with an example, name the idea, then generalize.  
+- **Active practice:** short problems before long homework.  
+- **Feedback loops:** small checkpoints and quick corrections.  
+- **Show the “why”:** connect every topic to a working demo or real use case.
+
+## What I am doing next
+I am expanding my mentoring materials into short, reusable modules:
+- Python notebooks for math and ML intuition  
+- Starter kits for robotics projects  
+- Presentation templates for student showcases
+
+If you would like the materials or want me to mentor a team, **reach out at omkarchittar@gmail.com**.
