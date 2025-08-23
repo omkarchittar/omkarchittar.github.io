@@ -1,205 +1,183 @@
 {
-    "basics": {
-      "name": "Omkar Chittar",
-      "label": "Master's Student",
-      "image": "",
-      "email": "ochittar@umd.edu",
-      "phone": "(301) 526-5726",
-      "url": "omkarchittar.com",
-      "summary": "I am a Robotics Engineer with a passion for creating intelligent systems that can perceive and interact with their environment. My areas of interest are mainly computer vision/ perception and machine learning/ deep learning applications for robots. My goal is to bring the benefits of robotics and AI to a wide range of industries by developing innovative solutions to real-world problems, while also advancing the field of computer vision through cutting-edge research.",
-      "location": {
-        "address": "3409 Tulane Dr",
-        "postalCode": "MD 20740",
-        "city": "College Park",
-        "countryCode": "US",
-        "region": "Maryland"
-      },
-      "profiles": [
-        {
-          "network": "Twitter",
-          "username": "ochittar",
-          "url": "https://twitter.com/ochittar"
-        }
-      ]
+  "basics": {
+    "name": "Omkar Chittar",
+    "label": "Master's Student",
+    "image": "",
+    "email": "ochittar@umd.edu",
+    "phone": "(301) 526-5726",
+    "url": "omkarchittar.com",
+    "summary": "I am a Robotics Engineer with a passion for creating intelligent systems that can perceive and interact with their environment. My areas of interest are mainly computer vision/ perception and machine learning/ deep learning applications for robots. My goal is to bring the benefits of robotics and AI to a wide range of industries by developing innovative solutions to real-world problems, while also advancing the field of computer vision through cutting-edge research.",
+    "location": {
+      "address": "3409 Tulane Dr",
+      "postalCode": "MD 20740",
+      "city": "College Park",
+      "countryCode": "US",
+      "region": "Maryland"
     },
-    "work": [
+    "profiles": [
       {
-        "name": "Sakar Robotics",
-        "position": "Computer Vision Engineer",
-        "url": "https://www.sakarrobotics.com",
-        "startDate": "2019-06-01",
-        "endDate": "2022-06-01",
-        "summary": [
-          "• Initiated vehicle detection and identification advancements using YOLO and DeepSORT, achieving a 20x increase in model inference speed through lossless quantization and deployment optimizations.", 
-          "• Employed optical flow algorithms for improved motion vector analysis, enhancing tracking performance.", 
-          "• Led enhancement of localization and navigation systems, integrating Normal Distribution Transform for localization and GPS/IMU fusion with Kalman filters, boosting mapping accuracy by 20% and efficiency by 50%.", 
-          "• Oversaw C++ driver development for GPS modules and optimized velocity estimation, reducing noise by 40%.",
-          "• Deployed Siamese neural networks for face recognition, showcasing skill in model optimization with OpenVINO and PyTorch, and integrated PyTorch models into C++ environments, demonstrating programming versatility."
-        ],
-        "highlights": ["Computer Vision"]
-      },
-      {
-        "name": "DRDO",
-        "position": "Project Intern",
-        "url": "",
-        "startDate": "2018-01-05",
-        "endDate": "2019-01-10",
-        "summary": [
-          "• Developed an active exoskeleton for assisting humans while lifting heavy loads, achieving 95% gait anomaly detection accuracy with PoseNet and LSTM networks, enhancing load support by 30%.", 
-          "• Conducted 100+ trials, significantly improving exoskeleton design and efficiency, and streamlined data processing by 40%, speeding up rehabilitation and task support adjustments"
-        ],
-        "highlights": ["Exoskeleton Systems"]
-      },
-      {
-        "name": "Sai Classes",
-        "position": "Propreitor and Teacher",
-        "url": "",
-        "startDate": "2018-06-01",
-        "endDate": "2022-06-01",
-        "summary": "Mentored and guided a group of 500+ undergraduate students over a period of 4 years. Managed and directed a group of 10 faculty members. Courses taught: Linear Algebra, Calculus, Probability and Statistics, DSA, ML, Computer Vision.",
-        "highlights": ["Mentoring"]
-      }
-    ],
-    "volunteer": [
-      {
-        "organization": "Global Cancer Concern India",
-        "position": "Volunteer",
-        "url": "https://globalcancer.org",
-        "startDate": "",
-        "endDate": "",
-        "summary": ""
-      }
-    ],
-    "education": [
-      {
-        "institution": "University of Maryland, College Park",
-        "location": "College Park, MD",
-        "url": "https://umd.edu",
-        "area": "Robotics",
-        "studyType": "Master of Engineering",
-        "startDate": "2022-08-29",
-        "endDate": "2024-05-20",
-        "score": "3.96",
-        "courses": [
-          "Advanced Techniques in Visual Learning and Recognition", 
-          "3D Vision",
-          "Perception for Autonomous Robots",
-          "Planning for Autonomous Robots",
-          "Robot programming"
-        ]
-      }
-    ],
-    "skills": [
-      {
-        "name": "Languages",
-        "level": "Master",
-        "icon": "fa-solid fa-hashtag",
-        "keywords": [
-          "C, C++, Python, MATLAB, SQL, R"
-        ]
-      },
-      {
-        "name": "Developer Tools",
-        "level": "Master",
-        "icon": "fa-solid fa-hashtag",
-        "keywords": [
-          "Git, Docker, GCP, VS Code, Linux, ROS, OpenVINO, ONNX, Carla, Colab, AWS, Kubernetes"
-        ]
-      },
-      {
-        "name": "Libraries",
-        "level": "Master",
-        "icon": "fa-solid fa-hashtag",
-        "keywords": [
-          "PyTorch3D, pandas, NumPy, Matplotlib, PyTorch, Tensorflow, Keras, Scikit, OpenCV, PCL, PIL, OpenGL"
-        ]
-      },
-      {
-        "name": "Computer Vision Applications",
-        "level": "Master",
-        "icon": "fa-solid fa-hashtag",
-        "keywords": [
-          "3D reconstruction, multi-view geometry, SfM/SLAM, Generative models, Object Detection & Tracking, Semantic Segmentation, Inpainting, Depth Estimation, Point Cloud processing, Pose Estimation"
-        ]
-      },
-      {
-        "name": "Architectures",
-        "level": "Master",
-        "icon": "fa-solid fa-hashtag",
-        "keywords": [
-          "VGG16, ResNet, GANs, LSTM, VAE, Transformers, NeRF, Diffusion Models, RNN, RCNN, ViT"
-        ]
-      },
-      {
-        "name": "Modeling and Analysis",
-        "level": "Master",
-        "icon": "fa-solid fa-hashtag",
-        "keywords": [
-          "SolidWorks, ANSYS, Simulink, MoveIt, Gazebo, RViz"
-        ]
-      }
-    ],
-    "languages": [
-      {
-        "language": "English",
-        "fluency": "Fluent",
-        "icon": ""
-      },
-      {
-        "language": "Hindi",
-        "fluency": "Native Speaker",
-        "icon": ""
-      },
-      {
-        "language": "Marathi",
-        "fluency": "Native Speaker",
-        "icon": ""
-      }
-    ],
-    "interests": [
-      {
-        "name": "Deep learning",
-        "icon": "fa-solid fa-tag",
-        "keywords": [
-          "Computer Vision",
-          "Pattern Recognition",
-          "Natural Language Processing",
-          "Machine learning"
-        ]
-      },
-      {
-        "name": "Robotics",
-        "icon": "fa-solid fa-tag",
-        "keywords": [
-          "Perception",
-          "Path Planning",
-          "Reinforcement Learning",
-          "Controls"
-        ]
-  
-      }
-    ],
-    "references": [
-      {
-        "name": "Professor John Doe",
-        "icon": "fa-solid fa-laptop",
-        "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-      },
-      {
-        "name": "Professor John Doe",
-        "icon": "fa-solid fa-thumbtack",
-        "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-      }
-    ],
-    "projects": [
-      {
-        "name": "Quantum Computing",
-        "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-        "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-        "startDate": "2018-01-01",
-        "endDate": "2018-01-01",
-        "url": "https://example.com"
+        "network": "Twitter",
+        "username": "ochittar",
+        "url": "https://twitter.com/ochittar"
       }
     ]
-  }
-  
+  },
+  "work": [
+    {
+      "name": "Sakar Robotics",
+      "position": "Computer Vision Engineer",
+      "url": "https://www.sakarrobotics.com",
+      "startDate": "2019-06-01",
+      "endDate": "2022-06-01",
+      "summary": [
+        "• Initiated vehicle detection and identification advancements using YOLO and DeepSORT, achieving a 20x increase in model inference speed through lossless quantization and deployment optimizations.",
+        "• Employed optical flow algorithms for improved motion vector analysis, enhancing tracking performance.",
+        "• Led enhancement of localization and navigation systems, integrating Normal Distribution Transform for localization and GPS/IMU fusion with Kalman filters, boosting mapping accuracy by 20% and efficiency by 50%.",
+        "• Oversaw C++ driver development for GPS modules and optimized velocity estimation, reducing noise by 40%.",
+        "• Deployed Siamese neural networks for face recognition, showcasing skill in model optimization with OpenVINO and PyTorch, and integrated PyTorch models into C++ environments, demonstrating programming versatility."
+      ],
+      "highlights": ["Computer Vision"]
+    },
+    {
+      "name": "DRDO",
+      "position": "Project Intern",
+      "url": "",
+      "startDate": "2018-01-05",
+      "endDate": "2019-01-10",
+      "summary": [
+        "• Developed an active exoskeleton for assisting humans while lifting heavy loads, achieving 95% gait anomaly detection accuracy with PoseNet and LSTM networks, enhancing load support by 30%.",
+        "• Conducted 100+ trials, significantly improving exoskeleton design and efficiency, and streamlined data processing by 40%, speeding up rehabilitation and task support adjustments"
+      ],
+      "highlights": ["Exoskeleton Systems"]
+    },
+    {
+      "name": "Sai Classes",
+      "position": "Propreitor and Teacher",
+      "url": "",
+      "startDate": "2018-06-01",
+      "endDate": "2022-06-01",
+      "summary": "Mentored and guided a group of 500+ undergraduate students over a period of 4 years. Managed and directed a group of 10 faculty members. Courses taught: Linear Algebra, Calculus, Probability and Statistics, DSA, ML, Computer Vision.",
+      "highlights": ["Mentoring"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Global Cancer Concern India",
+      "position": "Volunteer",
+      "url": "https://globalcancer.org",
+      "startDate": "",
+      "endDate": "",
+      "summary": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Maryland, College Park",
+      "location": "College Park, MD",
+      "url": "https://umd.edu",
+      "area": "Robotics",
+      "studyType": "Master of Engineering",
+      "startDate": "2022-08-29",
+      "endDate": "2024-05-20",
+      "score": "3.96",
+      "courses": [
+        "Advanced Techniques in Visual Learning and Recognition",
+        "3D Vision",
+        "Perception for Autonomous Robots",
+        "Planning for Autonomous Robots",
+        "Robot programming"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["C, C++, Python, MATLAB, SQL, R"]
+    },
+    {
+      "name": "Developer Tools",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["Git, Docker, GCP, VS Code, Linux, ROS, OpenVINO, ONNX, Carla, Colab, AWS, Kubernetes"]
+    },
+    {
+      "name": "Libraries",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["PyTorch3D, pandas, NumPy, Matplotlib, PyTorch, Tensorflow, Keras, Scikit, OpenCV, PCL, PIL, OpenGL"]
+    },
+    {
+      "name": "Computer Vision Applications",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "3D reconstruction, multi-view geometry, SfM/SLAM, Generative models, Object Detection & Tracking, Semantic Segmentation, Inpainting, Depth Estimation, Point Cloud processing, Pose Estimation"
+      ]
+    },
+    {
+      "name": "Architectures",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["VGG16, ResNet, GANs, LSTM, VAE, Transformers, NeRF, Diffusion Models, RNN, RCNN, ViT"]
+    },
+    {
+      "name": "Modeling and Analysis",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["SolidWorks, ANSYS, Simulink, MoveIt, Gazebo, RViz"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent",
+      "icon": ""
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Native Speaker",
+      "icon": ""
+    },
+    {
+      "language": "Marathi",
+      "fluency": "Native Speaker",
+      "icon": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "Deep learning",
+      "icon": "fa-solid fa-tag",
+      "keywords": ["Computer Vision", "Pattern Recognition", "Natural Language Processing", "Machine learning"]
+    },
+    {
+      "name": "Robotics",
+      "icon": "fa-solid fa-tag",
+      "keywords": ["Perception", "Path Planning", "Reinforcement Learning", "Controls"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Professor John Doe",
+      "icon": "fa-solid fa-laptop",
+      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+    },
+    {
+      "name": "Professor John Doe",
+      "icon": "fa-solid fa-thumbtack",
+      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Quantum Computing",
+      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
+      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
+      "startDate": "2018-01-01",
+      "endDate": "2018-01-01",
+      "url": "https://example.com"
+    }
+  ]
+}

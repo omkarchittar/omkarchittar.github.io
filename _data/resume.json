@@ -36,9 +36,7 @@
       "position": "Research Intern",
       "startDate": "2020-06",
       "endDate": "2021-06",
-      "highlights": [
-        "Worked on 3D vision/rendering; applied ML for recognition and scene analysis."
-      ]
+      "highlights": ["Worked on 3D vision/rendering; applied ML for recognition and scene analysis."]
     },
     {
       "name": "SAI Classes",
@@ -56,9 +54,7 @@
       "organization": "FIRST LEGO League (FLL)",
       "position": "Mentor",
       "startDate": "2024-08",
-      "highlights": [
-        "Coach middle-school teams; simplify robotics/AI concepts and guide innovation projects."
-      ]
+      "highlights": ["Coach middle-school teams; simplify robotics/AI concepts and guide innovation projects."]
     }
   ],
   "education": [
@@ -84,10 +80,6 @@
     { "name": "Other", "keywords": ["Excel Solver", "PERT/Monte Carlo"] },
     { "name": "Soft Skills", "keywords": ["Mentorship", "Cross-functional collaboration", "Technical writing"] }
   ],
-  "languages": [
-    { "language": "English", "fluency": "Professional" }
-  ],
-  "interests": [
-    { "name": "Robotics, AI for media, mentoring" }
-  ]
+  "languages": [{ "language": "English", "fluency": "Professional" }],
+  "interests": [{ "name": "Robotics, AI for media, mentoring" }]
 }

@@ -7,6 +7,7 @@ importance: 2
 category: work
 related_publications: true
 ---
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/3D_vision_main.png" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -16,15 +17,15 @@ related_publications: true
 Developing autonomous agents requires them to understand and interact within a 3D environment. The capability to deduce, shape, and apply 3D representations is crucial in AI for various applications, including robotic handling, autonomous driving, virtual reality, and photo editing. The ambition to comprehend 3D spaces in computer vision has made significant strides with the advent of advanced (deep) learning methods. This area aims to delve into the integration of 3D Vision with Learning-based approaches, highlighting recent breakthroughs in the field.
 
 It covers topics including:
-- Explicit, Implicit, and Neural 3D Representations	
+
+- Explicit, Implicit, and Neural 3D Representations
 - Differentiable Rendering
-- Single-view 3D Prediction: Objects, Scenes, and Humans	
+- Single-view 3D Prediction: Objects, Scenes, and Humans
 - Neural Rendering
 - Multi-view 3D Inference: Radiance Fields, Multi-plane Images, Implicit Surfaces, etc.
-- Generative 3D Models	
-- Shape Abstraction	
+- Generative 3D Models
+- Shape Abstraction
 - Mesh and Point cloud processing
-
 
 <div class="row">
     <div class="row justify-content-center">
@@ -63,6 +64,7 @@ It covers topics including:
 </div>
 
 <a href="https://github.com/omkarchittar/Neural_Surfaces">VolSDF</a>
+
 <div class="container">
     <div class="row">
         <div class="col"><a href="https://github.com/omkarchittar/Neural_Surfaces">
@@ -80,8 +82,8 @@ It covers topics including:
 
 </div>
 
-
 <a href="https://github.com/omkarchittar/Neural_Surfaces">Phong Relighting</a>
+
 <div class="container">
     <div class="row">
         <div class="col"><a href="https://github.com/omkarchittar/Neural_Surfaces">
@@ -98,6 +100,7 @@ It covers topics including:
 </div>
 
 <a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">Point Cloud Classification</a>
+
 <div class="container">
     <div class="row">
         <div class="col"><a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">
@@ -117,6 +120,7 @@ It covers topics including:
 </div>
 
 <a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">Point Cloud Segmentation</a>
+
 <div class="container">
     <div class="row">
         <div class="col"><a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">
@@ -136,16 +140,13 @@ It covers topics including:
 </div>
 
 <a href="https://github.com/omkarchittar/Structure_from_Motion">Structure from Motion</a>
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Structure_from_Motion">
         {% include figure.liquid path="assets/img/3DV18.jpeg" title="SfM" class="img-fluid rounded z-depth-1" %}</a>
     </div>
 </div>
 
-
 [MVS](https://github.com/walsvid/Awesome-MVS?tab=readme-ov-file#early)
 [SLAM](https://github.com/kanster/awesome-slam)
 [SLAM](https://github.com/SilenceOverflow/Awesome-SLAM)
-
-
-

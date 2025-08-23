@@ -13,7 +13,6 @@ category: work
     </div>
 </div>
 
-
 Creating a fully autonomous vehicle or robotic system involves integrating several crucial components. These include the perception system, path planning, trajectory generation, follower subsystem, and controls subsystem.
 
 The perception subsystem relies on sensors like cameras, LiDARs, and RADARS to perceive the environment, localize the vehicle or robot, and plan trajectories while ensuring collision avoidance. It serves as a fundamental component for autonomous navigation.
@@ -34,7 +33,6 @@ Below sections showcase implementations of such systems, incorporating some or a
         </div>
     </div>
 </div>
-
 
 <div class="row">
     <div class="row justify-content-center">
@@ -69,4 +67,3 @@ Below sections showcase implementations of such systems, incorporating some or a
     {% include figure.liquid path="assets/img/ROB5.png" title="Pose Estimation" class="img-fluid rounded z-depth-1" %}</a>
     </div>
 </div>
-

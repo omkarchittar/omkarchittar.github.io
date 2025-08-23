@@ -7,6 +7,7 @@ importance: 1
 category: work
 related_publications: true
 ---
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/CVDL_main.png" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -35,6 +36,7 @@ Welcome to the showcase of my deep learning and computer vision projects, where 
 </div>
 
 <a href="https://github.com/omkarchittar/Semantic_Segmentation_and_Object_Detection">Semantic Segmentation and Object Detection</a>
+
 <div class="container">
     <div class="row"><a href="https://github.com/omkarchittar/Semantic_Segmentation_and_Object_Detection">
                 {% include figure.liquid path="assets/img/CVDL7.png" title="Semantic Segmentation" class="img-fluid rounded z-depth-1" %}</a>
@@ -48,8 +50,6 @@ Welcome to the showcase of my deep learning and computer vision projects, where 
     2. Sample Object Detection Results
 </div>
 
-
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Implicit_Neural_Representation">Implicit Neural Representation
     {% include figure.liquid path="assets/img/CVDL5.png" title="Implicit Neural Representation" class="img-fluid rounded z-depth-1" %}</a>
@@ -61,6 +61,7 @@ Welcome to the showcase of my deep learning and computer vision projects, where 
 </div>
 
 <a href="https://github.com/omkarchittar/Structure_from_Motion">Structure from Motion</a>
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Structure_from_Motion">
         {% include figure.liquid path="assets/img/3DV18.jpeg" title="SfM" class="img-fluid rounded z-depth-1" %}</a>
@@ -74,6 +75,7 @@ Welcome to the showcase of my deep learning and computer vision projects, where 
 </div>
 
 # Classical Computer Vision
+
 <a href="https://github.com/omkarchittar/K_Means_Clustering"> K-Means Clustering </a><br>
 <a href="https://github.com/omkarchittar/Stereo_Depth_Estimation"> Stereo Depth Estimation </a><br>
 <a href="https://github.com/omkarchittar/Lane_Detection"> Lane detection </a><br>
