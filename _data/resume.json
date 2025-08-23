@@ -13,7 +13,7 @@
       "name": "FOX Sports",
       "position": "Data Scientist",
       "location": "Remote",
-      "startDate": "2024-01",
+      "startDate": "2024-08",
       "endDate": "2025-08",
       "highlights": [
         "Built and deployed ML pipelines to automate media post-production workflows.",
@@ -41,8 +41,8 @@
     {
       "name": "SAI Classes",
       "position": "Founder & Educator",
-      "startDate": "2016-01",
-      "endDate": "2020-12",
+      "startDate": "2018-06",
+      "endDate": "2022-06",
       "highlights": [
         "Taught Linear Algebra, Calculus, ML, and Computer Vision; managed a team of 10+ instructors.",
         "Created materials that simplify complex math/AI concepts."
@@ -62,12 +62,12 @@
       "institution": "University of Maryland, College Park",
       "area": "Robotics",
       "studyType": "M.S.",
-      "startDate": "2019-08",
-      "endDate": "2021-05"
+      "startDate": "2022-08",
+      "endDate": "2024-05"
     },
     {
-      "institution": "University of Pune",
-      "area": "Computer Engineering",
+      "institution": "Savitribai Phule Pune University (SPPU)",
+      "area": "Mechanical Engineering",
       "studyType": "B.E.",
       "startDate": "2014-08",
       "endDate": "2018-05"
