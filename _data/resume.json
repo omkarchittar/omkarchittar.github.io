@@ -24,19 +24,12 @@
     {
       "name": "Sakaar Robotics",
       "position": "Computer Vision Engineer",
-      "startDate": "2021-07",
-      "endDate": "2022-12",
+      "startDate": "2019-07",
+      "endDate": "2022-06",
       "highlights": [
         "Implemented localization/navigation and object detection/segmentation/tracking.",
         "Improved real-world robustness and efficiency of robotic vision systems."
       ]
-    },
-    {
-      "name": "DRDO",
-      "position": "Research Intern",
-      "startDate": "2020-06",
-      "endDate": "2021-06",
-      "highlights": ["Worked on 3D vision/rendering; applied ML for recognition and scene analysis."]
     },
     {
       "name": "SAI Classes",
