@@ -1,2 +1,7 @@
+assets/css/main.scss
 assets/js/distillpub/template.v2.js
 assets/js/distillpub/transforms.v2.js
+assets/css/*.min.css
+assets/js/*.min.js
+assets/plotly/demo.html
+lighthouse_results/**
