@@ -84,5 +84,3 @@ Welcome to the showcase of my deep learning and computer vision projects, where 
 <a href="https://github.com/omkarchittar/Tsai_Camera_Calibration"> Tsai Camera Calibration </a><br>
 <a href="https://github.com/omkarchittar/Image_Stitching"> Image Stitching </a><br>
 <a href="https://github.com/omkarchittar/Camera_Pose_Estimation"> Camera Pose Estimation </a><br>
-<a href=" "> </a><br>
-<a href=" "> </a><br>
