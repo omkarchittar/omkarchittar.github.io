@@ -3,193 +3,84 @@
   contents:
     - name: Full Name
       value: Omkar Chittar
-    - name: Location
-      value: Redmond, WA, USA
     - name: Email
       value: omkarchittar@gmail.com
+    - name: Phone
+      value: (301) 526-5726
     - name: Website
       value: omkarchittar.com
-    - name: GitHub
-      value: github.com/omkarchittar
-    - name: LinkedIn
-      value: linkedin.com/in/omkarchittar
-
-- title: Experience
-  type: time_table
-  contents:
-    - title: Data Scientist
-      institution: FOX Sports (Remote)
-      year: 2024 – 2025
-      description:
-        - Built and deployed <b>ML pipelines</b> to automate media post-production.
-        - Developed systems for <b>audio-track selection</b> and <b>video–commentary sync</b>.
-        - Worked with <b>BigQuery</b>, <b>Looker</b>, and <b>GCP</b> for scalable data workflows and dashboards.
-    - title: Computer Vision Engineer
-      institution: Sakaar Robotics
-      year: 2021 – 2022
-      description:
-        - Implemented <b>localization/navigation</b> and <b>object detection/segmentation/tracking</b>.
-        - Improved real-world robustness and efficiency of robotic vision systems.
-    - title: Research Intern
-      institution: DRDO (Defence Research and Development Organisation)
-      year: 2020 – 2021
-      description:
-        - Worked on 3D vision/recognition; explored rendering and scene understanding.
-    - title: Founder & Educator
-      institution: SAI Classes
-      year: 2016 – 2020
-      description:
-        - Taught <b>Linear Algebra, Calculus, ML, Computer Vision</b>; managed a team of 10+ instructors.
-        - Designed curricula that simplify complex math/AI concepts.
+    - name: Languages
+      value: English, Hindi, Marathi
 
 - title: Education
   type: time_table
   contents:
-    - title: M.S., Robotics
-      institution: University of Maryland, College Park
-      year: 2019 – 2021
+    - title: Master of Engineering in Robotics
+      institution: University of Maryland, College Park, MD
+      year: 2022 - 2024
       description:
-        - Focus on computer vision, ML, intelligent systems.
-    - title: B.E., Computer Engineering
-      institution: University of Pune
-      year: 2014 – 2018
+        - "CGPA: 3.97"
+        - "Relevant Coursework: Machine Learning, Deep Learning, Reinforcement Learning, Computer Vision"
 
-- title: Projects (Selected)
+- title: Experience
   type: time_table
   contents:
-    - title: AI for Sports Broadcasting
-      year: 2024 – 2025
+    - title: Software Engineer, AI Strategy & Solutions
+      institution: Insight Global, LLC — Orlando, FL
+      year: Nov 2025 - Present
       description:
-        - Pipeline for automated <b>audio-track selection</b> and <b>video–audio synchronization</b>.
-    - title: 3D Rendering & CV Systems
-      year: 2021 – 2023
+        - Leading AI integration and delivery across Universal Creative and Universal Destinations and Experiences
+        - Shipped multiple GenAI solutions, including a domain expert chatbot for internal knowledge discovery
+        - Built end-to-end RAG + agent workflows with guardrails and source attribution
+        - Automated recurring manual workflows using LLM-based extraction/classification
+        - Implemented an LLM evaluation & regression harness to prevent quality drift
+        - Hardened solutions for production with secure access controls, logging/monitoring, and documentation
+    - title: Data Scientist
+      institution: Insight Global, LLC — Redmond, WA (Remote)
+      year: Aug 2024 - Aug 2025
       description:
-        - PyTorch3D rendering; detection/tracking models for robotics scenarios.
-    - title: Distribution Optimization
-      year: 2025
+        - Spearheaded integration of AI solutions into media post-production pipelines for FOX Sports
+        - Decreased issue resolution time 35% by developing a Slack AI agent (AWS Bedrock, Lambda)
+        - Reduced ad-hoc reporting effort 40% by building a RAG conversational assistant (FAISS, Bedrock)
+        - Built an LLM evaluation harness; improved top-5 retrieval by +12 p.p.
+        - Optimized serving with prompt caching on Databricks; reduced per-request cost 28%
+        - Streamlined operations on 2M+ digital assets; lifted user retention 25%
+    - title: Software Engineer
+      institution: Sakar Robotics — Pune, India
+      year: Jul 2019 - Jun 2022
       description:
-        - Solver-based optimization across factories, warehouses, and retailers.
-    - title: PERT Schedule Simulation
-      year: 2025
-      description:
-        - Risk/timeline simulation for large construction program (Crystal Ball).
+        - Implemented stereo depth + point-cloud registration (OpenCV, Open3D, ICP); increased pick success 18%
+        - Performed multi-camera calibration (PnP/RANSAC); reduced pose error 22%
+        - Fused frames into a TSDF map for robust 6-DoF tracking; cut re-localization time 35%
+        - Saved $10,000/year deploying vision-based construction-site monitoring using NeRFs
+        - Achieved 30% precision gains in manipulation via reinforcement learning (DDPG + HER)
 
 - title: Skills
-  type: map
+  type: nested_list
   contents:
-    - name: Programming
-      value: Python, SQL, Git, Linux
-    - name: Data/Cloud
-      value: BigQuery, Looker, Google Cloud
-    - name: ML/AI
-      value: Computer Vision, Deep Learning, Predictive Modeling, Data Pipelines
-    - name: Other
-      value: Excel Solver, PERT/Monte Carlo
-    - name: Soft Skills
-      value: Mentoring, Cross-functional collaboration, Technical writing
+    - title: Languages
+      items:
+        - Python, SQL, C++, R
+    - title: LLMs/GenAI
+      items:
+        - RAG, vector search, function calling & agents, prompt engineering, guardrails, evaluation (Ragas), LangChain, OpenAI/Bedrock, LangGraph
+    - title: 3D Vision
+      items:
+        - Stereo depth, epipolar geometry (E/F), PnP/EPnP, ICP/registration, SLAM, COLMAP, TSDF/OctoMap, MiDaS/DPT, OpenCV, Open3D, PyTorch3D
+    - title: ML/DS
+      items:
+        - Predictive Modeling, Deep Learning, NLP, Reinforcement Learning (DDPG, HER)
+    - title: Cloud/Data
+      items:
+        - GCP (BigQuery, Vertex AI, Cloud Functions), AWS (Bedrock, Lambda, SageMaker, S3), Azure, Databricks, Snowflake, Spark, Airflow, Kafka, Postgres/BigQuery
+    - title: MLOps/Dev
+      items:
+        - MLflow, CI/CD, Docker, Git, REST API, prompt caching, feature store
 
-- title: Volunteer
-  type: time_table
+- title: Leadership and Publications
+  type: list
   contents:
-    - title: Mentor
-      institution: FIRST LEGO League (FLL)
-      year: 2024 – Present
-      description:
-        - Coach middle-school teams; simplify robotics/AI concepts and guide innovation projects.
-# - title: General Information
-#   type: map
-#   contents:
-#     - name: Full Name
-#       value: Albert Einstein
-#     - name: Date of Birth
-#       value: 14th March 1879
-#     - name: Languages
-#       value: English, German
-
-# - title: Education
-#   type: time_table
-#   contents:
-#     - title: PhD
-#       institution: University of Zurich, Zurich, Switzerland
-#       year: 1905
-#       description:
-#         - Description 1.
-#         - Description 2.
-#         - title: Description 3.
-#           contents:
-#             - Sub-description 1.
-#             - Sub-description 2.
-#     - title: Federal teaching diploma
-#       institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-#       year: 1900
-#       description:
-#         - Description 1.
-#         - Description 2.
-
-# - title: Experience
-#   type: time_table
-#   contents:
-#     - title: Professor of Theoretical Physics
-#       institution: Institute for Advanced Study, Princeton University
-#       year: 1933 - 1955
-#       description:
-#         - Description 1.
-#         - Description 2.
-#         - title: Description 3.
-#           contents:
-#             - Sub-description 1.
-#             - Sub-description 2.
-#     - title: Visiting Professor
-#       institution: California Institute of Technology, Pasadena, California, US
-#       year: 1933
-#       description:
-#         - Description 1.
-#         - Description 2.
-
-#     - title: Director
-#       institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-#       year: 1917-1933
-
-#     - title: Professor of Theoretical Physics
-#       institution: Karl-Ferdinand University, Prague, Czechoslovakia
-#       year: 1911 - 1917
-#       description:
-
-#     - title: Associate Professor of Theoretical Physics
-#       institution: University of Zurich, Zurich, Switzerland
-#       year: 1909 - 1911
-
-# - title: Open Source Projects
-#   type: time_table
-#   contents:
-#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-#       year: 2015-now
-#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-# - title: Honors and Awards
-#   type: time_table
-#   contents:
-#     - year: 1921
-#       items:
-#         - Nobel Prize in Physics
-#         - Matteucci Medal
-#     - year: 2029
-#       items:
-#         - Max Planck Medal
-
-# - title: Academic Interests
-#   type: nested_list
-#   contents:
-#     - title: Topic 1.
-#       items:
-#         - Description 1.
-#         - Description 2.
-#     - title: Topic 2.
-#       items:
-#         - Description 1.
-#         - Description 2.
-
-# - title: Other Interests
-#   type: list
-#   contents:
-#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - "<b>Mentor</b>, First Lego League (FLL) — helping middle school students design and code robots since 2024"
+    - "<b>Recruitment & Retention Manager</b>, Department of Transportation Services, University of Maryland"
+    - "<b>Proprietor</b>, Sai Classes Pune — founded and taught the computer science and mathematics curriculum"
+    - "<b>Publications:</b> 2 peer-reviewed papers on exoskeleton systems — MATPR 2022, MATPR 2022"

@@ -8,8 +8,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>8709 161st Ave NE</p>
-    <p>Redmond, WA 98052</p>
+    <p>Orlando, FL</p>
 
 news: false # includes a list of news items
 latest_posts: false # includes a list of the newest posts
@@ -19,12 +18,10 @@ social: true # includes social icons at the bottom of the page
 
 Hello! I'm Omkar Chittar.
 
-I am a Data Scientist with a strong foundation in Robotics and Machine Learning. I earned my Master’s degree in Robotics from the University of Maryland, where I specialized in computer vision, machine learning, and intelligent systems. Over the years, I have combined my passion for applied AI with hands-on experience across industries such as media, robotics, and education.
+I'm a Software Engineer focused on AI Strategy & Solutions at Insight Global, where I lead AI integration and delivery across Universal Creative and Universal Destinations and Experiences. My work involves shipping GenAI solutions, building end-to-end RAG and agent workflows, and implementing LLM evaluation harnesses to ensure production-grade reliability.
 
-Most recently, I worked at **FOX Sports**, where I designed and deployed machine learning pipelines to support media post-production. My work included building AI systems to synchronize video with commentary, automate audio track selection, and streamline production workflows. This experience gave me deep exposure to large-scale data systems, cloud platforms, and real-world AI integration.
+Previously, as a Data Scientist at Insight Global, I spearheaded AI solutions for FOX Sports' media post-production pipelines, building Slack AI agents, RAG conversational assistants, and automated metadata extraction systems at scale. Before that, at Sakar Robotics, I worked on stereo depth estimation, point-cloud registration, TSDF-based 6-DoF tracking, and reinforcement learning for robotic manipulation.
 
-Previously, I contributed to **Sakaar Robotics** and **DRDO**, where I worked on advanced computer vision projects involving localization, navigation, object detection, and tracking. These roles honed my ability to apply AI techniques to solve complex engineering problems with efficiency and accuracy.
+I hold a Master's in Robotics from the University of Maryland (3.97 GPA), with coursework in Machine Learning, Deep Learning, Reinforcement Learning, and Computer Vision. I'm also passionate about education — I founded Sai Classes where I taught computer science and mathematics, and I currently mentor middle school students in robotics through First Lego League.
 
-Beyond industry, I am deeply committed to **mentorship and education**. As a volunteer mentor for **FIRST Lego League (FLL)**, I guide middle school students in robotics, helping them simplify and understand challenging concepts in AI and engineering. Earlier, through **SAI Classes**, I taught courses in Linear Algebra, Calculus, Machine Learning, and Computer Vision, managing a team of 10 instructors and fostering a culture of learning and innovation.
-
-I thrive at the intersection of **AI, data, and impact**, with interests spanning computer vision, data engineering, and AI-driven decision systems. My goal is to leverage technology not just to build smarter systems, but also to create opportunities for the next generation of innovators.
+My work is driven by a belief in the transformative power of AI and technology. Whether it's building intelligent agents, developing 3D vision systems, or mentoring the next generation of engineers, I aim to bridge the gap between cutting-edge research and real-world impact.
