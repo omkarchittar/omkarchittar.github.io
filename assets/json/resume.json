@@ -113,12 +113,7 @@
       "startDate": "2022-08-01",
       "endDate": "2024-05-20",
       "score": "3.97",
-      "courses": [
-        "Machine Learning",
-        "Deep Learning",
-        "Reinforcement Learning",
-        "Computer Vision"
-      ]
+      "courses": ["Machine Learning", "Deep Learning", "Reinforcement Learning", "Computer Vision"]
     }
   ],
   "skills": [
@@ -126,9 +121,7 @@
       "name": "Languages",
       "level": "Master",
       "icon": "fa-solid fa-code",
-      "keywords": [
-        "Python, SQL, C++, R"
-      ]
+      "keywords": ["Python, SQL, C++, R"]
     },
     {
       "name": "LLMs/GenAI",
@@ -150,9 +143,7 @@
       "name": "ML/DS",
       "level": "Master",
       "icon": "fa-solid fa-brain",
-      "keywords": [
-        "Predictive Modeling, Deep Learning, NLP, Reinforcement Learning (DDPG, HER)"
-      ]
+      "keywords": ["Predictive Modeling, Deep Learning, NLP, Reinforcement Learning (DDPG, HER)"]
     },
     {
       "name": "Cloud/Data",
@@ -166,9 +157,7 @@
       "name": "MLOps/Dev",
       "level": "Master",
       "icon": "fa-solid fa-gears",
-      "keywords": [
-        "MLflow, CI/CD, Docker, Git, REST API, prompt caching, feature store"
-      ]
+      "keywords": ["MLflow, CI/CD, Docker, Git, REST API, prompt caching, feature store"]
     }
   ],
   "languages": [
@@ -192,21 +181,12 @@
     {
       "name": "Artificial Intelligence",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "GenAI/LLMs",
-        "Computer Vision",
-        "Deep Learning",
-        "Machine Learning"
-      ]
+      "keywords": ["GenAI/LLMs", "Computer Vision", "Deep Learning", "Machine Learning"]
     },
     {
       "name": "Robotics",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "3D Vision",
-        "Perception",
-        "Reinforcement Learning"
-      ]
+      "keywords": ["3D Vision", "Perception", "Reinforcement Learning"]
     }
   ]
 }
