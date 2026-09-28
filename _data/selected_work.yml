@@ -30,7 +30,7 @@
     - Reduced issue-resolution time by 35%.
 
 - id: llm-evaluation
-  featured: false
+  featured: true
   title: LLM evaluation & serving
   context: FOX Sports
   summary: Evaluation and regression tooling that improves retrieval quality, alongside serving optimizations that reduce per-request cost.

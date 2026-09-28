@@ -1,6 +1,6 @@
 # Preview the production AI redesign
 
-Development branch: `codex/production-ai-redesign`.
+Development branch: `codex/homepage-resume-alignment`.
 
 ## Native Jekyll preview
 
@@ -21,13 +21,15 @@ bundle --version
 Confirm Ruby reports **3.3.x**, then run the following from the repository root.
 Repeat the `export PATH` command in each new terminal session before running
 Bundler; it selects Homebrew Ruby without changing Apple's system Ruby.
+Port 4001 and the separate build directory avoid colliding with an existing
+preview on port 4000.
 
 ```sh
 bundle install
-bundle exec jekyll serve --host 127.0.0.1 --port 4000
+bundle exec jekyll serve --host 127.0.0.1 --port 4001 --destination /tmp/omkar-home-resume-review
 ```
 
-Open <http://127.0.0.1:4000>. Stop the server with Ctrl+C. Restart it after
+Open <http://127.0.0.1:4001>. Stop the server with Ctrl+C. Restart it after
 editing `_config.yml`.
 
 For a production build:
@@ -52,14 +54,32 @@ the al-folio image on first use.
 The Resume navigation item keeps the existing `/cv/` URL. Its text comes from
 `assets/json/resume.json`, synchronized with the latest supplied `resume_SWE.pdf`.
 The PDF is copied unchanged to `assets/pdf/resume.pdf`, which is linked from the
-homepage and Resume page. The root source PDF is excluded from publication to
+Resume page. The homepage Resume CTA opens the web resume. The root source PDF is excluded from publication to
 avoid publishing duplicate copies. Contact email is `ochittar@gmail.com`.
 
 Selected Work summaries are shared between the homepage and Projects through
-`_data/selected_work.yml`. Three featured summaries appear on Home; the Projects
-page also includes LLM evaluation and serving. Claims use only information in
+`_data/selected_work.yml`. Four featured summaries appear on Home and Projects, including LLM
+evaluation and serving. Claims use only information in
 the supplied resume. Earlier robotics and computer vision project URLs remain
 unchanged.
 
 `CNAME` and site metadata use `omkarchittar.com`. DNS and GitHub Pages settings
 were not changed; this branch does not deploy automatically when pushed.
+
+## Homepage and resume alignment review
+
+The live-site audit found the production AI homepage and current employment
+history already published. This branch completes the hero links, aligns SEO
+and social titles, and improves the web resume's hierarchy and rendering.
+The source PDF and role accomplishments are unchanged. Missing dates for Sai
+Classes and the University of Maryland transportation role remain omitted;
+confirm those dates before adding them. No additional public AI case study
+exists in the current source content to add beyond the shared Selected Work.
+
+The resume shows Work Experience, Skills, Education, and Teaching & Community.
+Contact links are in its header. Robotics experience remains under Earlier Work.
+Summary arrays render as bullets; text summaries render as paragraphs.
+The unused `assets/json/resume_og.json` has been removed. Demo posts and news
+remain excluded from publication. Deployment workflows and domain settings
+are unchanged. The homepage and resume alignment changes were reviewed and
+approved for publication.

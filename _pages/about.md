@@ -1,19 +1,21 @@
 ---
 layout: about
 title: Home
-seo_title: Omkar Chittar | Software Engineer / AI Engineer
+seo_title: Omkar Chittar | Software Engineer & AI Engineer
 permalink: /
-description: Software Engineer / AI Engineer building production AI systems. RAG, agents, evaluation, MLOps, and software that connects AI to real workflows.
+description: Software Engineer / AI Engineer building production AI systems. RAG, AI agents and tool calling, LLM evaluation, MLOps, full-stack software, and enterprise AI delivery.
 ---
 
 <section class="home-hero" aria-labelledby="hero-title">
-  <p class="eyebrow">Omkar Chittar <span aria-hidden="true">/</span> Orlando, FL</p>
+  <p class="eyebrow">Omkar Chittar <span aria-hidden="true">/</span> Sunnyvale, CA</p>
   <h1 id="hero-title"><span class="hero-role">Software Engineer / AI Engineer</span>Building production AI systems<span class="accent">.</span></h1>
-  <p class="hero-intro">I build RAG applications, agent workflows, and evaluation systems that turn AI capabilities into reliable software.</p>
-  <p class="hero-context">From knowledge discovery to workflow automation, my focus is on getting AI into production and keeping it useful.</p>
+  <p class="hero-intro">I build production AI systems with RAG, AI agents and tool calling, and LLM evaluation—backed by MLOps and full-stack software engineering.</p>
+  <p class="hero-context">From knowledge discovery to workflow automation, I deliver enterprise AI from requirements through deployment and ongoing reliability.</p>
   <div class="portfolio-actions">
-    <a class="portfolio-button primary" href="#selected-work">Explore selected work <span aria-hidden="true">↗</span></a>
-    <a class="portfolio-button" href="{{ '/assets/pdf/resume.pdf' | relative_url }}" download>Download resume (PDF)</a>
+    <a class="portfolio-button primary" href="{{ '/projects/' | relative_url }}">View Projects <span aria-hidden="true">↗</span></a>
+    <a class="portfolio-button" href="{{ '/cv/' | relative_url }}">Resume</a>
+    <a class="portfolio-button" href="https://github.com/{{ site.github_username }}">GitHub <span aria-hidden="true">↗</span></a>
+    <a class="portfolio-button" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn <span aria-hidden="true">↗</span></a>
   </div>
   <ul class="hero-topics" aria-label="Engineering focus">
     <li>RAG</li><li>Agents</li><li>Evaluation</li><li>MLOps</li><li>Full-stack software</li>
@@ -33,10 +35,10 @@ description: Software Engineer / AI Engineer building production AI systems. RAG
   <p class="eyebrow">02 / How I build</p>
   <h2 id="capabilities-title">Engineering Capabilities</h2>
   <div class="capability-grid">
-    <article><span class="capability-index" aria-hidden="true">01</span><h3>RAG &amp; agents</h3><p>Ingestion, embeddings, vector retrieval, grounded generation, tool calling, and guardrails.</p><p class="capability-tools">LangChain · LangGraph · FAISS · Bedrock</p></article>
-    <article><span class="capability-index" aria-hidden="true">02</span><h3>Evaluation &amp; reliability</h3><p>Golden sets, retrieval checks, regression harnesses, and prompt and embedding experiments.</p><p class="capability-tools">Ragas · Retrieval evaluation · Quality regression</p></article>
-    <article><span class="capability-index" aria-hidden="true">03</span><h3>MLOps &amp; production</h3><p>Deployment workflows, access controls, logging, monitoring, and serving cost optimization.</p><p class="capability-tools">MLflow · Docker · CI/CD · AWS · GCP</p></article>
-    <article><span class="capability-index" aria-hidden="true">04</span><h3>Full-stack software</h3><p>Python backends and React/TypeScript frontends, document-ingestion pipelines, computation engines, and automated testing.</p><p class="capability-tools">Python · React · TypeScript · Flask · REST APIs</p></article>
+    <article><span class="capability-index" aria-hidden="true">01</span><h3>RAG &amp; Agents</h3><p>Ingestion, embeddings, vector retrieval, grounded generation, tool calling, and guardrails.</p><p class="capability-tools">LangChain · LangGraph · FAISS · Bedrock</p></article>
+    <article><span class="capability-index" aria-hidden="true">02</span><h3>Evaluation &amp; Reliability</h3><p>Golden sets, retrieval checks, regression harnesses, and prompt and embedding experiments.</p><p class="capability-tools">Ragas · Retrieval evaluation · Quality regression</p></article>
+    <article><span class="capability-index" aria-hidden="true">03</span><h3>MLOps &amp; Deployment</h3><p>Deployment workflows, access controls, logging, monitoring, and serving cost optimization.</p><p class="capability-tools">MLflow · Docker · CI/CD · AWS · GCP</p></article>
+    <article><span class="capability-index" aria-hidden="true">04</span><h3>Full-Stack &amp; Integrations</h3><p>Python backends, React/TypeScript frontends, REST APIs, and integrations with enterprise data and workflows.</p><p class="capability-tools">Python · React · TypeScript · Flask · REST APIs</p></article>
   </div>
 </section>
 
@@ -60,9 +62,7 @@ description: Software Engineer / AI Engineer building production AI systems. RAG
   <div>
     <p class="eyebrow">04 / Background</p>
     <h2 id="about-title">About</h2>
-    <p>I'm Omkar, a software engineer focused on making AI useful in real systems. I care about the work around the model: connecting it to the right data, evaluating its behavior, and supporting it in production.</p>
-    <p>My earlier work at Sakar Robotics and my Master's in Robotics at the University of Maryland built my foundation in machine learning, perception, and software engineering. Today, I bring that background to production AI applications.</p>
-    <p>I also founded Sai Classes and mentor students through FIRST LEGO League.</p>
+    <p>I'm a software engineer focused on the work around the model: connecting it to the right data, evaluating its behavior, and supporting it in production. Earlier work at Sakar Robotics and a Master's in Robotics at the University of Maryland built my foundation in machine learning, computer vision, and software engineering.</p>
     <div class="about-links"><a class="text-link" href="{{ '/projects/' | relative_url }}#earlier-work">Earlier work</a><a class="text-link" href="{{ '/teaching/' | relative_url }}">Teaching &amp; mentoring</a></div>
   </div>
   <img class="about-portrait" src="{{ '/assets/img/omkar-chittar.jpg' | relative_url }}" alt="Omkar Chittar" loading="lazy" decoding="async" width="600" height="670">

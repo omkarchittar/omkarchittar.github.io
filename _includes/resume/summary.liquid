@@ -1,0 +1,13 @@
+{% comment %}Resume sources can supply a paragraph or an array of accomplishments.{% endcomment %}
+{% if include.summary != blank %}
+  {% assign summary_type = include.summary | jsonify | slice: 0, 1 %}
+  {% if summary_type == '[' %}
+    <ul class="resume-bullets">
+      {% for accomplishment in include.summary %}
+        <li>{{ accomplishment | escape }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>{{ include.summary | escape }}</p>
+  {% endif %}
+{% endif %}

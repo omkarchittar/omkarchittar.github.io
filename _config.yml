@@ -3,12 +3,13 @@
 # -----------------------------------------------------------------------------
 
 title: Omkar Chittar # the website title (if blank, full name will be used instead)
+seo_title: Omkar Chittar | Software Engineer & AI Engineer
 first_name: Omkar
 middle_name: Ashok
 last_name: Chittar
 email: ochittar@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Software Engineer / AI Engineer building production AI systems. RAG, agents, evaluation, MLOps, and full-stack software.
+  Software Engineer / AI Engineer building production AI systems. RAG, AI agents and tool calling, LLM evaluation, MLOps, full-stack software, and enterprise AI delivery.
 footer_text:
 keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -208,7 +209,6 @@ exclude:
   # Keep theme examples and outdated resume assets out of the published site.
   - _posts
   - _news
-  - assets/json/resume_og.json
   - resume_SWE.pdf
   - image.png
   - assets/pdf/example_pdf.pdf
@@ -452,16 +452,9 @@ vega-lite:
 jekyll_get_json:
   - data: resume
     json: assets/json/resume.json # it can also be an url
+# Visible sections; contact details appear in the Resume header.
 jsonresume:
-  - basics
   - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
   - skills
-  - languages
-  - interests
-  - references
+  - education
+  - volunteer

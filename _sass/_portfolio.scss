@@ -41,7 +41,8 @@ button:focus-visible {
 }
 
 .portfolio-home,
-.portfolio-projects {
+.portfolio-projects,
+.portfolio-resume {
   line-height: 1.75;
 
   h1,
@@ -200,6 +201,10 @@ button:focus-visible {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
   margin: 2rem 0;
+}
+
+.selected-work-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .work-card {
@@ -368,5 +373,103 @@ button:focus-visible {
 
   .about-portrait {
     max-width: 180px;
+  }
+}
+
+// Resume uses the same restrained palette and spacing as the portfolio.
+.portfolio-resume {
+  .resume-positioning {
+    max-width: 720px;
+    font-size: clamp(1.25rem, 3vw, 1.7rem);
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .resume-intro,
+  .resume-organization,
+  .resume-date,
+  .resume-coursework {
+    color: var(--portfolio-muted);
+  }
+
+  .resume-header {
+    margin-bottom: 3rem;
+  }
+
+  .contact-links {
+    overflow-wrap: anywhere;
+  }
+
+  .resume-section {
+    border-top: 1px solid var(--portfolio-border);
+    padding: 2.5rem 0 0.5rem;
+
+    h2 {
+      font-size: 1.75rem;
+      scroll-margin-top: 90px;
+    }
+  }
+
+  .resume-entry {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border: 1px solid var(--portfolio-border);
+    border-radius: 8px;
+    background: var(--portfolio-surface);
+  }
+
+  .resume-entry-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0 1rem;
+
+    h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  .resume-date {
+    font-size: 0.85rem;
+  }
+
+  .resume-bullets {
+    padding-left: 1.25rem;
+
+    li + li {
+      margin-top: 0.8rem;
+    }
+  }
+
+  .resume-earlier {
+    background: transparent;
+  }
+
+  .resume-skills {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 2rem;
+
+    h3 {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  // Hiding only the parent visibility leaves Bootstrap nav children visible.
+  #toc-sidebar {
+    display: none;
+  }
+
+  .portfolio-resume {
+    .resume-entry {
+      padding: 1.1rem;
+    }
+
+    .resume-skills {
+      grid-template-columns: 1fr;
+    }
   }
 }

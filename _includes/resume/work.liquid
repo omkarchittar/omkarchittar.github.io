@@ -1,42 +1,37 @@
-<ul class="card-text font-weight-light list-group list-group-flush">
-  {% assign work = data[1] | sort: 'startDate' | reverse %}
-  {% for content in work %}
-    <li class="list-group-item">
-      <div class="row">
-        <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px">
-          {% if content.startDate %}
-            {% assign startDate = content.startDate | split: '-' | slice: 0, 2 | join: '.' %}
-            {% assign endDate = content.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
-            {% assign date = startDate | append: ' - ' %}
-            {% assign date = date | append: endDate %}
+{% assign work = data[1] | sort: 'startDate' | reverse %}
+{% for content in work %}
+  <article class="resume-entry{% if content.earlier %} resume-earlier{% endif %}">
+    {% if content.earlier %}
+      <p class="eyebrow">Earlier Work</p>
+    {% endif %}
+    <div class="resume-entry-heading">
+      <div>
+        <h3 data-toc-skip>
+          {% if content.url != blank %}
+            <a href="{{ content.url }}">{{ content.position }}</a>
           {% else %}
-            {% assign date = '' %}
+            {{ content.position }}
           {% endif %}
-          <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ date }} </span>
-        </div>
-        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-          <h6 class="title font-weight-bold ml-1 ml-md-4">
-            {% if content.url and content.url != '' -%}
-              <a href="{{ content.url }}">{{ content.position }}</a>
-            {%- else -%}
-              {{- content.position -}}
-            {%- endif %}
-          </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.name }}</h6>
-          <ul class="ml-1 ml-md-4 pl-3">
-            {% for accomplishment in content.summary %}
-              <li>{{ accomplishment }}</li>
-            {% endfor %}
-          </ul>
-          <ul class="items">
-            {% for item in content.highlights %}
-              <li>
-                <span class="item">{{ item }}</span>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
+        </h3>
+        <p class="resume-organization">
+          {{ content.name -}}
+          {%- if content.location != blank %} · {{ content.location }}{% endif %}
+        </p>
       </div>
-    </li>
-  {% endfor %}
-</ul>
+      {% if content.startDate != blank %}
+        <p class="resume-date">
+          {{ content.startDate | date: '%b %Y' }} —
+          {% if content.endDate == blank or content.endDate == 'Present' %}Present{% else %}{{ content.endDate | date: '%b %Y' }}{% endif %}
+        </p>
+      {% endif %}
+    </div>
+    {% include resume/summary.liquid summary=content.summary %}
+    {% if content.highlights.size > 0 %}
+      <ul class="work-tags" aria-label="Role focus">
+        {% for item in content.highlights %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </article>
+{% endfor %}

@@ -18,28 +18,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>
-  {% if site.title == 'blank' %}
-    {% capture title %}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{% endcapture %}
-  {% else %}
-    {% capture title %}{{ site.title }}{% endcapture %}
-  {% endif %}
-  {% if page.seo_title %}
-    {{ page.seo_title }}
-  {% elsif page.url == '/blog/index.html' %}
-    {{ page.title }} | {{ title }}
-  {% elsif page.title != 'blank' and page.url != '/' %}
-    {% if page.title == null or page.title == '' %}
-      {{ page.date | date: '%Y' }} | {{ title }}
-    {% else %}
-      {{ page.title }} | {{ title }}
-    {% endif %}
-  {% else %}
-    {{ title }}
-  {% endif %}
-</title>
+{% if site.title == 'blank' %}
+  {% capture title %}{{ site.first_name }} {{ site.last_name }}{% endcapture %}
+{% else %}
+  {% assign title = site.title %}
+{% endif %}
+{% assign site_seo_title = site.seo_title | default: title %}
+{% if page.seo_title %}
+  {% assign page_seo_title = page.seo_title %}
+{% elsif page.url == '/' %}
+  {% assign page_seo_title = site_seo_title %}
+{% elsif page.title and page.title != 'blank' %}
+  {% capture page_seo_title %}{{ page.title }} | {{ site_seo_title }}{% endcapture %}
+{% else %}
+  {% assign page_seo_title = site_seo_title %}
+{% endif %}
+{% assign page_description = page.description | default: site.description | strip %}
+<title>{{ page_seo_title | escape }}</title>
 <meta name="author" content="{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}">
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="description" content="{{ page_description | escape }}">
 {% if page.keywords or site.keywords %}
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
 {% endif %}
@@ -53,14 +50,14 @@
 
 {% if site.serve_og_meta %}
   <!-- OpenGraph -->
-  <meta property="og:site_name" content="{{ title }}">
+  <meta property="og:site_name" content="{{ site_seo_title | escape }}">
   <meta property="og:type" content="{% if is_blog_post %}article{% else %}website{% endif %}">
   <meta
     property="og:title"
-    content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ title }} | {{ page.title }}{% else %}{{ title }}{% endif %}"
+    content="{{ page_seo_title | escape }}"
   >
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url | remove_first: 'index.html' }}">
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:description" content="{{ page_description | escape }}">
   {% if page.og_image or site.og_image %}
     <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
   {% endif %}
@@ -70,9 +67,9 @@
   <meta name="twitter:card" content="summary">
   <meta
     name="twitter:title"
-    content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ title }}{% endif %}"
+    content="{{ page_seo_title | escape }}"
   >
-  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:description" content="{{ page_description | escape }}">
   {% if page.og_image or site.og_image %}
     <meta name="twitter:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
   {% endif %}

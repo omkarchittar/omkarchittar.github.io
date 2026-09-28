@@ -45,14 +45,22 @@
         "Implemented TSDF mapping and 6-DoF tracking services, lowering re-localization time during occlusions by 35%",
         "Developed reinforcement-learning components for robotic manipulation using DDPG + HER, improving task precision by 30%"
       ],
-      "highlights": ["Computer Vision", "3D Vision", "Robotics"]
+      "highlights": ["Computer Vision", "3D Vision", "Robotics"],
+      "earlier": true
     }
   ],
   "skills": [
     {
-      "name": "Languages",
-      "icon": "fa-solid fa-code",
-      "keywords": ["Python, JavaScript/TypeScript, SQL, C++"]
+      "name": "GenAI/LLMs",
+      "icon": "fa-solid fa-robot",
+      "keywords": [
+        "RAG, agentic AI & tool calling, vector search, embeddings, guardrails, LLM evaluation (Ragas), prompt engineering & caching, LangChain, LangGraph, OpenAI, Claude, Hugging Face, MCP"
+      ]
+    },
+    {
+      "name": "MLOps/DevOps",
+      "icon": "fa-solid fa-gears",
+      "keywords": ["MLflow, Docker, CI/CD, Git/GitHub, Linux, vector stores & databases, automated testing"]
     },
     {
       "name": "Backend & Web",
@@ -67,16 +75,9 @@
       ]
     },
     {
-      "name": "MLOps/DevOps",
-      "icon": "fa-solid fa-gears",
-      "keywords": ["MLflow, Docker, CI/CD, Git/GitHub, Linux, vector stores & databases, automated testing"]
-    },
-    {
-      "name": "GenAI/LLMs",
-      "icon": "fa-solid fa-robot",
-      "keywords": [
-        "RAG, agentic AI & tool calling, vector search, embeddings, guardrails, LLM evaluation (Ragas), prompt engineering & caching, LangChain, LangGraph, OpenAI, Claude, Hugging Face, MCP"
-      ]
+      "name": "Languages",
+      "icon": "fa-solid fa-code",
+      "keywords": ["Python, JavaScript/TypeScript, SQL, C++"]
     },
     {
       "name": "ML/DL",
@@ -99,16 +100,16 @@
   ],
   "basics": {
     "name": "Omkar Chittar",
-    "label": "Software Engineer (AI/ML) | RAG · Agents · MLOps | Building Production AI Systems",
+    "label": "Software Engineer / AI Engineer building production AI systems",
     "image": "",
     "email": "ochittar@gmail.com",
     "phone": "(301) 526-5726",
     "url": "https://omkarchittar.com",
-    "summary": "Software Engineer building production AI systems, with experience in end-to-end RAG and agent workflows, LLM evaluation, enterprise integrations, and production reliability. Earlier experience in robotics and computer vision provides a foundation in machine learning and software engineering.",
+    "summary": "Production AI systems, RAG, AI agents and tool calling, LLM evaluation, MLOps, full-stack software, and enterprise AI delivery.",
     "location": {
-      "city": "Orlando",
+      "city": "Sunnyvale",
       "countryCode": "US",
-      "region": "Florida"
+      "region": "California"
     },
     "profiles": [
       {

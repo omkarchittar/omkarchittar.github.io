@@ -1,5 +1,5 @@
 ---
-- title: Experience
+- title: Work Experience
   type: time_table
   contents:
     - title: Lead Software Engineer
@@ -58,9 +58,15 @@
 - title: Skills
   type: nested_list
   contents:
-    - title: Languages
+    - title: GenAI/LLMs
       items:
-        - Python, JavaScript/TypeScript, SQL, C++
+        - RAG, agentic AI & tool calling, vector search, embeddings, guardrails, LLM evaluation
+          (Ragas), prompt engineering & caching, LangChain, LangGraph, OpenAI, Claude,
+          Hugging Face, MCP
+    - title: MLOps/DevOps
+      items:
+        - MLflow, Docker, CI/CD, Git/GitHub, Linux, vector stores & databases, automated
+          testing
     - title: Backend & Web
       items:
         - Node.js, Flask, REST APIs, React, Next.js
@@ -68,15 +74,9 @@
       items:
         - AWS (Bedrock, Lambda, SageMaker, S3), GCP (BigQuery, Vertex AI, Cloud Functions),
           Azure, Databricks, Snowflake, Spark, Airflow, Kafka, Postgres
-    - title: MLOps/DevOps
+    - title: Languages
       items:
-        - MLflow, Docker, CI/CD, Git/GitHub, Linux, vector stores & databases, automated
-          testing
-    - title: GenAI/LLMs
-      items:
-        - RAG, agentic AI & tool calling, vector search, embeddings, guardrails, LLM evaluation
-          (Ragas), prompt engineering & caching, LangChain, LangGraph, OpenAI, Claude,
-          Hugging Face, MCP
+        - Python, JavaScript/TypeScript, SQL, C++
     - title: ML/DL
       items:
         - Deep Learning, NLP, Computer Vision, PyTorch, TensorFlow
