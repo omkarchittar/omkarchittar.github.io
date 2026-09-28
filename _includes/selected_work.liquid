@@ -1,0 +1,36 @@
+<div class="selected-work-grid{% if include.detailed %} detailed{% endif %}">
+  {% assign work_items = site.data.selected_work %}
+  {% unless include.detailed %}
+    {% assign work_items = work_items | where: 'featured', true %}
+  {% endunless %}
+  {% for work in work_items %}
+    <article
+      class="work-card"
+      {% if include.detailed %}
+        id="{{ work.id }}"
+      {% endif %}
+    >
+      <p class="work-context">{{ work.context }}</p>
+      <h3>{{ work.title }}</h3>
+      <p>{{ work.summary }}</p>
+      {% if include.detailed %}
+        <ul class="work-details">
+          {% for detail in work.details %}
+            <li>{{ detail }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      <ul class="work-tags" aria-label="Technologies and focus">
+        {% for tag in work.tags %}
+          <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+      {% unless include.detailed %}
+        <a class="text-link" href="{{ '/projects/' | relative_url }}#{{ work.id }}"
+          >Explore {{ work.title | downcase }}
+          <span aria-hidden="true">↗</span></a
+        >
+      {% endunless %}
+    </article>
+  {% endfor %}
+</div>

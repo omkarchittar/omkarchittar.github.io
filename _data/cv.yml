@@ -1,17 +1,85 @@
-- title: General Information
-  type: map
+---
+- title: Experience
+  type: time_table
   contents:
-    - name: Full Name
-      value: Omkar Chittar
-    - name: Email
-      value: omkarchittar@gmail.com
-    - name: Phone
-      value: (301) 526-5726
-    - name: Website
-      value: omkarchittar.com
-    - name: Languages
-      value: English, Hindi, Marathi
-
+    - title: Lead Software Engineer
+      institution: NBCUniversal — Orlando, FL
+      year: 2025-11 - Present
+      description:
+        - "Independently designed and built a full-stack estimating and takeoff platform
+          (Python backend, React/TypeScript frontend): document-ingestion pipeline, OCR,
+          spatial registration, and a geometry-aware computation engine with AI-assisted
+          extraction; cut takeoff time from 6 hours to 30 minutes, backed by approximately
+          900 automated tests"
+        - Led software delivery across Universal Creative and UDX, partnering with stakeholders
+          across 6 business functions to gather requirements and author PRDs, shipping
+          10 products from concept into production
+        - Architected 8+ production systems spanning estimating, legal, engineering, safety,
+          finance, and operations — designing shared patterns for service routing, validation,
+          access control, and human-in-the-loop approval
+        - Led development of a centralized contract lifecycle platform, building ETL and
+          a unified search layer over 10,000+ documents from SharePoint, databases, and
+          enterprise repositories; reduced first-draft contract generation from approximately
+          2 weeks to under 48 hours
+        - Built retrieval and evaluation infrastructure over 5,000+ pages of legal documents
+          with semantic search, automated citation validation, and deterministic checks;
+          achieved full citation coverage at an approximately 2% review-error rate
+        - Delivered a cost-intelligence platform over historical cost data with structured
+          retrieval, query routing, provenance tracking, and a conversational UI; reduced
+          cost-research time 95%
+    - title: AI Engineer
+      institution: FOX Sports — Redmond, WA (Remote)
+      year: 2024-08 - 2025-11
+      description:
+        - Decreased issue resolution time 35% by building an event-driven monitoring service
+          (AWS Bedrock, Lambda, Slack API) for ML pipelines, surfacing drift alerts, exceptions,
+          and health insights in real time
+        - Reduced ad-hoc reporting effort 40% by building a natural-language-to-SQL assistant
+          (FAISS, Bedrock) serving producers at p95 approximately 1.3s latency
+        - Built an automated evaluation and regression harness (synthetic queries, oracle
+          sets, precision@k) integrated into the iteration workflow; improved top-5 retrieval
+          by 12 percentage points
+        - Cut per-request serving cost 28% without quality loss via response caching and
+          lightweight request routing on Databricks
+        - Streamlined operations on 2M+ digital assets by automating metadata extraction
+          and ETL (BigQuery, Spark, Cloud Functions); features powered engagement forecasting
+          (LSTM, transformers) that lifted user retention 25%
+    - title: Software Engineer
+      institution: Sakar Robotics — Pune, India
+      year: 2019-06 - 2022-06
+      description:
+        - Developed reusable computer-vision and 3D-processing modules using OpenCV, Open3D,
+          stereo depth, ICP, and multi-camera calibration; improved robotic pick success
+          18% and reduced pose error 22%
+        - Implemented TSDF mapping and 6-DoF tracking services, lowering re-localization
+          time during occlusions by 35%
+        - Developed reinforcement-learning components for robotic manipulation using DDPG
+          + HER, improving task precision by 30%
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Languages
+      items:
+        - Python, JavaScript/TypeScript, SQL, C++
+    - title: Backend & Web
+      items:
+        - Node.js, Flask, REST APIs, React, Next.js
+    - title: Cloud & Data
+      items:
+        - AWS (Bedrock, Lambda, SageMaker, S3), GCP (BigQuery, Vertex AI, Cloud Functions),
+          Azure, Databricks, Snowflake, Spark, Airflow, Kafka, Postgres
+    - title: MLOps/DevOps
+      items:
+        - MLflow, Docker, CI/CD, Git/GitHub, Linux, vector stores & databases, automated
+          testing
+    - title: GenAI/LLMs
+      items:
+        - RAG, agentic AI & tool calling, vector search, embeddings, guardrails, LLM evaluation
+          (Ragas), prompt engineering & caching, LangChain, LangGraph, OpenAI, Claude,
+          Hugging Face, MCP
+    - title: ML/DL
+      items:
+        - Deep Learning, NLP, Computer Vision, PyTorch, TensorFlow
 - title: Education
   type: time_table
   contents:
@@ -20,67 +88,18 @@
       year: 2022 - 2024
       description:
         - "CGPA: 3.97"
-        - "Relevant Coursework: Machine Learning, Deep Learning, Reinforcement Learning, Computer Vision"
-
-- title: Experience
-  type: time_table
+- title: General Information
+  type: map
   contents:
-    - title: Software Engineer, AI Strategy & Solutions
-      institution: Insight Global, LLC — Orlando, FL
-      year: Nov 2025 - Present
-      description:
-        - Leading AI integration and delivery across Universal Creative and Universal Destinations and Experiences
-        - Shipped multiple GenAI solutions, including a domain expert chatbot for internal knowledge discovery
-        - Built end-to-end RAG + agent workflows with guardrails and source attribution
-        - Automated recurring manual workflows using LLM-based extraction/classification
-        - Implemented an LLM evaluation & regression harness to prevent quality drift
-        - Hardened solutions for production with secure access controls, logging/monitoring, and documentation
-    - title: Data Scientist
-      institution: Insight Global, LLC — Redmond, WA (Remote)
-      year: Aug 2024 - Aug 2025
-      description:
-        - Spearheaded integration of AI solutions into media post-production pipelines for FOX Sports
-        - Decreased issue resolution time 35% by developing a Slack AI agent (AWS Bedrock, Lambda)
-        - Reduced ad-hoc reporting effort 40% by building a RAG conversational assistant (FAISS, Bedrock)
-        - Built an LLM evaluation harness; improved top-5 retrieval by +12 p.p.
-        - Optimized serving with prompt caching on Databricks; reduced per-request cost 28%
-        - Streamlined operations on 2M+ digital assets; lifted user retention 25%
-    - title: Software Engineer
-      institution: Sakar Robotics — Pune, India
-      year: Jul 2019 - Jun 2022
-      description:
-        - Implemented stereo depth + point-cloud registration (OpenCV, Open3D, ICP); increased pick success 18%
-        - Performed multi-camera calibration (PnP/RANSAC); reduced pose error 22%
-        - Fused frames into a TSDF map for robust 6-DoF tracking; cut re-localization time 35%
-        - Saved $10,000/year deploying vision-based construction-site monitoring using NeRFs
-        - Achieved 30% precision gains in manipulation via reinforcement learning (DDPG + HER)
-
-- title: Skills
-  type: nested_list
-  contents:
-    - title: Languages
-      items:
-        - Python, SQL, C++, R
-    - title: LLMs/GenAI
-      items:
-        - RAG, vector search, function calling & agents, prompt engineering, guardrails, evaluation (Ragas), LangChain, OpenAI/Bedrock, LangGraph
-    - title: 3D Vision
-      items:
-        - Stereo depth, epipolar geometry (E/F), PnP/EPnP, ICP/registration, SLAM, COLMAP, TSDF/OctoMap, MiDaS/DPT, OpenCV, Open3D, PyTorch3D
-    - title: ML/DS
-      items:
-        - Predictive Modeling, Deep Learning, NLP, Reinforcement Learning (DDPG, HER)
-    - title: Cloud/Data
-      items:
-        - GCP (BigQuery, Vertex AI, Cloud Functions), AWS (Bedrock, Lambda, SageMaker, S3), Azure, Databricks, Snowflake, Spark, Airflow, Kafka, Postgres/BigQuery
-    - title: MLOps/Dev
-      items:
-        - MLflow, CI/CD, Docker, Git, REST API, prompt caching, feature store
-
-- title: Leadership and Publications
+    - name: Full Name
+      value: Omkar Chittar
+    - name: Email
+      value: ochittar@gmail.com
+    - name: Phone
+      value: "(301) 526-5726"
+    - name: Website
+      value: https://omkarchittar.com
+- title: Publications
   type: list
   contents:
-    - "<b>Mentor</b>, First Lego League (FLL) — helping middle school students design and code robots since 2024"
-    - "<b>Recruitment & Retention Manager</b>, Department of Transportation Services, University of Maryland"
-    - "<b>Proprietor</b>, Sai Classes Pune — founded and taught the computer science and mathematics curriculum"
-    - "<b>Publications:</b> 2 peer-reviewed papers on exoskeleton systems — MATPR 2022, MATPR 2022"
+    - "Two peer-reviewed papers on exoskeleton systems in Materials Today: Proceedings."

@@ -1,0 +1,40 @@
+# Source: resume_SWE.pdf, supplied by Omkar as the current resume.
+- id: estimating-platform
+  featured: true
+  title: Full-stack estimating & takeoff
+  context: NBCUniversal
+  summary: A Python and React/TypeScript platform that combines document ingestion, OCR, spatial registration, and AI-assisted extraction.
+  tags: [Python, React/TypeScript, Automated testing]
+  details:
+    - Independently designed and built the platform, including a geometry-aware computation engine.
+    - Cut takeoff time from 6 hours to 30 minutes, backed by approximately 900 automated tests.
+
+- id: knowledge-discovery
+  featured: true
+  title: Legal retrieval & evaluation
+  context: NBCUniversal
+  summary: Retrieval and evaluation infrastructure over 5,000+ pages of legal documents, with semantic search and automated citation validation.
+  tags: [Retrieval, Evaluation, Citation validation]
+  details:
+    - Combined semantic search, automated citation validation, and deterministic checks.
+    - Achieved full citation coverage at an approximately 2% review-error rate.
+
+- id: operational-agents
+  featured: true
+  title: AI-powered operational monitoring
+  context: FOX Sports
+  summary: An event-driven monitoring service that surfaces ML pipeline drift alerts, exceptions, and health insights in real time.
+  tags: [AWS Bedrock, Lambda, Slack API]
+  details:
+    - Built the service using AWS Bedrock, Lambda, and the Slack API.
+    - Reduced issue-resolution time by 35%.
+
+- id: llm-evaluation
+  featured: false
+  title: LLM evaluation & serving
+  context: FOX Sports
+  summary: Evaluation and regression tooling that improves retrieval quality, alongside serving optimizations that reduce per-request cost.
+  tags: [Evaluation, Regression checks, MLOps]
+  details:
+    - Built an automated harness using synthetic queries, oracle sets, and precision@k; improved top-5 retrieval by 12 percentage points.
+    - Used response caching and lightweight request routing on Databricks to reduce per-request serving cost by 28% without quality loss.

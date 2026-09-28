@@ -2,7 +2,7 @@
 layout: page
 title: teaching
 permalink: /teaching/
-nav: true
+nav: false
 nav_order: 6
 description: Proprietor and Teacher at SAI Classes; Mentor for FIRST LEGO League
 ---
@@ -51,4 +51,4 @@ I am expanding my mentoring materials into short, reusable modules:
 - Starter kits for robotics projects
 - Presentation templates for student showcases
 
-If you would like the materials or want me to mentor a team, **reach out at omkarchittar@gmail.com**.
+If you would like the materials or want me to mentor a team, **reach out at ochittar@gmail.com**.

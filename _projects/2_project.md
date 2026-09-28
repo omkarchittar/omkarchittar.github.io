@@ -4,7 +4,7 @@ title: Deep Learning/CV
 description: Learning based computer vision
 img: assets/img/CVDL1.jpg
 importance: 1
-category: work
+category: earlier-work
 related_publications: true
 ---
 

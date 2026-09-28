@@ -4,7 +4,7 @@ title: Robotics & Autonomy
 description: Perception, Planning, Controls
 img: assets/img/ROB1.jpg
 importance: 3
-category: work
+category: earlier-work
 ---
 
 <div class="row">

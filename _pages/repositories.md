@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /repositories/
-title: repositories
-description:
-nav: true
+title: Earlier Repositories
+description: Earlier work in robotics, computer vision, and algorithms.
+nav: false
 nav_order: 4
 ---
 

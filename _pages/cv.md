@@ -1,11 +1,11 @@
 ---
 layout: cv
 permalink: /cv/
-title: cv
+title: Resume
 nav: true
 nav_order: 3
 cv_pdf: resume.pdf
-description: Please feel free to download the CV by clicking on PDF icon
+description: Software Engineer (AI/ML) | RAG · Agents · MLOps | Building Production AI Systems
 toc:
   sidebar: left
 ---
