@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://omkarchittar.github.io/sitemap.xml
+Sitemap: https://omkarchittar.com/sitemap.xml
