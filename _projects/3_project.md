@@ -8,8 +8,6 @@ category: earlier-work
 project_gallery: true
 ---
 
-<p class="gallery-back"><a href="{{ '/projects/' | relative_url }}">← All projects</a></p>
-
 {% include gallery_figure.liquid path="assets/img/ROB_main.png" title="Autonomous system architecture" caption="Perception, localization, planning, and control in an autonomous system." overview=true %}
 
 Creating a fully autonomous vehicle or robotic system involves integrating several crucial components. These include the perception system, path planning, trajectory generation, follower subsystem, and controls subsystem.

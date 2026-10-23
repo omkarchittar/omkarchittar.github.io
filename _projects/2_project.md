@@ -8,8 +8,6 @@ category: earlier-work
 project_gallery: true
 ---
 
-<p class="gallery-back"><a href="{{ '/projects/' | relative_url }}">← All projects</a></p>
-
 {% include gallery_figure.liquid path="assets/img/CVDL_main.png" title="Computer vision project overview" caption="An overview of computer vision tasks." overview=true %}
 
 Welcome to the showcase of my deep learning and computer vision projects, where innovation meets practical application. My portfolio spans a variety of cutting-edge projects that demonstrate my expertise in harnessing the power of neural networks to interpret and understand visual data. From developing sophisticated algorithms for real-time object detection and recognition, to crafting advanced neural network architectures for image segmentation and enhancement, each project embodies my commitment to advancing the field of computer vision.

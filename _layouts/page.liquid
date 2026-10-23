@@ -8,6 +8,9 @@ layout: default
   </header>
 
   <article>
+    {% if page.project_gallery %}
+      <p class="gallery-back"><a href="{{ '/projects/' | relative_url }}">← All projects</a></p>
+    {% endif %}
     {{ content }}
   </article>
 

@@ -8,8 +8,6 @@ category: earlier-work
 project_gallery: true
 ---
 
-<p class="gallery-back"><a href="{{ '/projects/' | relative_url }}">← All projects</a></p>
-
 {% include gallery_figure.liquid path="assets/img/3D_vision_main.png" title="Learning-based 3D vision overview" caption="An overview of learning-based 3D vision." overview=true %}
 
 Developing autonomous agents requires them to understand and interact within a 3D environment. The capability to deduce, shape, and apply 3D representations is crucial in AI for various applications, including robotic handling, autonomous driving, virtual reality, and photo editing. The ambition to comprehend 3D spaces in computer vision has made significant strides with the advent of advanced (deep) learning methods. This area aims to delve into the integration of 3D Vision with Learning-based approaches, highlighting recent breakthroughs in the field.
