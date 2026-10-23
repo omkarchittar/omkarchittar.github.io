@@ -1,0 +1,15 @@
+{% if include.url %}<a class="gallery-tile" href="{{ include.url | escape }}">{% endif %}
+<figure class="gallery-figure{% if include.overview %} gallery-overview{% endif %}">
+  <div class="gallery-media">
+    <img src="{{ include.path | relative_url }}" alt="{{ include.title | escape }}" loading="lazy" decoding="async">
+  </div>
+  <figcaption>
+    {% unless include.overview %}
+      <h3>{{ include.title }}</h3>
+    {% endunless %}
+    {% if include.caption %}
+      <p>{{ include.caption }}</p>
+    {% endif %}
+  </figcaption>
+</figure>
+{% if include.url %}</a>{% endif %}

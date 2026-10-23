@@ -1,40 +1,127 @@
-# Source: resume_SWE.pdf, supplied by Omkar as the current resume.
+# Source: Omkar_swe.pdf, supplied by Omkar on 2026-10-22.
+---
 - id: estimating-platform
   featured: true
   title: Full-stack estimating & takeoff
   context: NBCUniversal
-  summary: A Python and React/TypeScript platform that combines document ingestion, OCR, spatial registration, and AI-assisted extraction.
-  tags: [Python, React/TypeScript, Automated testing]
+  summary: A Python and React/TypeScript platform that combines document ingestion,
+    OCR, spatial registration, and AI-assisted extraction.
+  tags:
+    - Python
+    - React/TypeScript
+    - Automated testing
   details:
-    - Independently designed and built the platform, including a geometry-aware computation engine.
-    - Cut takeoff time from 6 hours to 30 minutes, backed by approximately 900 automated tests.
-
+    - Independently designed and built the platform, including a geometry-aware computation
+      engine.
+    - Cut takeoff time from 6 hours to 30 minutes, backed by approximately 900 automated
+      tests.
+  flow:
+    - Documents
+    - OCR / registration
+    - Extraction
+    - Geometry
+- id: ci-debugging
+  featured: true
+  title: Production CI debugging agent
+  context: NBCUniversal
+  summary: A production developer tool using Python, FastAPI, GitHub Actions, and
+    LLM tool calling to analyze failed builds, identify likely root causes, and recommend
+    code fixes.
+  tags:
+    - Python
+    - FastAPI
+    - GitHub Actions
+  details:
+    - Built and deployed the agent to analyze failed builds and recommend code fixes.
+    - Combined build diagnostics, likely-root-cause analysis, and LLM tool calling in
+      the debugging workflow.
+  flow:
+    - Failed build
+    - Analysis
+    - Likely cause
+    - Suggested fix
+- id: media-pipelines
+  featured: true
+  title: Video understanding & media pipelines
+  context: FOX Sports
+  summary: Production video understanding and orchestration pipelines generating 100K+
+    searchable clip embeddings monthly, contributing to 30% higher retrieval accuracy.
+  tags:
+    - Python
+    - Apache Airflow
+    - GCP
+    - BigQuery
+  details:
+    - Built video understanding pipelines using Python, FFmpeg, CLIP/SigLIP, and TimeSformer;
+      integrated FAISS/HNSW and BigQuery for semantic retrieval.
+    - Deployed Apache Airflow DAGs on GCP for 100K+ video segments monthly, with preprocessing,
+      transcription, embeddings, and BigQuery ETL.
+    - Parallel execution, automated retries, SLA monitoring, and idempotent backfills
+      achieved 99%+ pipeline success and 50% fewer manual interventions.
+  flow:
+    - Video
+    - FFmpeg
+    - Embeddings
+    - Retrieval
+- id: speech-pipelines
+  featured: true
+  title: Speech transcription & diarization
+  context: FOX Sports
+  summary: Speech processing pipelines handling 800+ hours of audio monthly, contributing
+    to a 40% reduction in manual media search effort.
+  tags:
+    - Python
+    - FFmpeg
+    - Whisper
+    - VAD
+  details:
+    - Engineered production transcription and speaker diarization using Whisper, VAD,
+      and speaker-embedding clustering.
+    - Generated timestamp-aligned, speaker-labeled transcripts and multilingual metadata
+      for the media search platform.
+  flow:
+    - Audio
+    - Whisper / VAD
+    - Speaker labels
+    - Transcripts
 - id: knowledge-discovery
   featured: true
   title: Legal retrieval & evaluation
   context: NBCUniversal
-  summary: Retrieval and evaluation infrastructure over 5,000+ pages of legal documents, with semantic search and automated citation validation.
-  tags: [Retrieval, Evaluation, Citation validation]
+  summary: Retrieval and evaluation infrastructure over 5,000+ pages of legal documents,
+    with semantic search and automated citation validation.
+  tags:
+    - Retrieval
+    - Evaluation
+    - Citation validation
   details:
     - Combined semantic search, automated citation validation, and deterministic checks.
     - Achieved full citation coverage at an approximately 2% review-error rate.
-
 - id: operational-agents
   featured: true
-  title: AI-powered operational monitoring
+  title: Event-driven operational monitoring
   context: FOX Sports
-  summary: An event-driven monitoring service that surfaces ML pipeline drift alerts, exceptions, and health insights in real time.
-  tags: [AWS Bedrock, Lambda, Slack API]
+  summary: An event-driven monitoring service that surfaces ML pipeline drift alerts,
+    exceptions, and health insights in real time.
+  tags:
+    - AWS Bedrock
+    - Lambda
+    - Slack API
   details:
     - Built the service using AWS Bedrock, Lambda, and the Slack API.
     - Reduced issue-resolution time by 35%.
-
 - id: llm-evaluation
   featured: true
   title: LLM evaluation & serving
   context: FOX Sports
-  summary: Evaluation and regression tooling that improves retrieval quality, alongside serving optimizations that reduce per-request cost.
-  tags: [Evaluation, Regression checks, MLOps]
+  summary: Evaluation and regression tooling that improves retrieval quality, alongside
+    serving optimizations that reduce per-request cost.
+  tags:
+    - Evaluation
+    - Regression checks
+    - MLOps
   details:
-    - Built an automated harness using synthetic queries, oracle sets, and precision@k; improved top-5 retrieval by 12 percentage points.
-    - Used response caching and lightweight request routing on Databricks to reduce per-request serving cost by 28% without quality loss.
+    - Built an automated harness using synthetic queries, oracle sets, and precision@k;
+      improved top-5 retrieval by 12 percentage points.
+    - Used response caching and lightweight request routing on Databricks to reduce
+      per-request serving cost by 28% without quality loss.

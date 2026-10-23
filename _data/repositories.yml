@@ -23,3 +23,10 @@ github_repos:
   - omkarchittar/Trajectory_Tracking
   - omkarchittar/Point_Cloud_Analysis
   - omkarchittar/Wall_Following_Robot
+  - omkarchittar/Generative_Adversarial_Networks
+  - omkarchittar/K_Means_Clustering
+  - omkarchittar/Lane_Detection
+  - omkarchittar/LiDAR_SLAM
+  - omkarchittar/Pose_Estimation_2D
+  - omkarchittar/Semantic_Segmentation_and_Object_Detection
+  - omkarchittar/Structure_from_Motion

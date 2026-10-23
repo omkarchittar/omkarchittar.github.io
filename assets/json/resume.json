@@ -13,7 +13,8 @@
         "Architected 8+ production systems spanning estimating, legal, engineering, safety, finance, and operations — designing shared patterns for service routing, validation, access control, and human-in-the-loop approval",
         "Led development of a centralized contract lifecycle platform, building ETL and a unified search layer over 10,000+ documents from SharePoint, databases, and enterprise repositories; reduced first-draft contract generation from approximately 2 weeks to under 48 hours",
         "Built retrieval and evaluation infrastructure over 5,000+ pages of legal documents with semantic search, automated citation validation, and deterministic checks; achieved full citation coverage at an approximately 2% review-error rate",
-        "Delivered a cost-intelligence platform over historical cost data with structured retrieval, query routing, provenance tracking, and a conversational UI; reduced cost-research time 95%"
+        "Delivered a cost-intelligence platform over historical cost data with structured retrieval, query routing, provenance tracking, and a conversational UI; reduced cost-research time 95%",
+        "Built and deployed a production CI debugging agent using Python, FastAPI, GitHub Actions, and LLM tool calling to analyze failed builds, identify likely root causes, and recommend code fixes"
       ],
       "highlights": ["Full-stack software", "Production AI", "Technical leadership"]
     },
@@ -25,10 +26,13 @@
       "startDate": "2024-08-01",
       "endDate": "2025-11-30",
       "summary": [
+        "Built and deployed production video understanding pipelines on GCP using Python, FFmpeg, CLIP/SigLIP, and TimeSformer, generating 100K+ searchable clip embeddings monthly; integrated FAISS/HNSW and BigQuery for semantic retrieval, contributing to 30% higher retrieval accuracy across the multimodal search platform",
+        "Engineered production speech transcription and speaker diarization pipelines using Python, FFmpeg, Whisper, VAD, and speaker-embedding clustering, processing 800+ hours of audio monthly; generated timestamp-aligned, speaker-labeled transcripts and multilingual metadata, contributing to a 40% reduction in manual media search effort across the platform",
         "Decreased issue resolution time 35% by building an event-driven monitoring service (AWS Bedrock, Lambda, Slack API) for ML pipelines, surfacing drift alerts, exceptions, and health insights in real time",
         "Reduced ad-hoc reporting effort 40% by building a natural-language-to-SQL assistant (FAISS, Bedrock) serving producers at p95 approximately 1.3s latency",
         "Built an automated evaluation and regression harness (synthetic queries, oracle sets, precision@k) integrated into the iteration workflow; improved top-5 retrieval by 12 percentage points",
         "Cut per-request serving cost 28% without quality loss via response caching and lightweight request routing on Databricks",
+        "Engineered and deployed production Apache Airflow DAGs on GCP for 100K+ video segments monthly: FFmpeg preprocessing, Whisper transcription, CLIP/SigLIP embeddings, and BigQuery ETL; parallel execution, automated retries, SLA monitoring, and idempotent backfills achieved 99%+ pipeline success and 50% fewer manual interventions",
         "Streamlined operations on 2M+ digital assets by automating metadata extraction and ETL (BigQuery, Spark, Cloud Functions); features powered engagement forecasting (LSTM, transformers) that lifted user retention 25%"
       ],
       "highlights": ["AI systems", "Evaluation", "MLOps"]
@@ -51,38 +55,48 @@
   ],
   "skills": [
     {
+      "name": "Languages",
+      "keywords": ["Python, JavaScript/TypeScript, SQL, C++"]
+    },
+    {
+      "name": "Backend & Web",
+      "keywords": ["Node.js, Flask, FastAPI, REST APIs, gRPC, React, Next.js"]
+    },
+    {
+      "name": "Cloud & Data",
+      "keywords": [
+        "AWS (Bedrock, Lambda, SageMaker, S3), GCP (BigQuery, Vertex AI, Cloud Functions), Azure, Databricks, Snowflake, Spark, Apache Airflow, Kafka, Postgres, NoSQL, Redis, SQL query tuning, warehouse data modeling"
+      ]
+    },
+    {
+      "name": "MLOps/DevOps",
+      "keywords": [
+        "MLflow, Docker, Kubernetes, CI/CD, Git/GitHub, GitHub Actions, Linux, unit/integration/end-to-end testing, vector stores & databases"
+      ]
+    },
+    {
       "name": "GenAI/LLMs",
-      "icon": "fa-solid fa-robot",
       "keywords": [
         "RAG, agentic AI & tool calling, vector search, embeddings, guardrails, LLM evaluation (Ragas), prompt engineering & caching, LangChain, LangGraph, OpenAI, Claude, Hugging Face, MCP"
       ]
     },
     {
-      "name": "MLOps/DevOps",
-      "icon": "fa-solid fa-gears",
-      "keywords": ["MLflow, Docker, CI/CD, Git/GitHub, Linux, vector stores & databases, automated testing"]
-    },
-    {
-      "name": "Backend & Web",
-      "icon": "fa-solid fa-laptop-code",
-      "keywords": ["Node.js, Flask, REST APIs, React, Next.js"]
-    },
-    {
-      "name": "Cloud & Data",
-      "icon": "fa-solid fa-cloud",
-      "keywords": [
-        "AWS (Bedrock, Lambda, SageMaker, S3), GCP (BigQuery, Vertex AI, Cloud Functions), Azure, Databricks, Snowflake, Spark, Airflow, Kafka, Postgres"
-      ]
-    },
-    {
-      "name": "Languages",
-      "icon": "fa-solid fa-code",
-      "keywords": ["Python, JavaScript/TypeScript, SQL, C++"]
-    },
-    {
       "name": "ML/DL",
-      "icon": "fa-solid fa-brain",
-      "keywords": ["Deep Learning, NLP, Computer Vision, PyTorch, TensorFlow"]
+      "keywords": ["NLP, Computer Vision, Whisper, CLIP/SigLIP, TimeSformer, PyTorch, TensorFlow"]
+    }
+  ],
+  "publications": [
+    {
+      "name": "Waist-Supportive Exoskeleton : Systems and Materials",
+      "publisher": "Materials Today: Proceedings",
+      "releaseDate": "2022",
+      "url": "https://doi.org/10.1016/j.matpr.2022.02.455"
+    },
+    {
+      "name": "Experimental investigations on waist supportive passive exoskeleton to improve human comfort",
+      "publisher": "Materials Today: Proceedings",
+      "releaseDate": "2023",
+      "url": "https://doi.org/10.1016/j.matpr.2022.09.086"
     }
   ],
   "education": [
@@ -100,12 +114,12 @@
   ],
   "basics": {
     "name": "Omkar Chittar",
-    "label": "Software Engineer / AI Engineer building production AI systems",
+    "label": "Software Engineer",
     "image": "",
     "email": "ochittar@gmail.com",
     "phone": "(301) 526-5726",
     "url": "https://omkarchittar.com",
-    "summary": "Production AI systems, RAG, AI agents and tool calling, LLM evaluation, MLOps, full-stack software, and enterprise AI delivery.",
+    "summary": "Building full-stack applications, backend services, developer tools, and reliable data pipelines. Experience delivering production software across media, enterprise workflows, and search infrastructure.",
     "location": {
       "city": "Sunnyvale",
       "countryCode": "US",

@@ -1,0 +1,72 @@
+{% assign slug = include.repository | split: '/' | last %}
+<svg
+  class="repository-thumbnail"
+  viewBox="0 0 128 88"
+  width="56"
+  height="42"
+  aria-hidden="true"
+  focusable="false"
+  data-repository-thumbnail="{{ include.repository | escape }}"
+>
+  <rect class="thumb-background" x="1" y="1" width="126" height="86" rx="4"/>
+  <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  {% case slug %}
+  {% when 'A_Star_Path_Planning' %}
+  <path d="M20 18H108M20 36H108M20 54H108M20 72H108M20 18V72M42 18V72M64 18V72M86 18V72M108 18V72" opacity=".3"/><path class="thumb-solid" d="M47 39H60V51H47ZM69 57H82V69H69Z"/><path class="thumb-accent" d="M28 63H40V27H95"/><circle class="thumb-dot" cx="28" cy="63" r="4"/><path class="thumb-accent" d="M95 22L100 27L95 32"/>
+  {% when 'BFS_8_Puzzle' %}
+  <rect x="32" y="12" width="65" height="64" rx="3"/><path d="M54 12V76M76 12V76M32 33H97M32 55H97"/><rect class="thumb-tint" x="77" y="56" width="19" height="19"/><path class="thumb-accent" d="M40 23H47M62 22H69M84 23H91M40 44H47M62 44H69M84 44H91M40 65H47M63 61L68 65L63 69"/>
+  {% when 'Camera_Pose_Estimation' %}
+  <path d="M24 37H48V57H24ZM48 42L61 33V61L48 52ZM61 33L101 16V73L61 61"/><path class="thumb-accent" d="M78 47H106M78 47V20M78 47L99 64"/><circle class="thumb-dot" cx="78" cy="47" r="3"/>
+  {% when 'Control_of_Crane_System' %}
+  <path d="M20 22H105M31 22V73M22 73H40M82 27V55M66 23H94V31H66Z"/><path class="thumb-accent" d="M82 55L68 71M59 71H77V78H59M91 48Q107 59 93 72M94 65L93 72L100 71"/>
+  {% when 'Dijkstra_Point_Robot' %}
+  <path d="M23 62L42 24L68 42L98 20M23 62L70 69L104 56L98 20M42 24L70 69M68 42L104 56"/><path class="thumb-accent" d="M23 62L68 42L98 20"/><g class="thumb-dot"><circle cx="23" cy="62" r="4"/><circle cx="42" cy="24" r="3"/><circle cx="68" cy="42" r="4"/><circle cx="70" cy="69" r="3"/><circle cx="104" cy="56" r="3"/><circle cx="98" cy="20" r="4"/></g>
+  {% when 'Generative_Adversarial_Networks' %}
+  <circle cx="19" cy="44" r="6"/><path d="M26 44H42M80 44H96M37 39L42 44L37 49M91 39L96 44L91 49"/><rect x="43" y="24" width="36" height="40" rx="3"/><path class="thumb-accent" d="M52 34H69M52 44H69M52 54H69"/><rect class="thumb-tint" x="98" y="29" width="17" height="30"/><path d="M102 52L106 42L112 49"/>
+  {% when 'Image_Stitching' %}
+  <rect x="14" y="25" width="47" height="37" rx="2"/><rect x="42" y="18" width="47" height="45" rx="2"/><rect x="70" y="26" width="44" height="36" rx="2"/><path class="thumb-accent" d="M18 54L35 38L49 50L64 32L82 52L97 41L111 53"/><path d="M45 22V59M74 29V59" stroke-dasharray="3 3"/>
+  {% when 'Implicit_Neural_Representation' %}
+  <path d="M14 58H37M21 65V29M36 44H49M31 39L36 44L31 49"/><circle cx="58" cy="29" r="3"/><circle cx="58" cy="58" r="3"/><circle cx="77" cy="44" r="3"/><path d="M61 29L74 44L61 58M80 44H94"/><rect x="95" y="27" width="21" height="34" rx="2"/><path class="thumb-accent" d="M99 54L106 35L112 48"/>
+  {% when 'K_Means_Clustering' %}
+  <g class="thumb-dot"><circle cx="27" cy="27" r="3"/><circle cx="35" cy="37" r="3"/><circle cx="21" cy="39" r="3"/><circle cx="42" cy="25" r="3"/></g><g class="thumb-solid"><circle cx="86" cy="24" r="3"/><circle cx="99" cy="34" r="3"/><circle cx="84" cy="38" r="3"/><circle cx="102" cy="20" r="3"/></g><circle cx="31" cy="32" r="21"/><circle cx="93" cy="29" r="21"/><circle cx="64" cy="65" r="16"/><circle class="thumb-dot" cx="57" cy="63" r="2"/><circle class="thumb-solid" cx="69" cy="69" r="2"/><circle class="thumb-solid" cx="68" cy="58" r="2"/>
+  {% when 'Lane_Detection' %}
+  <path d="M23 76L51 15M105 76L77 15M64 72V62M64 53V45M64 36V28M64 21V15"/><path class="thumb-accent" d="M34 76L56 15M94 76L72 15"/><path d="M18 77H110"/>
+  {% when 'LiDAR_SLAM' %}
+  <path d="M19 68V19H59M77 19H108V69H89M38 69H60"/><path d="M44 54A27 27 0 0 1 86 54M33 58A40 40 0 0 1 97 58"/><path class="thumb-accent" d="M64 63L33 27M64 63L100 29M64 63V21"/><circle class="thumb-dot" cx="64" cy="63" r="4"/><circle class="thumb-dot" cx="33" cy="27" r="2"/><circle class="thumb-dot" cx="100" cy="29" r="2"/>
+  {% when 'Neural_Radiance_Fields' %}
+  <path d="M65 26L89 17L111 29V57L86 69L65 55ZM65 26L86 39L111 29M86 39V69"/><path class="thumb-accent" d="M21 31L84 28M21 44L86 44M21 58L86 57"/><path d="M12 25H25V36H12ZM12 39H25V50H12ZM12 53H25V64H12Z"/>
+  {% when 'Neural_Surfaces' %}
+  <path d="M22 47C22 16 58 10 90 22S118 61 91 72S22 78 22 47ZM36 47C36 25 61 25 82 31S104 58 84 63S36 67 36 47Z"/><path class="thumb-accent" d="M49 47C49 34 66 35 78 41S86 56 73 57S49 58 49 47Z"/>
+  {% when 'Obstacle_Avoidance_Bot' %}
+  <path d="M15 72H113M15 16V72M113 16V72"/><rect class="thumb-solid" x="49" y="33" width="26" height="30" rx="2"/><path class="thumb-accent" d="M25 60H35V23H92V60H103"/><circle class="thumb-dot" cx="25" cy="60" r="4"/><path class="thumb-accent" d="M97 55L103 60L97 65"/>
+  {% when 'PointCloud_Classification_and_Segmentation' %}
+  <path d="M15 66H113M64 15V74" opacity=".3"/><g class="thumb-dot"><circle cx="27" cy="29" r="3"/><circle cx="38" cy="25" r="3"/><circle cx="34" cy="41" r="3"/><circle cx="22" cy="48" r="3"/><circle cx="40" cy="54" r="3"/><circle cx="85" cy="28" r="3"/><circle cx="96" cy="25" r="3"/><circle cx="92" cy="39" r="3"/></g><g class="thumb-solid"><circle cx="81" cy="49" r="3"/><circle cx="99" cy="53" r="3"/><circle cx="87" cy="60" r="3"/></g><path class="thumb-accent" d="M48 39H56M52 35L56 39L52 43"/>
+  {% when 'Point_Cloud_Analysis' %}
+  <path d="M27 66H109M27 66V14M27 66L60 38"/><g class="thumb-dot"><circle cx="52" cy="39" r="3"/><circle cx="63" cy="31" r="3"/><circle cx="76" cy="42" r="3"/><circle cx="89" cy="35" r="3"/><circle cx="60" cy="52" r="3"/><circle cx="78" cy="57" r="3"/><circle cx="92" cy="49" r="3"/></g><path d="M48 25L80 19L103 42L84 65L48 57Z" stroke-dasharray="3 3"/>
+  {% when 'Pose_Estimation_2D' %}
+  <circle cx="65" cy="21" r="7"/><path class="thumb-accent" d="M65 29V47L46 67M65 47L83 68M42 43L65 34L88 42M42 43L30 29M88 42L99 25"/><g class="thumb-dot"><circle cx="65" cy="34" r="3"/><circle cx="65" cy="47" r="3"/><circle cx="42" cy="43" r="3"/><circle cx="88" cy="42" r="3"/><circle cx="46" cy="67" r="3"/><circle cx="83" cy="68" r="3"/></g>
+  {% when 'PyTorch3D_Rendering_Basics' %}
+  <path d="M27 60L65 16L102 63L27 60L65 43L102 63M65 16V43"/><path class="thumb-tint" d="M27 60L65 16V43Z"/><path class="thumb-accent" d="M65 43L102 63M65 16V43"/><path d="M18 74H111"/>
+  {% when 'Semantic_Segmentation_and_Object_Detection' %}
+  <rect x="15" y="20" width="98" height="52" rx="2"/><path class="thumb-tint" d="M17 70L46 33L68 70Z"/><path class="thumb-solid" d="M63 70L90 45L111 70Z"/><path class="thumb-accent" d="M28 27H65V70H28ZM75 37H105V70H75Z"/><circle cx="88" cy="29" r="5"/>
+  {% when 'Single_View_to_3D' %}
+  <rect x="15" y="25" width="30" height="40" rx="2"/><path d="M21 56L30 35L40 56ZM56 45H69"/><path class="thumb-accent" d="M64 40L69 45L64 50"/><path d="M77 30L94 21L113 31V59L95 69L77 59ZM77 30L95 40L113 31M95 40V69"/>
+  {% when 'Stereo_Depth_Estimation' %}
+  <path d="M18 25H42V41H18ZM87 25H111V41H87ZM30 41L64 69L99 41M42 33H87"/><path class="thumb-accent" d="M58 59V74M64 55V74M70 61V74"/><path d="M57 18H72M60 14L56 18L60 22M68 14L72 18L68 22"/>
+  {% when 'Structure_from_Motion' %}
+  <path d="M14 37H31V50H14ZM53 13H70V26H53ZM96 35H113V48H96ZM29 44L58 49M62 27L65 43M96 42L75 48"/><g class="thumb-dot"><circle cx="58" cy="49" r="3"/><circle cx="69" cy="44" r="3"/><circle cx="75" cy="54" r="3"/><circle cx="59" cy="62" r="3"/><circle cx="76" cy="65" r="3"/></g><path class="thumb-accent" d="M21 64Q60 85 104 61"/>
+  {% when 'Superpixels_and_SLIC' %}
+  <rect x="17" y="15" width="94" height="59" rx="2"/><path d="M17 35L36 28L55 38L74 24L93 34L111 26M17 57L37 50L54 60L73 47L94 56L111 47M36 15V28L37 50L32 74M57 15L55 38L54 60L61 74M78 15L74 24L73 47L79 74M96 15L93 34L94 56L101 74"/><path class="thumb-tint" d="M55 38L74 24L73 47L54 60Z"/>
+  {% when 'Trajectory_Tracking' %}
+  <path d="M15 72H114M15 72V14M22 62C47 60 33 21 59 24S85 67 110 25" stroke-dasharray="3 4"/><path class="thumb-accent" d="M22 65C48 65 36 25 59 28S88 70 110 30"/><circle class="thumb-dot" cx="65" cy="32" r="4"/>
+  {% when 'Tsai_Camera_Calibration' %}
+  <path d="M16 39H40V58H16ZM40 44L51 35V64L40 54M51 35L100 17M51 64L100 74"/><path class="thumb-accent" d="M78 49H109M78 49V19M78 49L97 68"/><circle cx="78" cy="49" r="11"/><circle class="thumb-dot" cx="78" cy="49" r="3"/>
+  {% when 'Wall_Following_Robot' %}
+  <path d="M22 72V19H105V71M35 72V33H91V71"/><path class="thumb-accent" d="M43 68V42H82V65"/><circle class="thumb-dot" cx="43" cy="68" r="4"/><path class="thumb-accent" d="M77 59L82 65L87 59"/>
+  {% when 'Zhang_Camera_Calibration' %}
+  <path d="M25 23L99 15L109 64L31 74ZM29 39L102 31M30 56L106 48M49 20L55 71M74 18L81 68"/><path class="thumb-tint" d="M25 23L49 20L51 36L29 39ZM51 36L76 34L78 51L53 53ZM76 34L102 31L99 15L74 18ZM53 53L55 71L31 74L30 56ZM78 51L106 48L109 64L81 68Z"/>
+  {% when 'manipulator_control_DDPG' %}
+  <path d="M24 74H55M40 74V61"/><path class="thumb-accent" d="M40 61L66 35L96 46M96 46L104 38M96 46L104 54"/><circle cx="40" cy="61" r="6"/><circle cx="66" cy="35" r="5"/><path d="M43 27Q75 7 106 26M99 21L106 26L98 29" stroke-dasharray="3 3"/>
+  {% endcase %}
+  </g>
+</svg>

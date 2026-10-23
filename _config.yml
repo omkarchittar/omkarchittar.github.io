@@ -3,13 +3,13 @@
 # -----------------------------------------------------------------------------
 
 title: Omkar Chittar # the website title (if blank, full name will be used instead)
-seo_title: Omkar Chittar | Software Engineer & AI Engineer
+seo_title: Omkar Chittar | Software Engineer
 first_name: Omkar
 middle_name: Ashok
 last_name: Chittar
 email: ochittar@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Software Engineer / AI Engineer building production AI systems. RAG, AI agents and tool calling, LLM evaluation, MLOps, full-stack software, and enterprise AI delivery.
+  Software engineer building full-stack applications, reliable services, developer tools, and production data pipelines.
 footer_text:
 keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -48,7 +48,7 @@ navbar_fixed: true
 footer_fixed: false
 
 # Dimensions
-max_width: 1100px
+max_width: 1280px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -219,6 +219,8 @@ exclude:
   - _posts.zip
   - _projects.zip
   - LOCAL_PREVIEW.md
+  - tests
+  - docs/superpowers
 keep_files:
   - CNAME
   - .nojekyll
@@ -456,5 +458,6 @@ jekyll_get_json:
 jsonresume:
   - work
   - skills
+  - publications
   - education
   - volunteer

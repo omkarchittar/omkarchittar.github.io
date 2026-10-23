@@ -1,81 +1,161 @@
 ---
 layout: about
 title: Home
-seo_title: Omkar Chittar | Software Engineer & AI Engineer
+seo_title: Omkar Chittar | Software Engineer
 permalink: /
-description: Software Engineer / AI Engineer building production AI systems. RAG, AI agents and tool calling, LLM evaluation, MLOps, full-stack software, and enterprise AI delivery.
+description: Software engineer building full-stack applications, reliable services, developer tools, and production data pipelines.
+point_cloud: true
 ---
 
-<section class="home-hero" aria-labelledby="hero-title">
-  <p class="eyebrow">Omkar Chittar <span aria-hidden="true">/</span> Sunnyvale, CA</p>
-  <h1 id="hero-title"><span class="hero-role">Software Engineer / AI Engineer</span>Building production AI systems<span class="accent">.</span></h1>
-  <p class="hero-intro">I build production AI systems with RAG, AI agents and tool calling, and LLM evaluation—backed by MLOps and full-stack software engineering.</p>
-  <p class="hero-context">From knowledge discovery to workflow automation, I deliver enterprise AI from requirements through deployment and ongoing reliability.</p>
-  <div class="portfolio-actions">
-    <a class="portfolio-button primary" href="{{ '/projects/' | relative_url }}">View Projects <span aria-hidden="true">↗</span></a>
-    <a class="portfolio-button" href="{{ '/cv/' | relative_url }}">Resume</a>
-    <a class="portfolio-button" href="https://github.com/{{ site.github_username }}">GitHub <span aria-hidden="true">↗</span></a>
-    <a class="portfolio-button" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn <span aria-hidden="true">↗</span></a>
-  </div>
-  <ul class="hero-topics" aria-label="Engineering focus">
-    <li>RAG</li><li>Agents</li><li>Evaluation</li><li>MLOps</li><li>Full-stack software</li>
-  </ul>
-</section>
+{% assign estimating = site.data.selected_work | where: 'id', 'estimating-platform' | first %}
+{% assign debugging = site.data.selected_work | where: 'id', 'ci-debugging' | first %}
+{% assign media = site.data.selected_work | where: 'id', 'media-pipelines' | first %}
+{% assign legal = site.data.selected_work | where: 'id', 'knowledge-discovery' | first %}
+{% assign monitoring = site.data.selected_work | where: 'id', 'operational-agents' | first %}
 
-<section class="home-section" id="selected-work" aria-labelledby="selected-work-title">
-  <div class="section-heading">
-    <div><p class="eyebrow">01 / Applied AI</p><h2 id="selected-work-title">Selected Work</h2></div>
-    <a class="text-link" href="{{ '/projects/' | relative_url }}">All work <span aria-hidden="true">↗</span></a>
+<section class="ed-hero">
+  <div class="hero-meta"><span>SOFTWARE ENGINEER</span><span>SUNNYVALE, CALIFORNIA</span></div>
+  <h1>
+    I make ideas<br>
+    <span class="second-line">work in the <em>real world.</em></span>
+  </h1>
+  <div class="ed-hero-bottom">
+    <div class="ed-hero-intro">
+      <p>
+        I turn complex problems into useful software. From the first sketch to the production system,
+        I build for the people on the other side.
+      </p>
+      <a class="hero-work-link" href="#selected-work">Explore my work <span aria-hidden="true">↓</span></a>
+    </div>
+    <div class="ed-cloud">
+      <div class="ed-cloud-meta"><span>ALWAYS CONNECTING DOTS</span><button id="cloud-pause" type="button">Pause motion</button></div>
+      <div class="ed-cloud-stage">
+        <canvas
+          id="point-cloud"
+          width="700"
+          height="480"
+          role="img"
+          aria-label="Terracotta point cloud forming an intricate three-dimensional mathematical knot. Use the reconstruction slider below to move between scattered points and a clear shape."
+        ></canvas>
+        <div class="ed-static-orbit" aria-hidden="true">◎</div>
+        <span class="ed-cloud-axis" aria-hidden="true"
+          >Y ↑<br>
+          └── X</span
+        >
+      </div>
+      <div class="ed-cloud-controls">
+        <div><label for="reconstruction">A little order from the noise.</label><output id="cloud-value" for="reconstruction">100%</output></div>
+        <input type="range" id="reconstruction" min="0" max="100" value="100">
+        <p>Drag to explore · A study in creative coding</p>
+      </div>
+    </div>
   </div>
-  <p class="section-intro">Full-stack applications and AI systems for estimating, knowledge discovery, and operational support.</p>
-  {% include selected_work.liquid %}
-</section>
-
-<section class="home-section" id="capabilities" aria-labelledby="capabilities-title">
-  <p class="eyebrow">02 / How I build</p>
-  <h2 id="capabilities-title">Engineering Capabilities</h2>
-  <div class="capability-grid">
-    <article><span class="capability-index" aria-hidden="true">01</span><h3>RAG &amp; Agents</h3><p>Ingestion, embeddings, vector retrieval, grounded generation, tool calling, and guardrails.</p><p class="capability-tools">LangChain · LangGraph · FAISS · Bedrock</p></article>
-    <article><span class="capability-index" aria-hidden="true">02</span><h3>Evaluation &amp; Reliability</h3><p>Golden sets, retrieval checks, regression harnesses, and prompt and embedding experiments.</p><p class="capability-tools">Ragas · Retrieval evaluation · Quality regression</p></article>
-    <article><span class="capability-index" aria-hidden="true">03</span><h3>MLOps &amp; Deployment</h3><p>Deployment workflows, access controls, logging, monitoring, and serving cost optimization.</p><p class="capability-tools">MLflow · Docker · CI/CD · AWS · GCP</p></article>
-    <article><span class="capability-index" aria-hidden="true">04</span><h3>Full-Stack &amp; Integrations</h3><p>Python backends, React/TypeScript frontends, REST APIs, and integrations with enterprise data and workflows.</p><p class="capability-tools">Python · React · TypeScript · Flask · REST APIs</p></article>
+  <div class="ed-proof">
+    <span>RECENTLY BUILDING AT</span><strong>NBCUniversal</strong><span class="proof-divider">/</span><strong>FOX Sports</strong
+    ><span class="proof-end">Thoughtful systems. Useful software.</span>
   </div>
 </section>
-
-<section class="home-section" id="experience" aria-labelledby="experience-title">
-  <p class="eyebrow">03 / Delivery</p>
-  <h2 id="experience-title">Experience &amp; Impact</h2>
-  <div class="experience-list">
-    <article class="experience-item">
-      <p class="experience-date">Nov 2025 — Present</p>
-      <div><h3>Lead Software Engineer</h3><p class="experience-company">NBCUniversal · Universal Creative and UDX</p><p>Led delivery of 10 products from concept into production across 6 business functions. Work spans a full-stack estimating platform, contract lifecycle software, retrieval and evaluation infrastructure, and cost intelligence.</p><p class="experience-impact">Estimating and takeoff time reduced from 6 hours to 30 minutes · Approximately 900 automated tests backing the platform.</p></div>
+<section class="ed-work" id="selected-work">
+  <div class="section-top">
+    <p class="eyebrow">01 / SELECTED WORK</p>
+    <p>A few things I've helped bring into the world.</p>
+  </div>
+  <article class="ed-feature">
+    <div class="ed-project-copy">
+      <span class="project-number">01—</span>
+      <p class="eyebrow">{{ estimating.context }} / FULL-STACK ENGINEERING</p>
+      <h2>
+        Six hours.<br>
+        Thirty minutes.<br>
+        <em>Time back.</em>
+      </h2>
+      <p>{{ estimating.summary }}</p>
+      <div class="ed-project-stat"><strong>6h → 30m</strong><span>Estimating & takeoff time</span></div>
+      <a class="text-link" href="{{ '/projects/' | relative_url }}#estimating-platform">Explore the project <span aria-hidden="true">↗</span></a>
+    </div>
+    {% include project_art.liquid project=estimating.id %}
+  </article>
+  <div class="ed-secondary">
+    <article>
+      {% include project_art.liquid project=debugging.id %}
+      <p class="eyebrow">{{ debugging.context }} / DEVELOPER TOOLS</p>
+      <h3>From a failed build to a next step.</h3>
+      <p>{{ debugging.summary }}</p>
+      <a class="text-link" href="{{ '/projects/' | relative_url }}#ci-debugging">Explore the CI debugging agent ↗</a>
     </article>
-    <article class="experience-item">
-      <p class="experience-date">Aug 2024 — Nov 2025</p>
-      <div><h3>AI Engineer</h3><p class="experience-company">FOX Sports</p><p>Built AI solutions for media post-production: a Slack agent for ML pipeline monitoring, a natural-language-to-SQL assistant, evaluation tooling, and automated metadata extraction.</p><p class="experience-impact">35% less issue-resolution time with the Slack agent · 40% less ad-hoc reporting effort with the conversational assistant.</p></div>
+    <article>
+      {% include project_art.liquid project=media.id %}
+      <p class="eyebrow">{{ media.context }} / DATA PIPELINES</p>
+      <h3>Media, made searchable.</h3>
+      <p>{{ media.summary }}</p>
+      <a class="text-link" href="{{ '/projects/' | relative_url }}#media-pipelines">Explore the media pipelines ↗</a>
+    </article>
+    <article>
+      {% include project_art.liquid project=legal.id %}
+      <p class="eyebrow">{{ legal.context }} / SEARCH & DATA INFRASTRUCTURE</p>
+      <h3>Answers with a paper trail.</h3>
+      <p>{{ legal.summary }}</p>
+      <a class="text-link" href="{{ '/projects/' | relative_url }}#knowledge-discovery">Explore legal retrieval ↗</a>
+    </article>
+    <article>
+      {% include project_art.liquid project=monitoring.id %}
+      <p class="eyebrow">{{ monitoring.context }} / EVENT-DRIVEN SYSTEMS</p>
+      <h3>Less noise. Faster resolution.</h3>
+      <p>{{ monitoring.summary }} {{ monitoring.details | last }}</p>
+      <a class="text-link" href="{{ '/projects/' | relative_url }}#operational-agents">Explore operational monitoring ↗</a>
     </article>
   </div>
-  <a class="text-link" href="{{ '/cv/' | relative_url }}">View full experience <span aria-hidden="true">↗</span></a>
+  <a class="all-work" href="{{ '/projects/' | relative_url }}">Browse all projects <span aria-hidden="true">↗</span></a>
 </section>
-
-<section class="home-section about-section" id="about" aria-labelledby="about-title">
+<section class="ed-about" id="about">
+  <div class="ed-person">
+    <p class="eyebrow">02 / THE PERSON BEHIND THE SYSTEMS</p>
+    <figure class="ed-portrait">
+      <img
+        src="{{ '/assets/img/omkar-chittar.jpg' | relative_url }}"
+        width="600"
+        height="670"
+        alt="Portrait of Omkar Chittar"
+        loading="lazy"
+        decoding="async"
+      >
+      <figcaption>
+        OMKAR CHITTAR<br>
+        <span>Software engineer</span>
+      </figcaption>
+    </figure>
+  </div>
   <div>
-    <p class="eyebrow">04 / Background</p>
-    <h2 id="about-title">About</h2>
-    <p>I'm a software engineer focused on the work around the model: connecting it to the right data, evaluating its behavior, and supporting it in production. Earlier work at Sakar Robotics and a Master's in Robotics at the University of Maryland built my foundation in machine learning, computer vision, and software engineering.</p>
-    <div class="about-links"><a class="text-link" href="{{ '/projects/' | relative_url }}#earlier-work">Earlier work</a><a class="text-link" href="{{ '/teaching/' | relative_url }}">Teaching &amp; mentoring</a></div>
+    <h2>
+      Curiosity is the<br>
+      <em>through line.</em>
+    </h2>
+    <p>
+      I build full-stack software: the interfaces people use, the services behind them, and the data flows that connect everything. My work at
+      NBCUniversal and FOX Sports spans estimating platforms, search infrastructure, and operational tools.
+    </p>
+    <p>
+      I care about how the pieces fit together: clear interfaces, automated testing, thoughtful architecture, and software that holds up beyond the
+      demo.
+    </p>
+    <a class="text-link" href="{{ '/teaching/' | relative_url }}">Teaching & mentoring ↗</a>
   </div>
-  <img class="about-portrait" src="{{ '/assets/img/omkar-chittar.jpg' | relative_url }}" alt="Omkar Chittar" loading="lazy" decoding="async" width="600" height="670">
+  <aside>
+    <span>MY TOOLBOX</span>
+    <p>
+      Python & TypeScript<br>
+      APIs & integrations<br>
+      Testing & deployment<br>
+      Search & data pipelines
+    </p>
+    <a href="{{ '/publications/' | relative_url }}">Research & publications ↗</a>
+  </aside>
 </section>
-
-<section class="home-section contact-section" id="contact" aria-labelledby="contact-title">
-  <p class="eyebrow">05 / Get in touch</p>
-  <h2 id="contact-title">Contact</h2>
-  <p>Let's talk about useful AI systems and the software that makes them work.</p>
-  <a class="contact-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
-  <div class="contact-links">
-    <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn <span aria-hidden="true">↗</span></a>
-    <a href="https://github.com/{{ site.github_username }}">GitHub <span aria-hidden="true">↗</span></a>
-    <a href="{{ '/cv/' | relative_url }}">Resume <span aria-hidden="true">↗</span></a>
-  </div>
+<section class="ed-contact" id="contact">
+  <p class="eyebrow">03 / WHAT COULD WE BUILD?</p>
+  <h2>
+    Good things start<br>
+    with <em>a conversation.</em>
+  </h2>
+  <a href="mailto:{{ site.email }}">Say hello <span aria-hidden="true">↗</span></a>
 </section>

@@ -1,0 +1,44 @@
+<figure
+  class="project-art gallery-art"
+  data-gallery-art="{{ include.project.slug }}"
+  role="img"
+  aria-label="{{ include.project.title | escape }}: conceptual illustration"
+>
+  <svg viewBox="0 0 600 300" aria-hidden="true" focusable="false">
+    {% case include.project.slug %}
+      {% when '2_project' %}
+        <text class="art-label" x="24" y="31">PIXELS → FEATURES → PREDICTIONS</text>
+        <rect class="art-panel" x="24" y="62" width="151" height="182" rx="5"/>
+        <g class="art-muted-fill"><path d="M40 78H67V105H40ZM74 78H101V105H74ZM108 78H135V105H108ZM142 78H159V105H142ZM40 112H67V139H40ZM74 112H101V139H74ZM108 112H135V139H108ZM142 112H159V139H142ZM40 146H67V173H40ZM74 146H101V173H74ZM108 146H135V173H108ZM142 146H159V173H142ZM40 180H67V207H40ZM74 180H101V207H74ZM108 180H135V207H108ZM142 180H159V207H142Z"/></g>
+        <g class="art-accent-fill"><path d="M74 112H101V139H74ZM108 112H135V139H108ZM74 146H101V173H74ZM108 146H135V173H108Z"/></g>
+        <path class="art-accent-line" d="M186 153H212M205 146L212 153L205 160"/>
+        <rect class="art-panel" x="225" y="62" width="151" height="182" rx="5"/>
+        <g class="art-line"><path d="M241 84H359M241 102H359M241 120H359M241 138H359M241 156H359M241 174H359M241 192H359M241 210H359"/></g>
+        <path class="art-accent-line" d="M260 95V192H342M387 153H413M406 146L413 153L406 160"/>
+        <rect class="art-panel" x="426" y="62" width="150" height="182" rx="5"/>
+        <circle class="art-muted-fill" cx="477" cy="117" r="21"/>
+        <path class="art-muted-fill" d="M479 209L518 148L556 209Z"/>
+        <g class="art-accent-line"><rect x="446" y="85" width="62" height="64"/><rect x="488" y="144" width="74" height="72"/></g>
+        <text class="art-label" x="24" y="278">COMPUTER VISION / IMAGE UNDERSTANDING</text>
+      {% when '1_project' %}
+        <text class="art-label" x="24" y="31">POINTS → SURFACES → RENDERING</text>
+        <path class="art-line" d="M56 239H143M56 239V159M56 239L96 210"/>
+        <text class="art-label" x="148" y="245">X</text><text class="art-label" x="50" y="151">Y</text>
+        {% comment %}A fixed triangulated surface illustrates the geometry projects.{% endcomment %}
+        <path class="art-line" d="M155.0 100.0L170.0 134.2M155.0 100.0L203.0 107.9M155.0 100.0L218.0 134.0M203.0 107.9L218.0 134.0M203.0 107.9L251.0 104.5M203.0 107.9L266.0 119.4M251.0 104.5L266.0 119.4M251.0 104.5L299.0 87.1M251.0 104.5L314.0 96.1M299.0 87.1L314.0 96.1M299.0 87.1L347.0 63.6M299.0 87.1L362.0 76.6M347.0 63.6L362.0 76.6M347.0 63.6L395.0 46.4M347.0 63.6L410.0 70.2M395.0 46.4L410.0 70.2M170.0 134.2L185.0 162.7M170.0 134.2L218.0 134.0M170.0 134.2L233.0 151.2M218.0 134.0L233.0 151.2M218.0 134.0L266.0 119.4M218.0 134.0L281.0 128.9M266.0 119.4L281.0 128.9M266.0 119.4L314.0 96.1M266.0 119.4L329.0 107.5M314.0 96.1L329.0 107.5M314.0 96.1L362.0 76.6M314.0 96.1L377.0 97.8M362.0 76.6L377.0 97.8M362.0 76.6L410.0 70.2M362.0 76.6L425.0 101.9M410.0 70.2L425.0 101.9M185.0 162.7L200.0 182.4M185.0 162.7L233.0 151.2M185.0 162.7L248.0 161.7M233.0 151.2L248.0 161.7M233.0 151.2L281.0 128.9M233.0 151.2L296.0 138.9M281.0 128.9L296.0 138.9M281.0 128.9L329.0 107.5M281.0 128.9L344.0 126.1M329.0 107.5L344.0 126.1M329.0 107.5L377.0 97.8M329.0 107.5L392.0 127.5M377.0 97.8L392.0 127.5M377.0 97.8L425.0 101.9M377.0 97.8L440.0 136.9M425.0 101.9L440.0 136.9M200.0 182.4L215.0 194.4M200.0 182.4L248.0 161.7M200.0 182.4L263.0 170.9M248.0 161.7L263.0 170.9M248.0 161.7L296.0 138.9M248.0 161.7L311.0 155.1M296.0 138.9L311.0 155.1M296.0 138.9L344.0 126.1M296.0 138.9L359.0 153.6M344.0 126.1L359.0 153.6M344.0 126.1L392.0 127.5M344.0 126.1L407.0 162.2M392.0 127.5L407.0 162.2M392.0 127.5L440.0 136.9M392.0 127.5L455.0 169.2M440.0 136.9L455.0 169.2M215.0 194.4L230.0 203.3M215.0 194.4L263.0 170.9M215.0 194.4L278.0 184.9M263.0 170.9L278.0 184.9M263.0 170.9L311.0 155.1M263.0 170.9L326.0 180.2M311.0 155.1L326.0 180.2M311.0 155.1L359.0 153.6M311.0 155.1L374.0 187.4M359.0 153.6L374.0 187.4M359.0 153.6L407.0 162.2M359.0 153.6L422.0 195.9M407.0 162.2L422.0 195.9M407.0 162.2L455.0 169.2M407.0 162.2L470.0 193.8M455.0 169.2L470.0 193.8M230.0 203.3L278.0 184.9M278.0 184.9L326.0 180.2M326.0 180.2L374.0 187.4M374.0 187.4L422.0 195.9M422.0 195.9L470.0 193.8"/><g class="art-accent-fill"><circle cx="155.0" cy="100.0" r="2.5"/><circle cx="203.0" cy="107.9" r="2.5"/><circle cx="251.0" cy="104.5" r="2.5"/><circle cx="299.0" cy="87.1" r="2.5"/><circle cx="347.0" cy="63.6" r="2.5"/><circle cx="395.0" cy="46.4" r="2.5"/><circle cx="170.0" cy="134.2" r="2.5"/><circle cx="218.0" cy="134.0" r="2.5"/><circle cx="266.0" cy="119.4" r="2.5"/><circle cx="314.0" cy="96.1" r="2.5"/><circle cx="362.0" cy="76.6" r="2.5"/><circle cx="410.0" cy="70.2" r="2.5"/><circle cx="185.0" cy="162.7" r="2.5"/><circle cx="233.0" cy="151.2" r="2.5"/><circle cx="281.0" cy="128.9" r="2.5"/><circle cx="329.0" cy="107.5" r="2.5"/><circle cx="377.0" cy="97.8" r="2.5"/><circle cx="425.0" cy="101.9" r="2.5"/><circle cx="200.0" cy="182.4" r="2.5"/><circle cx="248.0" cy="161.7" r="2.5"/><circle cx="296.0" cy="138.9" r="2.5"/><circle cx="344.0" cy="126.1" r="2.5"/><circle cx="392.0" cy="127.5" r="2.5"/><circle cx="440.0" cy="136.9" r="2.5"/><circle cx="215.0" cy="194.4" r="2.5"/><circle cx="263.0" cy="170.9" r="2.5"/><circle cx="311.0" cy="155.1" r="2.5"/><circle cx="359.0" cy="153.6" r="2.5"/><circle cx="407.0" cy="162.2" r="2.5"/><circle cx="455.0" cy="169.2" r="2.5"/><circle cx="230.0" cy="203.3" r="2.5"/><circle cx="278.0" cy="184.9" r="2.5"/><circle cx="326.0" cy="180.2" r="2.5"/><circle cx="374.0" cy="187.4" r="2.5"/><circle cx="422.0" cy="195.9" r="2.5"/><circle cx="470.0" cy="193.8" r="2.5"/></g>
+        <text class="art-label" x="24" y="278">3D VISION / GEOMETRY & REPRESENTATION</text>
+      {% when '3_project' %}
+        <text class="art-label" x="24" y="31">MAP → PLAN → CONTROL</text>
+        <rect class="art-panel" x="24" y="58" width="300" height="194" rx="5"/>
+        <path class="art-line" d="M74 58V252M124 58V252M174 58V252M224 58V252M274 58V252M24 106H324M24 154H324M24 202H324"/>
+        <g class="art-muted-fill"><rect x="134" y="111" width="33" height="36"/><rect x="229" y="161" width="37" height="34"/><rect x="80" y="62" width="38" height="36"/></g>
+        <path class="art-accent-line" d="M49 228H102V174H192V88H298"/>
+        <circle class="art-accent-fill" cx="49" cy="228" r="6"/><circle class="art-accent-fill" cx="298" cy="88" r="6"/>
+        <path class="art-accent-line" d="M336 154H363M356 147L363 154L356 161"/>
+        <rect class="art-panel" x="376" y="58" width="200" height="194" rx="5"/>
+        <path class="art-line" d="M394 215H557M394 215V78M394 154H557"/>
+        <path class="art-accent-line" d="M394 207C409 203 412 101 431 103S452 180 467 176S483 143 499 147S523 156 557 154"/>
+        <text class="art-label" x="24" y="278">ALGORITHMS / PLANNING & CONTROL</text>
+    {% endcase %}
+  </svg>
+</figure>

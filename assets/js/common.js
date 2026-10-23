@@ -10,6 +10,10 @@ $(document).ready(function () {
   });
   $("a").removeClass("waves-effect waves-light");
 
+  $("#navbarNav .nav-link").on("click", function () {
+    $("#navbarNav").collapse("hide");
+  });
+
   // bootstrap-toc
   if ($("#toc-sidebar").length) {
     // remove related publications years from the TOC

@@ -5,13 +5,12 @@ description: Perception, Planning, Controls
 img: assets/img/ROB1.jpg
 importance: 3
 category: earlier-work
+project_gallery: true
 ---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/ROB_main.png" title="main" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+<p class="gallery-back"><a href="{{ '/projects/' | relative_url }}">← All projects</a></p>
+
+{% include gallery_figure.liquid path="assets/img/ROB_main.png" title="Autonomous system architecture" caption="Perception, localization, planning, and control in an autonomous system." overview=true %}
 
 Creating a fully autonomous vehicle or robotic system involves integrating several crucial components. These include the perception system, path planning, trajectory generation, follower subsystem, and controls subsystem.
 
@@ -23,47 +22,25 @@ Lastly, the controls module issues commands to actuate and steer the vehicle or 
 
 Below sections showcase implementations of such systems, incorporating some or all of these key components essential for autonomous navigation.
 
-<div style="text-align: center;">
-    <a href="https://github.com/omkarchittar/manipulator_control_DDPG">Reinforcement Learning Manipulator Control</a>
-    <div class="container">
-        <div class="row">
-            <a href="https://github.com/omkarchittar/manipulator_control_DDPG" style="display: inline-block; margin: 0 auto;">
-                {% include figure.liquid path="assets/img/ROB7.gif" title="Reinforcement Learning Manipulator Control 1000 ep" class="img-fluid rounded z-depth-1" %}
-            </a>
-        </div>
-    </div>
+<section class="gallery-section">
+<h2>Learning and perception</h2>
+<div class="gallery-grid gallery-grid-three">
+{% include gallery_figure.liquid path="assets/img/ROB7.gif" title="Reinforcement Learning Manipulator Control" url="https://github.com/omkarchittar/manipulator_control_DDPG" %}
+{% include gallery_figure.liquid path="assets/img/SFM_square.png" title="Structure from Motion" url="https://github.com/omkarchittar/Structure_from_Motion" %}
+{% include gallery_figure.liquid path="assets/img/CVDL4.png" title="LiDAR SLAM" url="https://github.com/omkarchittar/LiDAR_SLAM" %}
 </div>
-
-<div class="row">
-    <div class="row justify-content-center">
-        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Structure_from_Motion">Structure from Motion
-            {% include figure.liquid path="assets/img/SFM_square.png" title="SfM" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/LiDAR_SLAM">LiDAR SLAM
-            {% include figure.liquid path="assets/img/CVDL4.png" title="LiDAR SLAM" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-    </div>
+</section>
+<section class="gallery-section">
+<h2>Path planning</h2>
+<div class="gallery-grid">
+{% include gallery_figure.liquid path="assets/img/ROB3.png" title="Dijkstra Path Planning" url="https://github.com/omkarchittar/Dijkstra_Point_Robot" %}
+{% include gallery_figure.liquid path="assets/img/ROB4.png" title="A* Path Planning" url="https://github.com/omkarchittar/A_Star_Path_Planning" %}
 </div>
-
-<div class="row">
-    <div class="row justify-content-center">
-        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Dijkstra_Point_Robot">Dijkstra Path Planning
-            {% include figure.liquid path="assets/img/ROB3.png" title="Dijkstra Path Planning" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/A_Star_Path_Planning">A* Path Planning
-            {% include figure.liquid path="assets/img/ROB4.png" title="A* Path Planning" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-    </div>
+</section>
+<section class="gallery-section">
+<h2>Navigation behaviors</h2>
+<div class="gallery-grid">
+{% include gallery_figure.liquid path="assets/img/ROB2.png" title="Obstacle Avoiding Bot" url="https://github.com/omkarchittar/Obstacle_Avoidance_Bot" %}
+{% include gallery_figure.liquid path="assets/img/ROB5.png" title="Wall Following Bot" url="https://github.com/omkarchittar/Wall_Following_Robot" %}
 </div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Obstacle_Avoidance_Bot">Obstacle Avoiding Bot
-        {% include figure.liquid path="assets/img/ROB2.png" title="Obstacle Avoiding Bot" class="img-fluid rounded z-depth-1" %}</a>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Wall_Following_Robot">Wall Following Bot
-    {% include figure.liquid path="assets/img/ROB5.png" title="Pose Estimation" class="img-fluid rounded z-depth-1" %}</a>
-    </div>
-</div>
+</section>

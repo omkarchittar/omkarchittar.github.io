@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
-<div class="portfolio-home">
+<div class="portfolio-home editorial-cloud">
   {{ content }}
 </div>
+
+{% if page.point_cloud %}
+  <script defer src="{{ '/assets/js/point-cloud.js' | relative_url | bust_file_cache }}"></script>
+{% endif %}

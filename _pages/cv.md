@@ -5,7 +5,7 @@ title: Resume
 nav: true
 nav_order: 3
 cv_pdf: resume.pdf
-description: Software Engineer / AI Engineer building production AI systems. RAG, agents, LLM evaluation, MLOps, full-stack software, and enterprise AI delivery.
+description: Software engineer with experience in full-stack applications, backend services, developer tools, and production data pipelines.
 toc:
   sidebar: left
 ---

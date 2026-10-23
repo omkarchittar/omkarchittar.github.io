@@ -1,29 +1,12 @@
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+  <nav id="navbar" class="navbar navbar-light navbar-expand-md {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if site.title %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.title == 'blank' %}
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-                &nbsp;</span
-              >
-            {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
-              &nbsp;
-            {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
-            {% endif %}
-          {% else %}
-            {{- site.title -}}
-          {% endif %}
-        </a>
-      {% endif %}
+      <a class="navbar-brand editorial-wordmark" href="{{ '/' | relative_url }}" aria-label="{{ site.title | escape }} home">
+        {{ site.first_name | downcase -}}
+        <span aria-hidden="true">✳</span>
+      </a>
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"
@@ -115,6 +98,8 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          <li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url }}#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url }}#contact">Contact</a></li>
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">

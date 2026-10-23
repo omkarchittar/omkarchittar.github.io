@@ -1,0 +1,169 @@
+{% case include.project %}
+  {% when 'estimating-platform' %}
+    <div
+      class="blueprint"
+      data-project-art="estimating-platform"
+      role="img"
+      aria-label="Conceptual illustration of geometry extraction from an architectural plan"
+    >
+      <div class="drawing-head"><span>FIG. 01 / DOCUMENT → GEOMETRY</span><span>CONCEPT STUDY</span></div>
+      <svg viewBox="0 0 500 380" aria-hidden="true">
+        <defs><pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0H0V25" fill="none" stroke="currentColor" opacity=".14"/></pattern></defs><rect width="500" height="380" fill="url(#grid)"/><g fill="none" stroke="currentColor" stroke-width="2"><path d="M90 290V110h150V70h170v220H90Z"/><path d="M100 280V120h150V80h150v200H100Z"/><path d="M250 80v110H100m150 0h150M250 200v80m80-90v90M170 120v70"/><path d="M60 110v180m-8-180h16m-16 180h16M90 320h310m-310-8v16m310-16v16" stroke-width="1"/><path d="M265 200h50v65h-50Z" stroke-dasharray="5 5"/></g><g fill="#e45735"><circle cx="90" cy="110" r="5"/><circle cx="240" cy="110" r="5"/><circle cx="240" cy="70" r="5"/><circle cx="410" cy="70" r="5"/><circle cx="410" cy="290" r="5"/><circle cx="90" cy="290" r="5"/></g><g fill="currentColor" font-size="11" font-family="monospace"><text x="125" y="158">01 / INGEST</text><text x="280" y="140">02 / EXTRACT</text><text x="125" y="240">03 / VALIDATE</text><text x="220" y="343">GEOMETRY-AWARE COMPUTATION</text></g>
+      </svg>
+      <div class="drawing-foot"><span>PYTHON + REACT / TYPESCRIPT</span><span>~900 automated tests</span></div>
+    </div>
+  {% when 'ci-debugging' %}
+    <figure
+      class="project-art ci-art"
+      data-project-art="ci-debugging"
+      role="img"
+      aria-label="Concept: a failed CI build and error trace are analyzed to identify a likely cause and suggest a code fix."
+    >
+      <svg viewBox="0 0 600 300" aria-hidden="true" focusable="false">
+        <text class="art-label" x="24" y="31">01 / FAILED BUILD</text>
+        <text class="art-label" x="344" y="31">02 / SUGGESTED FIX</text>
+        <rect class="art-panel" x="24" y="53" width="270" height="207" rx="7"/>
+        <path class="art-line" d="M24 88H294"/>
+        <circle class="art-accent-fill" cx="42" cy="71" r="4"/>
+        <circle class="art-muted-fill" cx="57" cy="71" r="4"/>
+        <circle class="art-muted-fill" cx="72" cy="71" r="4"/>
+        <text class="art-label" x="92" y="77">BUILD / FAILED</text>
+        <path class="art-code" d="M43 111H128M43 129H181M43 147H147"/>
+        <rect class="art-highlight" x="36" y="162" width="246" height="43" rx="3"/>
+        <path class="art-accent-line" d="M46 175L53 182L46 189M63 182H103"/>
+        <text class="art-label" x="118" y="188">ERROR TRACE</text>
+        <path class="art-code" d="M43 226H178M43 244H129"/>
+        <path class="art-accent-line" d="M307 157H331M324 150L331 157L324 164"/>
+        <rect class="art-panel" x="344" y="78" width="232" height="159" rx="7"/>
+        <text class="art-label" x="361" y="107">LIKELY CAUSE</text>
+        <path class="art-code" d="M361 121H528M361 135H481"/>
+        <path class="art-line" d="M344 151H576"/>
+        <text class="art-diff-remove" x="361" y="178">− failing path</text>
+        <text class="art-diff-add" x="361" y="207">+ proposed change</text>
+      </svg>
+      <figcaption>Build diagnostics → likely cause → suggested fix · Concept</figcaption>
+    </figure>
+  {% when 'media-pipelines' %}
+    <figure
+      class="project-art media-art"
+      data-project-art="media-pipelines"
+      role="img"
+      aria-label="Concept: video clips become embeddings in a vector index, which retrieves ranked video search results."
+    >
+      <svg viewBox="0 0 600 300" aria-hidden="true" focusable="false">
+        <text class="art-label" x="24" y="31">VIDEO CLIPS</text>
+        <text class="art-label" x="220" y="31">VECTOR INDEX</text>
+        <text class="art-label" x="412" y="31">SEARCH RESULTS</text>
+        <g class="art-panel">
+          <rect x="24" y="58" width="140" height="61" rx="4"/>
+          <rect x="24" y="129" width="140" height="61" rx="4"/>
+          <rect x="24" y="200" width="140" height="61" rx="4"/>
+        </g>
+        <g class="art-line">
+          <path d="M36 99L60 76L84 99M71 99L98 71L125 99M36 172H151M50 143V177M140 143V177M36 243L67 218L94 243L121 218L151 243"/>
+        </g>
+        <g class="art-accent-fill"><path d="M134 80L146 87L134 94ZM88 146L107 158L88 170ZM134 222L146 229L134 236Z"/></g>
+        <path class="art-accent-line" d="M176 159H203M196 152L203 159L196 166"/>
+        <rect class="art-panel" x="216" y="59" width="162" height="202" rx="7"/>
+        <g class="art-muted-fill">
+          <circle cx="239" cy="88" r="4"/><circle cx="266" cy="88" r="4"/><circle cx="293" cy="88" r="4"/><circle cx="320" cy="88" r="4"/><circle cx="347" cy="88" r="4"/>
+          <circle cx="239" cy="115" r="4"/><circle cx="266" cy="115" r="4"/><circle cx="293" cy="115" r="4"/><circle cx="320" cy="115" r="4"/><circle cx="347" cy="115" r="4"/>
+          <circle cx="239" cy="142" r="4"/><circle cx="266" cy="142" r="4"/><circle cx="293" cy="142" r="4"/><circle cx="320" cy="142" r="4"/><circle cx="347" cy="142" r="4"/>
+          <circle cx="239" cy="169" r="4"/><circle cx="266" cy="169" r="4"/><circle cx="293" cy="169" r="4"/><circle cx="320" cy="169" r="4"/><circle cx="347" cy="169" r="4"/>
+        </g>
+        <path class="art-accent-line" d="M266 115L293 142L320 115"/>
+        <g class="art-accent-fill"><circle cx="266" cy="115" r="6"/><circle cx="293" cy="142" r="6"/><circle cx="320" cy="115" r="6"/></g>
+        <path class="art-line" d="M216 193H378"/>
+        <text class="art-label" x="239" y="221">EMBEDDINGS</text>
+        <path class="art-accent-line" d="M388 159H409M402 152L409 159L402 166"/>
+        <rect class="art-panel" x="422" y="59" width="154" height="202" rx="7"/>
+        <rect class="art-highlight" x="432" y="73" width="134" height="53" rx="3"/>
+        <g class="art-accent-fill"><path d="M443 86H478V112H443ZM443 145H478V171H443ZM443 204H478V230H443Z"/></g>
+        <g class="art-play"><path d="M456 91L467 99L456 107ZM456 150L467 158L456 166ZM456 209L467 217L456 225Z"/></g>
+        <path class="art-code" d="M490 94H553M490 108H536M490 153H546M490 167H520M490 212H538M490 226H510"/>
+      </svg>
+      <figcaption>Video → embeddings → ranked retrieval · Concept</figcaption>
+    </figure>
+  {% when 'knowledge-discovery' %}
+    <div
+      class="mini-art retrieval-art"
+      data-project-art="knowledge-discovery"
+      role="img"
+      aria-label="Concept: legal source documents are retrieved, checked, and linked to verified citations."
+    >
+      <span class="paper p1" aria-hidden="true"
+        >DOCUMENT<br>
+        01</span
+      >
+      <span class="paper p2" aria-hidden="true"
+        >DOCUMENT<br>
+        02</span
+      >
+      <span class="paper p3" aria-hidden="true"
+        >VERIFIED<br>
+        <b>↗</b></span
+      >
+      <span class="art-caption" aria-hidden="true">RETRIEVE / CHECK / CITE · CONCEPT</span>
+    </div>
+  {% when 'operational-agents' %}
+    <div
+      class="mini-art monitor-art"
+      data-project-art="operational-agents"
+      role="img"
+      aria-label="Concept: operational signals are detected and surfaced so an issue can be resolved."
+    >
+      <div class="monitor-line" aria-hidden="true"></div>
+      <span class="signal s1" aria-hidden="true"></span><span class="signal s2" aria-hidden="true"></span
+      ><span class="signal s3" aria-hidden="true"></span>
+      <span class="monitor-label" aria-hidden="true">DETECT → SURFACE → RESOLVE</span>
+      <span class="art-caption" aria-hidden="true">OPERATIONAL SIGNALS · CONCEPT</span>
+    </div>
+  {% when 'speech-pipelines' %}
+    <figure
+      class="project-art speech-art"
+      data-project-art="speech-pipelines"
+      role="img"
+      aria-label="Concept: an audio waveform is divided by speaker and aligned with timestamped transcript segments."
+    >
+      <svg viewBox="0 0 600 300" aria-hidden="true" focusable="false">
+        <text class="art-label" x="24" y="31">AUDIO → SPEAKERS → TRANSCRIPT</text>
+        <rect class="art-panel" x="24" y="53" width="552" height="76" rx="5"/>
+        <path class="art-line" d="M40 91H560"/>
+        <path class="art-accent-line" d="M45 91H58V80H64V104H70V71H76V112H82V83H88V98H94V66H100V115H106V80H112V99H118V91H140V76H146V106H152V66H158V114H164V81H170V102H176V91H199V84H205V100H211V73H217V110H223V81H229V101H235V91H257V70H263V113H269V80H275V100H281V91H313V84H319V102H325V66H331V115H337V76H343V106H349V87H355V96H361V91H386V81H392V104H398V70H404V111H410V78H416V103H422V91H446V81H452V104H458V72H464V110H470V84H476V98H482V91H506V77H512V105H518V68H524V115H530V80H536V101H542V91H558"/>
+        <text class="art-label" x="24" y="162">SPEAKER A</text>
+        <text class="art-label" x="24" y="208">SPEAKER B</text>
+        <g class="art-accent-fill"><rect x="139" y="144" width="111" height="24" rx="3"/><rect x="360" y="144" width="192" height="24" rx="3"/></g>
+        <g class="art-muted-fill"><rect x="259" y="190" width="90" height="24" rx="3"/></g>
+        <path class="art-line" d="M139 138V227M250 138V227M259 177V227M349 177V227M360 138V227M552 138V227"/>
+        <g class="art-code"><path d="M139 240H226M259 240H332M360 240H490M139 254H201M259 254H310M360 254H443"/></g>
+        <text class="art-label" x="24" y="254">TEXT</text>
+      </svg>
+      <figcaption>Audio → speaker labels → aligned transcripts · Concept</figcaption>
+    </figure>
+  {% when 'llm-evaluation' %}
+    <figure
+      class="project-art evaluation-art"
+      data-project-art="llm-evaluation"
+      role="img"
+      aria-label="Concept: a query set measures top-five retrieval quality, alongside caching and request routing for serving efficiency."
+    >
+      <svg viewBox="0 0 600 300" aria-hidden="true" focusable="false">
+        <text class="art-label" x="24" y="31">QUERY SET</text>
+        <text class="art-label" x="224" y="31">TOP-5 RETRIEVAL</text>
+        <rect class="art-panel" x="24" y="60" width="144" height="128" rx="5"/>
+        <path class="art-code" d="M42 84H144M42 104H125M42 124H141M42 144H119M42 164H133"/>
+        <path class="art-accent-line" d="M182 125H207M200 118L207 125L200 132"/>
+        <rect class="art-panel" x="224" y="60" width="352" height="128" rx="5"/>
+        <g class="art-muted-fill"><rect x="245" y="83" width="37" height="38"/><rect x="301" y="83" width="37" height="38"/><rect x="357" y="83" width="37" height="38"/><rect x="413" y="83" width="37" height="38"/><rect x="469" y="83" width="37" height="38"/></g>
+        <g class="art-accent-fill"><rect x="245" y="138" width="37" height="25"/><rect x="301" y="138" width="37" height="25"/><rect x="357" y="138" width="37" height="25"/><rect x="413" y="138" width="37" height="25"/><rect x="469" y="138" width="37" height="25"/></g>
+        <g class="art-play" fill="none" stroke="currentColor" stroke-width="2"><path d="M255 149L261 155L273 144M311 149L317 155L329 144M367 149L373 155L385 144M423 149L429 155L441 144M479 149L485 155L497 144"/></g>
+        <text class="art-label" x="24" y="245">CACHE / ROUTE</text>
+        <path class="art-line" d="M185 239H240M240 239L300 216H400M240 239L300 264H400"/>
+        <rect class="art-highlight" x="400" y="203" width="176" height="27" rx="4"/>
+        <rect class="art-panel" x="400" y="251" width="176" height="27" rx="4"/>
+        <text class="art-label" x="417" y="222">CACHED RESPONSE</text>
+        <text class="art-label" x="417" y="270">MODEL REQUEST</text>
+      </svg>
+      <figcaption>Retrieval checks + efficient request serving · Concept</figcaption>
+    </figure>
+{% endcase %}

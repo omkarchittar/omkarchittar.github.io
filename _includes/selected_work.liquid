@@ -10,9 +10,25 @@
         id="{{ work.id }}"
       {% endif %}
     >
+      {% if include.detailed %}
+        {% include project_art.liquid project=work.id %}
+      {% endif %}
       <p class="work-context">{{ work.context }}</p>
       <h3>{{ work.title }}</h3>
       <p>{{ work.summary }}</p>
+      {% if include.detailed and work.flow %}
+        <ol class="work-flow" aria-label="Conceptual flow for {{ work.title | escape }}">
+          {% for step in work.flow %}
+            <li>
+              <span>{{ step }}</span>
+              {%- unless forloop.last -%}
+                <span class="flow-arrow" aria-hidden="true">→</span>
+              {%- endunless %}
+            </li>
+          {% endfor %}
+        </ol>
+        <p class="flow-caption">Conceptual flow based on the project description.</p>
+      {% endif %}
       {% if include.detailed %}
         <ul class="work-details">
           {% for detail in work.details %}

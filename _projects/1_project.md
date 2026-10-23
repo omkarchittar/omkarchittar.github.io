@@ -5,14 +5,12 @@ description: Learning for 3D Vision
 img: assets/img/3DV0.png
 importance: 2
 category: earlier-work
-related_publications: true
+project_gallery: true
 ---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/3D_vision_main.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+<p class="gallery-back"><a href="{{ '/projects/' | relative_url }}">← All projects</a></p>
+
+{% include gallery_figure.liquid path="assets/img/3D_vision_main.png" title="Learning-based 3D vision overview" caption="An overview of learning-based 3D vision." overview=true %}
 
 Developing autonomous agents requires them to understand and interact within a 3D environment. The capability to deduce, shape, and apply 3D representations is crucial in AI for various applications, including robotic handling, autonomous driving, virtual reality, and photo editing. The ambition to comprehend 3D spaces in computer vision has made significant strides with the advent of advanced (deep) learning methods. This area aims to delve into the integration of 3D Vision with Learning-based approaches, highlighting recent breakthroughs in the field.
 
@@ -27,126 +25,61 @@ It covers topics including:
 - Shape Abstraction
 - Mesh and Point cloud processing
 
-<div class="row">
-    <div class="row justify-content-center">
-        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/PyTorch3D_Rendering_Basics">Rendering Basics
-            {% include figure.liquid path="assets/img/3DV1.jpg" title="Rendering Basics" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Single_View_to_3D">Single View to 3D
-            {% include figure.liquid path="assets/img/3DV3.png" title="Single View to 3D" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Neural_Radiance_Fields">Neural Radiance Fields
-            {% include figure.liquid path="assets/img/3DV5.gif" title="Neural Radiance Fields" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-    </div>
+<section class="gallery-section">
+<h2>Rendering and reconstruction</h2>
+<div class="gallery-grid gallery-grid-three">
+{% include gallery_figure.liquid path="assets/img/3DV1.jpg" title="Rendering Basics" url="https://github.com/omkarchittar/PyTorch3D_Rendering_Basics" caption="Explore 3D representations and construct simple geometry with PyTorch3D." %}
+{% include gallery_figure.liquid path="assets/img/3DV3.png" title="Single View to 3D" url="https://github.com/omkarchittar/Single_View_to_3D" caption="Explore losses and decoders for voxels, point clouds, and meshes from a single RGB image." %}
+{% include gallery_figure.liquid path="assets/img/3DV5.gif" title="Neural Radiance Fields" url="https://github.com/omkarchittar/Neural_Radiance_Fields" caption="Volume rendering and neural radiance fields." %}
 </div>
-
-<div class="caption">
-    1. Learning the basics of rendering with PyTorch3D, exploring 3D representations, and practice constructing simple geometry <br>
-    2. Exploring the types of loss and decoder functions for regressing to voxels, point clouds, and mesh representation from single view RGB input <br>
-    3. Volume Rendering and Neural Radiance Fields <br>
+</section>
+<section class="gallery-section">
+<h2>Neural surfaces</h2>
+<div class="gallery-grid">
+{% include gallery_figure.liquid path="assets/img/3DV6.gif" title="Sphere Tracing" url="https://github.com/omkarchittar/Neural_Surfaces" caption="Implement sphere tracing to render a signed distance field." %}
+{% include gallery_figure.liquid path="assets/img/3DV7.gif" title="Optimizing a Neural SDF" url="https://github.com/omkarchittar/Neural_Surfaces" caption="Train an MLP-based neural signed distance field on point cloud data." %}
 </div>
-
-<div class="container">
-    <div class="row">
-        <div class="col"><a href="https://github.com/omkarchittar/Neural_Surfaces">Sphere Tracing
-                {% include figure.liquid path="assets/img/3DV6.gif" title="Sphere Tracing" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-        <div class="col"><a href="https://github.com/omkarchittar/Neural_Surfaces">Optimizing a Neural SDF
-                {% include figure.liquid path="assets/img/3DV7.gif" title="Optimizing a Neural SDF" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-    </div>
+</section>
+<section class="gallery-section">
+<h2>VolSDF</h2>
+<div class="gallery-grid">
+{% include gallery_figure.liquid path="assets/img/3DV8.gif" title="Volume density" url="https://github.com/omkarchittar/Neural_Surfaces" caption="Convert a signed distance field into volume density." %}
+{% include gallery_figure.liquid path="assets/img/3DV9.gif" title="Color prediction" url="https://github.com/omkarchittar/Neural_Surfaces" caption="Extend the neural surface to predict color." %}
 </div>
-
-<div class="caption">
-    1. Implementing sphere tracing for rendering an SDF <br>
-    2. Implementing an MLP architecture for a neural SDF, and training this neural SDF on point cloud data
+</section>
+<section class="gallery-section">
+<h2>Phong Relighting</h2>
+<p>Render the trained SDF volume under different lighting conditions using the Phong reflection model.</p>
+<div class="gallery-grid">
+{% include gallery_figure.liquid path="assets/img/3DV10.gif" title="Relighting example 1" url="https://github.com/omkarchittar/Neural_Surfaces" %}
+{% include gallery_figure.liquid path="assets/img/3DV11.gif" title="Relighting example 2" url="https://github.com/omkarchittar/Neural_Surfaces" %}
 </div>
-
-<a href="https://github.com/omkarchittar/Neural_Surfaces">VolSDF</a>
-
-<div class="container">
-    <div class="row">
-        <div class="col"><a href="https://github.com/omkarchittar/Neural_Surfaces">
-                {% include figure.liquid path="assets/img/3DV8.gif" title="VolSDF" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-        <div class="col"><a href="https://github.com/omkarchittar/Neural_Surfaces">
-                {% include figure.liquid path="assets/img/3DV9.gif" title="VolSDF" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-    </div>
+</section>
+<section class="gallery-section">
+<h2>Point Cloud Classification</h2>
+<p>Classify point clouds across three classes: chairs, vases, and lamps.</p>
+<div class="gallery-grid gallery-grid-three">
+{% include gallery_figure.liquid path="assets/img/3DV12.gif" title="Classification example 1" url="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation" %}
+{% include gallery_figure.liquid path="assets/img/3DV13.gif" title="Classification example 2" url="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation" %}
+{% include gallery_figure.liquid path="assets/img/3DV14.gif" title="Classification example 3" url="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation" %}
 </div>
-
-<div class="caption">
-    1. Implementing a function for converting SDF into volume density<br>
-    2. Extending the NeuralSurface class to predict color
-
+</section>
+<section class="gallery-section">
+<h2>Point Cloud Segmentation</h2>
+<p>Segment chair point clouds into six semantic classes.</p>
+<div class="gallery-grid gallery-grid-three">
+{% include gallery_figure.liquid path="assets/img/3DV15.gif" title="Segmentation example 1" url="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation" %}
+{% include gallery_figure.liquid path="assets/img/3DV16.gif" title="Segmentation example 2" url="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation" %}
+{% include gallery_figure.liquid path="assets/img/3DV17.gif" title="Segmentation example 3" url="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation" %}
 </div>
-
-<a href="https://github.com/omkarchittar/Neural_Surfaces">Phong Relighting</a>
-
-<div class="container">
-    <div class="row">
-        <div class="col"><a href="https://github.com/omkarchittar/Neural_Surfaces">
-                {% include figure.liquid path="assets/img/3DV10.gif" title="Phong Relighting" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-        <div class="col"><a href="https://github.com/omkarchittar/Neural_Surfaces">
-                {% include figure.liquid path="assets/img/3DV11.gif" title="Phong Relighting" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-    </div>
+</section>
+<section class="gallery-section">
+<h2>Multi-view geometry</h2>
+<div class="gallery-grid">
+{% include gallery_figure.liquid path="assets/img/3DV18.jpeg" title="Structure from Motion" url="https://github.com/omkarchittar/Structure_from_Motion" %}
 </div>
+</section>
 
-<div class="caption">
-    Implementing the Phong reflection model in order to render the SDF volume we trained under different lighting conditions
-</div>
+## Further reading
 
-<a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">Point Cloud Classification</a>
-
-<div class="container">
-    <div class="row">
-        <div class="col"><a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">
-                {% include figure.liquid path="assets/img/3DV12.gif" title="Point Cloud Classification" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-        <div class="col"><a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">
-                {% include figure.liquid path="assets/img/3DV13.gif" title="Point Cloud Classification" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-        <div class="col"><a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">
-                {% include figure.liquid path="assets/img/3DV14.gif" title="Point Cloud Classification" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-    </div>
-</div>
-
-<div class="caption">
-    Implementing a classification model that classifies points clouds from across 3 classes (chairs, vases and lamps objects)
-</div>
-
-<a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">Point Cloud Segmentation</a>
-
-<div class="container">
-    <div class="row">
-        <div class="col"><a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">
-                {% include figure.liquid path="assets/img/3DV15.gif" title="Point Cloud Segmentation" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-        <div class="col"><a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">
-                {% include figure.liquid path="assets/img/3DV16.gif" title="Point Cloud Segmentation" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-        <div class="col"><a href="https://github.com/omkarchittar/PointCloud_Classification_and_Segmentation">
-                {% include figure.liquid path="assets/img/3DV17.gif" title="Point Cloud Segmentation" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-    </div>
-</div>
-
-<div class="caption">
-    Implementing a Segmentation model that segments points of chair objects into 6 semantic segmentation classes
-</div>
-
-<a href="https://github.com/omkarchittar/Structure_from_Motion">Structure from Motion</a>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Structure_from_Motion">
-        {% include figure.liquid path="assets/img/3DV18.jpeg" title="SfM" class="img-fluid rounded z-depth-1" %}</a>
-    </div>
-</div>
-
-[MVS](https://github.com/walsvid/Awesome-MVS?tab=readme-ov-file#early)
-[SLAM](https://github.com/kanster/awesome-slam)
-[SLAM](https://github.com/SilenceOverflow/Awesome-SLAM)
+[MVS](https://github.com/walsvid/Awesome-MVS?tab=readme-ov-file#early) · [SLAM resources](https://github.com/kanster/awesome-slam) · [More SLAM resources](https://github.com/SilenceOverflow/Awesome-SLAM)

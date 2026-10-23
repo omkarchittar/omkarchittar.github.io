@@ -5,76 +5,40 @@ description: Learning based computer vision
 img: assets/img/CVDL1.jpg
 importance: 1
 category: earlier-work
-related_publications: true
+project_gallery: true
 ---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/CVDL_main.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+<p class="gallery-back"><a href="{{ '/projects/' | relative_url }}">← All projects</a></p>
+
+{% include gallery_figure.liquid path="assets/img/CVDL_main.png" title="Computer vision project overview" caption="An overview of computer vision tasks." overview=true %}
 
 Welcome to the showcase of my deep learning and computer vision projects, where innovation meets practical application. My portfolio spans a variety of cutting-edge projects that demonstrate my expertise in harnessing the power of neural networks to interpret and understand visual data. From developing sophisticated algorithms for real-time object detection and recognition, to crafting advanced neural network architectures for image segmentation and enhancement, each project embodies my commitment to advancing the field of computer vision.
 
-<div class="row">
-    <div class="row justify-content-center">
-        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Superpixels_and_SLIC">Superpixels and SLIC
-            {% include figure.liquid path="assets/img/CVDL2.png" title="Superpixels and SLIC" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Generative_Adversarial_Networks">GANs
-            {% include figure.liquid path="assets/img/CVDL3.png" title="GANs" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-        <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/LiDAR_SLAM">LiDAR SLAM
-            {% include figure.liquid path="assets/img/CVDL4.png" title="LiDAR SLAM" class="img-fluid rounded z-depth-1" %}</a>
-        </div>
-    </div>
+<section class="gallery-section">
+<h2>Learning-based vision</h2>
+<div class="gallery-grid gallery-grid-three">
+{% include gallery_figure.liquid path="assets/img/CVDL2.png" title="Superpixels and SLIC" url="https://github.com/omkarchittar/Superpixels_and_SLIC" caption="Segmentation using superpixels." %}
+{% include gallery_figure.liquid path="assets/img/CVDL3.png" title="Generative Adversarial Networks" url="https://github.com/omkarchittar/Generative_Adversarial_Networks" caption="GANs on MNIST and DCGANs on a human faces dataset." %}
+{% include gallery_figure.liquid path="assets/img/CVDL4.png" title="LiDAR SLAM" url="https://github.com/omkarchittar/LiDAR_SLAM" caption="Simultaneous localization and mapping using LiDAR data." %}
 </div>
-<div class="caption">
-    1. Segmentation using Superpixels <br>
-    2. Generative Adversarial Networks(GANs) on MNIST and Deep Convolutional GANs(DCGANs) on Human Faces Dataset <br>
-    3. Simultaneous Localization and Mapping using LiDAR data <br>
+</section>
+<section class="gallery-section">
+<h2>Semantic Segmentation and Object Detection</h2>
+<div class="gallery-grid">
+{% include gallery_figure.liquid path="assets/img/CVDL7.png" title="Semantic Segmentation" url="https://github.com/omkarchittar/Semantic_Segmentation_and_Object_Detection" caption="Sample segmentation results." %}
+{% include gallery_figure.liquid path="assets/img/CVDL8.png" title="Object Detection" url="https://github.com/omkarchittar/Semantic_Segmentation_and_Object_Detection" caption="Sample object detection results." %}
 </div>
-
-<a href="https://github.com/omkarchittar/Semantic_Segmentation_and_Object_Detection">Semantic Segmentation and Object Detection</a>
-
-<div class="container">
-    <div class="row"><a href="https://github.com/omkarchittar/Semantic_Segmentation_and_Object_Detection">
-                {% include figure.liquid path="assets/img/CVDL7.png" title="Semantic Segmentation" class="img-fluid rounded z-depth-1" %}</a>
-    </div>
-    <div class="row"><a href="https://github.com/omkarchittar/Semantic_Segmentation_and_Object_Detection">
-                {% include figure.liquid path="assets/img/CVDL8.png" title="Object Detection" class="img-fluid rounded z-depth-1" %}</a>
-    </div>
+</section>
+<section class="gallery-section">
+<h2>Representation and geometry</h2>
+<div class="gallery-grid gallery-grid-three">
+{% include gallery_figure.liquid path="assets/img/CVDL5.png" title="Implicit Neural Representation" url="https://github.com/omkarchittar/Implicit_Neural_Representation" caption="An MLP predicts an RGB pixel value from its x and y coordinates, representing an image as a continuous function." %}
+{% include gallery_figure.liquid path="assets/img/3DV18.jpeg" title="Structure from Motion" url="https://github.com/omkarchittar/Structure_from_Motion" %}
+{% include gallery_figure.liquid path="assets/img/CVDL6.gif" title="Pose Estimation" url="https://github.com/omkarchittar/Pose_Estimation_2D" %}
 </div>
-<div class="caption">
-    1. Sample Segmentation Results <br>
-    2. Sample Object Detection Results
-</div>
+</section>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Implicit_Neural_Representation">Implicit Neural Representation
-    {% include figure.liquid path="assets/img/CVDL5.png" title="Implicit Neural Representation" class="img-fluid rounded z-depth-1" %}</a>
-    </div>
-</div>
-
-<div class="caption">
-    An illustration of an image represented in the implicit neural representation (INR) form, i.e. as an MLP that predicts an RGB pixel value given its (x, y) coordinates. In contrast to a pixel-based representation, it stores the image in its true continuous form. 
-</div>
-
-<a href="https://github.com/omkarchittar/Structure_from_Motion">Structure from Motion</a>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Structure_from_Motion">
-        {% include figure.liquid path="assets/img/3DV18.jpeg" title="SfM" class="img-fluid rounded z-depth-1" %}</a>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0"><a href="https://github.com/omkarchittar/Pose_Estimation_2D">Pose Estimation
-    {% include figure.liquid path="assets/img/CVDL6.gif" title="Pose Estimation" class="img-fluid rounded z-depth-1" %}</a>
-    </div>
-</div>
-
-# Classical Computer Vision
+## Classical Computer Vision
 
 <a href="https://github.com/omkarchittar/K_Means_Clustering"> K-Means Clustering </a><br>
 <a href="https://github.com/omkarchittar/Stereo_Depth_Estimation"> Stereo Depth Estimation </a><br>

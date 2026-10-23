@@ -1,85 +1,48 @@
-# Preview the production AI redesign
+# Editorial software portfolio
 
-Development branch: `codex/homepage-resume-alignment`.
+This redesign applies the selected warm editorial layout to the existing Jekyll site. The homepage uses an abstract mathematical point cloud, a small About portrait, and conceptual project illustrations. The existing theme control switches between warm light and dark palettes and remembers the visitor's choice.
 
-## Native Jekyll preview
+## Current resume
 
-On this Apple Silicon Mac, install a separate Homebrew Ruby and ImageMagick.
-The macOS system Ruby 2.6 cannot install the project's current dependencies.
-If Homebrew reports an unaccepted Xcode license, first run
-`sudo xcodebuild -license` in Terminal, review the agreement, and accept it if
-you agree. This requires your administrator password.
+The authoritative source is `Omkar_swe.pdf`, supplied on October 22, 2026. Its bytes are copied unchanged to `assets/pdf/resume.pdf`. Web experience and skills are in `assets/json/resume.json`; `_data/cv.yml` retains the synchronized fallback. Historical job titles, education, dates, and accomplishments are preserved. The site's overall positioning is Software Engineer.
+
+New work includes the CI debugging agent, video understanding pipelines, speech transcription and diarization, and Apache Airflow orchestration. Shared project descriptions and conceptual pipeline steps live in `_data/selected_work.yml`. The homepage features five projects; Projects preserves all existing anchors and includes the additional work.
+
+## Build and preview
+
+Use the existing Homebrew Ruby 3.3 installation and installed gems:
 
 ```sh
-brew install ruby@3.3 imagemagick
 export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"
-hash -r
-ruby --version
-bundle --version
+bundle check
+bundle exec jekyll serve --host 127.0.0.1 --port 4001 --destination /tmp/omkar-editorial-preview
 ```
 
-Confirm Ruby reports **3.3.x**, then run the following from the repository root.
-Repeat the `export PATH` command in each new terminal session before running
-Bundler; it selects Homebrew Ruby without changing Apple's system Ruby.
-Port 4001 and the separate build directory avoid colliding with an existing
-preview on port 4000.
+Open <http://127.0.0.1:4001>. Stop with Ctrl+C. Restart after changing `_config.yml`.
 
 ```sh
-bundle install
-bundle exec jekyll serve --host 127.0.0.1 --port 4001 --destination /tmp/omkar-home-resume-review
+node tests/point-cloud.test.cjs
+bundle exec jekyll build --destination /tmp/omkar-editorial-build
+python3 tests/site.test.py /tmp/omkar-editorial-build
+python3 tests/visual-pairings.test.py /tmp/omkar-editorial-build
+python3 tests/project-collection.test.py /tmp/omkar-editorial-build
+python3 tests/internal-galleries.test.py /tmp/omkar-editorial-build
 ```
 
-Open <http://127.0.0.1:4001>. Stop the server with Ctrl+C. Restart it after
-editing `_config.yml`.
+## Check before publication
 
-For a production build:
+- Test Home, Projects, Resume, Publications, and older project URLs on desktop and mobile.
+- Switch themes, navigate to another page, and confirm the chosen theme persists.
+- Confirm the About portrait loads and the resume download opens the current PDF.
+- Operate the point-cloud slider with the keyboard; pause/resume motion and check reduced-motion behavior.
+- Diagrams illustrate the published project descriptions; they are not actual product screenshots.
 
-```sh
-JEKYLL_ENV=production bundle exec jekyll build --lsi
-```
+No domain, deployment workflow, or access settings were changed. Pushing to master/main invokes the existing deployment workflow; review changes before publishing. The user's root `image.png` and `resume_SWE.pdf` are untouched.
 
-The existing container alternative is `docker compose up`, which exposes the
-site at <http://localhost:8080>. It requires a working Docker engine and downloads
-the al-folio image on first use.
+Projects presents the three original galleries, a complete index of all 28 repositories referenced by the galleries or repository data, and the seven professional case studies. Gallery contents and legacy URLs are preserved.
 
-## Review checklist
+All seven professional projects have matching artwork. Gallery thumbnails use themed vector diagrams; the original gallery images and animations remain in the detail pages. The estimating plan illustration is shared between Home and Projects.
 
-- Check Home, Projects, Resume, and Publications on desktop and mobile.
-- Switch between light and dark themes and use the keyboard to navigate.
-- Follow the selected work links to their sections on Projects.
-- Confirm all three Earlier Work links still open their original project URLs.
-- Confirm the canonical URL and Open Graph URLs use `https://omkarchittar.com`.
-- Confirm the published PDF matches `resume_SWE.pdf`, and the old resume JSON and theme demo posts are absent from `_site`.
+The All projects index includes 28 compact, project-specific vector thumbnails. Each remains inside its corresponding repository link and follows the light/dark palette.
 
-The Resume navigation item keeps the existing `/cv/` URL. Its text comes from
-`assets/json/resume.json`, synchronized with the latest supplied `resume_SWE.pdf`.
-The PDF is copied unchanged to `assets/pdf/resume.pdf`, which is linked from the
-Resume page. The homepage Resume CTA opens the web resume. The root source PDF is excluded from publication to
-avoid publishing duplicate copies. Contact email is `ochittar@gmail.com`.
-
-Selected Work summaries are shared between the homepage and Projects through
-`_data/selected_work.yml`. Four featured summaries appear on Home and Projects, including LLM
-evaluation and serving. Claims use only information in
-the supplied resume. Earlier robotics and computer vision project URLs remain
-unchanged.
-
-`CNAME` and site metadata use `omkarchittar.com`. DNS and GitHub Pages settings
-were not changed; this branch does not deploy automatically when pushed.
-
-## Homepage and resume alignment review
-
-The live-site audit found the production AI homepage and current employment
-history already published. This branch completes the hero links, aligns SEO
-and social titles, and improves the web resume's hierarchy and rendering.
-The source PDF and role accomplishments are unchanged. Missing dates for Sai
-Classes and the University of Maryland transportation role remain omitted;
-confirm those dates before adding them. No additional public AI case study
-exists in the current source content to add beyond the shared Selected Work.
-
-The resume shows Work Experience, Skills, Education, and Teaching & Community.
-Contact links are in its header. Robotics experience remains under Earlier Work.
-Summary arrays render as bullets; text summaries render as paragraphs.
-The unused `assets/json/resume_og.json` has been removed. Demo posts and news
-remain excluded from publication. Deployment workflows and domain settings
-are unchanged. The homepage and resume alignment changes were reviewed and
-approved for publication.
+The three internal gallery pages use one responsive figure/caption layout, retaining all 34 original media files and project links. Scoped print rules remove Bootstrap's fixed-width body/container and A3 page setting.
